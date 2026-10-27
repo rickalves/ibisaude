@@ -1,0 +1,61 @@
+{
+  "descricao": "Municipios da Serra da Ibiapaba (CE). Nucleo = antiga 13a Regiao de Saude (Tiangua), hoje incorporada a 5a RS Sobral (codigo 23011). Codigos IBGE: 6 digitos (padrao da maioria dos endpoints) e 7 digitos (populacao SVSA).",
+  "regiao_saude_atual": {
+    "codigo": "23011",
+    "nome": "5a RS SOBRAL"
+  },
+  "nucleo": [
+    {
+      "ibge6": "230340",
+      "ibge7": "2303402",
+      "nome": "Carnaubal"
+    },
+    {
+      "ibge6": "230423",
+      "ibge7": "2304236",
+      "nome": "Croatá"
+    },
+    {
+      "ibge6": "230500",
+      "ibge7": "2305001",
+      "nome": "Guaraciaba do Norte"
+    },
+    {
+      "ibge6": "230530",
+      "ibge7": "2305308",
+      "nome": "Ibiapina"
+    },
+    {
+      "ibge6": "231230",
+      "ibge7": "2312304",
+      "nome": "São Benedito"
+    },
+    {
+      "ibge6": "231340",
+      "ibge7": "2313401",
+      "nome": "Tianguá"
+    },
+    {
+      "ibge6": "231360",
+      "ibge7": "2313609",
+      "nome": "Ubajara"
+    },
+    {
+      "ibge6": "231410",
+      "ibge7": "2314102",
+      "nome": "Viçosa do Ceará"
+    }
+  ],
+  "opcionais": [
+    {
+      "ibge6": "230580",
+      "ibge7": "2305803",
+      "nome": "Ipu"
+    },
+    {
+      "ibge6": "230590",
+      "ibge7": "2305902",
+      "nome": "Ipueiras"
+    }
+  ]
+}

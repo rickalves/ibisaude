@@ -1,0 +1,2646 @@
+unidade,nome,ano,indicador,numerador,denominador,valor
+230340,Carnaubal,2019,populacao,17606,,17606
+230340,Carnaubal,2019,nascidos_vivos,266,,266
+230340,Carnaubal,2019,tmi,3,266,11.28
+230340,Carnaubal,2019,tmn,3,266,11.28
+230340,Carnaubal,2019,obitos_maternos,0,,0
+230340,Carnaubal,2019,pct_cesarea,106,266,39.85
+230340,Carnaubal,2019,pct_prenatal7,236,258,91.47
+230340,Carnaubal,2019,pct_prenatal_1tri,230,257,89.49
+230340,Carnaubal,2019,pct_baixo_peso,22,266,8.27
+230340,Carnaubal,2019,pct_prematuro,27,260,10.38
+230340,Carnaubal,2019,pct_mae_adolescente,40,266,15.04
+230340,Carnaubal,2019,obitos,117,,117
+230340,Carnaubal,2019,tx_mortalidade,117,17606,6.65
+230340,Carnaubal,2019,obitos_dcnt_prematuros,23,,23
+230340,Carnaubal,2019,tx_causas_externas,17,17606,96.56
+230340,Carnaubal,2019,tx_homicidio,2,17606,11.36
+230340,Carnaubal,2019,tx_transito,6,17606,34.08
+230340,Carnaubal,2019,obitos_covid,0,,0
+230340,Carnaubal,2019,internacoes,1138,,1138
+230340,Carnaubal,2019,tx_internacao,1138,17606,64.64
+230340,Carnaubal,2019,pct_icsap,315,948,33.23
+230340,Carnaubal,2019,pct_fora_serra,250,1138,21.97
+230340,Carnaubal,2019,pct_obito_hospitalar,39,1138,3.43
+230340,Carnaubal,2019,gasto_sih_per_capita,972840.67,17606,55.26
+230340,Carnaubal,2019,dengue_casos,1,,1
+230340,Carnaubal,2019,dengue_incidencia,1,17606,5.68
+230340,Carnaubal,2019,dengue_graves,0,,0
+230340,Carnaubal,2019,dengue_obitos,0,,0
+230340,Carnaubal,2019,chik_casos,0,,0
+230340,Carnaubal,2019,chik_incidencia,0,17606,0.0
+230340,Carnaubal,2019,zika_casos,0,,0
+230340,Carnaubal,2020,populacao,17685,,17685
+230340,Carnaubal,2020,nascidos_vivos,225,,225
+230340,Carnaubal,2020,tmi,2,225,8.89
+230340,Carnaubal,2020,tmn,2,225,8.89
+230340,Carnaubal,2020,obitos_maternos,0,,0
+230340,Carnaubal,2020,pct_cesarea,90,225,40.0
+230340,Carnaubal,2020,pct_prenatal7,195,222,87.84
+230340,Carnaubal,2020,pct_prenatal_1tri,188,223,84.3
+230340,Carnaubal,2020,pct_baixo_peso,10,225,4.44
+230340,Carnaubal,2020,pct_prematuro,24,220,10.91
+230340,Carnaubal,2020,pct_mae_adolescente,31,225,13.78
+230340,Carnaubal,2020,obitos,113,,113
+230340,Carnaubal,2020,tx_mortalidade,113,17685,6.39
+230340,Carnaubal,2020,obitos_dcnt_prematuros,22,,22
+230340,Carnaubal,2020,tx_causas_externas,10,17685,56.55
+230340,Carnaubal,2020,tx_homicidio,1,17685,5.65
+230340,Carnaubal,2020,tx_transito,4,17685,22.62
+230340,Carnaubal,2020,obitos_covid,8,,8
+230340,Carnaubal,2020,internacoes,877,,877
+230340,Carnaubal,2020,tx_internacao,877,17685,49.59
+230340,Carnaubal,2020,pct_icsap,207,734,28.2
+230340,Carnaubal,2020,pct_fora_serra,256,877,29.19
+230340,Carnaubal,2020,pct_obito_hospitalar,45,877,5.13
+230340,Carnaubal,2020,gasto_sih_per_capita,1004544.82,17685,56.8
+230340,Carnaubal,2020,dengue_casos,4,,4
+230340,Carnaubal,2020,dengue_incidencia,4,17685,22.62
+230340,Carnaubal,2020,dengue_graves,0,,0
+230340,Carnaubal,2020,dengue_obitos,0,,0
+230340,Carnaubal,2020,chik_casos,0,,0
+230340,Carnaubal,2020,chik_incidencia,0,17685,0.0
+230340,Carnaubal,2020,zika_casos,0,,0
+230340,Carnaubal,2021,populacao,17763,,17763
+230340,Carnaubal,2021,nascidos_vivos,276,,276
+230340,Carnaubal,2021,tmi,0,276,0.0
+230340,Carnaubal,2021,tmi_3a,5,767,6.52
+230340,Carnaubal,2021,tmn,0,276,0.0
+230340,Carnaubal,2021,tmn_3a,5,767,6.52
+230340,Carnaubal,2021,obitos_maternos,0,,0
+230340,Carnaubal,2021,rmm_3a,0,767,0.0
+230340,Carnaubal,2021,pct_cesarea,110,276,39.86
+230340,Carnaubal,2021,pct_prenatal7,246,275,89.45
+230340,Carnaubal,2021,pct_prenatal_1tri,245,272,90.07
+230340,Carnaubal,2021,pct_baixo_peso,19,276,6.88
+230340,Carnaubal,2021,pct_prematuro,35,271,12.92
+230340,Carnaubal,2021,pct_mae_adolescente,50,276,18.12
+230340,Carnaubal,2021,obitos,168,,168
+230340,Carnaubal,2021,tx_mortalidade,168,17763,9.46
+230340,Carnaubal,2021,obitos_dcnt_prematuros,25,,25
+230340,Carnaubal,2021,tx_causas_externas,20,17763,112.59
+230340,Carnaubal,2021,tx_homicidio,4,17763,22.52
+230340,Carnaubal,2021,tx_transito,10,17763,56.3
+230340,Carnaubal,2021,obitos_covid,32,,32
+230340,Carnaubal,2021,internacoes,1167,,1167
+230340,Carnaubal,2021,tx_internacao,1167,17763,65.7
+230340,Carnaubal,2021,pct_icsap,206,993,20.75
+230340,Carnaubal,2021,pct_fora_serra,341,1167,29.22
+230340,Carnaubal,2021,pct_obito_hospitalar,73,1167,6.26
+230340,Carnaubal,2021,gasto_sih_per_capita,2103872.3,17763,118.44
+230340,Carnaubal,2021,dengue_casos,4,,4
+230340,Carnaubal,2021,dengue_incidencia,4,17763,22.52
+230340,Carnaubal,2021,dengue_graves,0,,0
+230340,Carnaubal,2021,dengue_obitos,0,,0
+230340,Carnaubal,2021,chik_casos,0,,0
+230340,Carnaubal,2021,chik_incidencia,0,17763,0.0
+230340,Carnaubal,2021,zika_casos,0,,0
+230340,Carnaubal,2022,populacao,17210,,17210
+230340,Carnaubal,2022,nascidos_vivos,238,,238
+230340,Carnaubal,2022,tmi,3,238,12.61
+230340,Carnaubal,2022,tmi_3a,5,739,6.77
+230340,Carnaubal,2022,tmn,2,238,8.4
+230340,Carnaubal,2022,tmn_3a,4,739,5.41
+230340,Carnaubal,2022,obitos_maternos,0,,0
+230340,Carnaubal,2022,rmm_3a,0,739,0.0
+230340,Carnaubal,2022,pct_cesarea,96,238,40.34
+230340,Carnaubal,2022,pct_prenatal7,219,237,92.41
+230340,Carnaubal,2022,pct_prenatal_1tri,212,238,89.08
+230340,Carnaubal,2022,pct_baixo_peso,28,238,11.76
+230340,Carnaubal,2022,pct_prematuro,40,237,16.88
+230340,Carnaubal,2022,pct_mae_adolescente,28,238,11.76
+230340,Carnaubal,2022,obitos,146,,146
+230340,Carnaubal,2022,tx_mortalidade,146,17210,8.48
+230340,Carnaubal,2022,obitos_dcnt_prematuros,23,,23
+230340,Carnaubal,2022,tx_causas_externas,11,17210,63.92
+230340,Carnaubal,2022,tx_homicidio,4,17210,23.24
+230340,Carnaubal,2022,tx_transito,4,17210,23.24
+230340,Carnaubal,2022,obitos_covid,5,,5
+230340,Carnaubal,2022,internacoes,1252,,1252
+230340,Carnaubal,2022,tx_internacao,1252,17210,72.75
+230340,Carnaubal,2022,pct_icsap,199,1102,18.06
+230340,Carnaubal,2022,pct_fora_serra,268,1252,21.41
+230340,Carnaubal,2022,pct_obito_hospitalar,65,1252,5.19
+230340,Carnaubal,2022,gasto_sih_per_capita,1280638.36,17210,74.41
+230340,Carnaubal,2022,dengue_casos,13,,13
+230340,Carnaubal,2022,dengue_incidencia,13,17210,75.54
+230340,Carnaubal,2022,dengue_graves,0,,0
+230340,Carnaubal,2022,dengue_obitos,0,,0
+230340,Carnaubal,2022,chik_casos,10,,10
+230340,Carnaubal,2022,chik_incidencia,10,17210,58.11
+230340,Carnaubal,2022,zika_casos,0,,0
+230340,Carnaubal,2023,populacao,17484,,17484
+230340,Carnaubal,2023,nascidos_vivos,233,,233
+230340,Carnaubal,2023,tmi,0,233,0.0
+230340,Carnaubal,2023,tmi_3a,3,747,4.02
+230340,Carnaubal,2023,tmn,0,233,0.0
+230340,Carnaubal,2023,tmn_3a,2,747,2.68
+230340,Carnaubal,2023,obitos_maternos,0,,0
+230340,Carnaubal,2023,rmm_3a,0,747,0.0
+230340,Carnaubal,2023,pct_cesarea,95,233,40.77
+230340,Carnaubal,2023,pct_prenatal7,208,230,90.43
+230340,Carnaubal,2023,pct_prenatal_1tri,200,229,87.34
+230340,Carnaubal,2023,pct_baixo_peso,20,233,8.58
+230340,Carnaubal,2023,pct_prematuro,30,230,13.04
+230340,Carnaubal,2023,pct_mae_adolescente,37,233,15.88
+230340,Carnaubal,2023,obitos,127,,127
+230340,Carnaubal,2023,tx_mortalidade,127,17484,7.26
+230340,Carnaubal,2023,obitos_dcnt_prematuros,21,,21
+230340,Carnaubal,2023,tx_causas_externas,11,17484,62.91
+230340,Carnaubal,2023,tx_homicidio,3,17484,17.16
+230340,Carnaubal,2023,tx_transito,5,17484,28.6
+230340,Carnaubal,2023,obitos_covid,1,,1
+230340,Carnaubal,2023,internacoes,1469,,1469
+230340,Carnaubal,2023,tx_internacao,1469,17484,84.02
+230340,Carnaubal,2023,pct_icsap,116,1322,8.77
+230340,Carnaubal,2023,pct_fora_serra,319,1469,21.72
+230340,Carnaubal,2023,pct_obito_hospitalar,56,1469,3.81
+230340,Carnaubal,2023,gasto_sih_per_capita,1514408.5,17484,86.62
+230340,Carnaubal,2023,dengue_casos,4,,4
+230340,Carnaubal,2023,dengue_incidencia,4,17484,22.88
+230340,Carnaubal,2023,dengue_graves,0,,0
+230340,Carnaubal,2023,dengue_obitos,0,,0
+230340,Carnaubal,2023,chik_casos,1,,1
+230340,Carnaubal,2023,chik_incidencia,1,17484,5.72
+230340,Carnaubal,2023,zika_casos,0,,0
+230340,Carnaubal,2024,populacao,17758,,17758
+230340,Carnaubal,2024,nascidos_vivos,202,,202
+230340,Carnaubal,2024,tmi,1,202,4.95
+230340,Carnaubal,2024,tmi_3a,4,673,5.94
+230340,Carnaubal,2024,tmn,1,202,4.95
+230340,Carnaubal,2024,tmn_3a,3,673,4.46
+230340,Carnaubal,2024,obitos_maternos,0,,0
+230340,Carnaubal,2024,rmm_3a,0,673,0.0
+230340,Carnaubal,2024,pct_cesarea,93,202,46.04
+230340,Carnaubal,2024,pct_prenatal7,192,202,95.05
+230340,Carnaubal,2024,pct_prenatal_1tri,176,199,88.44
+230340,Carnaubal,2024,pct_baixo_peso,23,201,11.44
+230340,Carnaubal,2024,pct_prematuro,36,201,17.91
+230340,Carnaubal,2024,pct_mae_adolescente,18,202,8.91
+230340,Carnaubal,2024,obitos,123,,123
+230340,Carnaubal,2024,tx_mortalidade,123,17758,6.93
+230340,Carnaubal,2024,obitos_dcnt_prematuros,22,,22
+230340,Carnaubal,2024,tx_causas_externas,18,17758,101.36
+230340,Carnaubal,2024,tx_homicidio,7,17758,39.42
+230340,Carnaubal,2024,tx_transito,5,17758,28.16
+230340,Carnaubal,2024,obitos_covid,0,,0
+230340,Carnaubal,2024,internacoes,1576,,1576
+230340,Carnaubal,2024,tx_internacao,1576,17758,88.75
+230340,Carnaubal,2024,pct_icsap,115,1451,7.93
+230340,Carnaubal,2024,pct_fora_serra,293,1576,18.59
+230340,Carnaubal,2024,pct_obito_hospitalar,52,1576,3.3
+230340,Carnaubal,2024,gasto_sih_per_capita,1704526.66,17758,95.99
+230340,Carnaubal,2024,dengue_casos,4,,4
+230340,Carnaubal,2024,dengue_incidencia,4,17758,22.53
+230340,Carnaubal,2024,dengue_graves,0,,0
+230340,Carnaubal,2024,dengue_obitos,0,,0
+230340,Carnaubal,2024,chik_casos,6,,6
+230340,Carnaubal,2024,chik_incidencia,6,17758,33.79
+230340,Carnaubal,2024,zika_casos,0,,0
+230340,Carnaubal,2025,populacao,17815,,17815
+230340,Carnaubal,2025,nascidos_vivos,205,,205
+230340,Carnaubal,2025,tmi,2,205,9.76
+230340,Carnaubal,2025,tmi_3a,3,640,4.69
+230340,Carnaubal,2025,tmn,1,205,4.88
+230340,Carnaubal,2025,tmn_3a,2,640,3.12
+230340,Carnaubal,2025,obitos_maternos,1,,1
+230340,Carnaubal,2025,rmm_3a,1,640,156.25
+230340,Carnaubal,2025,pct_cesarea,114,205,55.61
+230340,Carnaubal,2025,pct_prenatal7,192,202,95.05
+230340,Carnaubal,2025,pct_prenatal_1tri,179,199,89.95
+230340,Carnaubal,2025,pct_baixo_peso,18,205,8.78
+230340,Carnaubal,2025,pct_prematuro,29,205,14.15
+230340,Carnaubal,2025,pct_mae_adolescente,26,205,12.68
+230340,Carnaubal,2025,obitos,154,,154
+230340,Carnaubal,2025,tx_mortalidade,154,17815,8.64
+230340,Carnaubal,2025,obitos_dcnt_prematuros,25,,25
+230340,Carnaubal,2025,tx_causas_externas,14,17815,78.59
+230340,Carnaubal,2025,tx_homicidio,1,17815,5.61
+230340,Carnaubal,2025,tx_transito,11,17815,61.75
+230340,Carnaubal,2025,obitos_covid,1,,1
+230340,Carnaubal,2025,internacoes,1589,,1589
+230340,Carnaubal,2025,tx_internacao,1589,17815,89.19
+230340,Carnaubal,2025,pct_icsap,117,1487,7.87
+230340,Carnaubal,2025,pct_fora_serra,300,1589,18.88
+230340,Carnaubal,2025,pct_obito_hospitalar,74,1589,4.66
+230340,Carnaubal,2025,gasto_sih_per_capita,1869581.51,17815,104.94
+230340,Carnaubal,2025,dengue_casos,7,,7
+230340,Carnaubal,2025,dengue_incidencia,7,17815,39.29
+230340,Carnaubal,2025,dengue_graves,0,,0
+230340,Carnaubal,2025,dengue_obitos,0,,0
+230340,Carnaubal,2025,chik_casos,1,,1
+230340,Carnaubal,2025,chik_incidencia,1,17815,5.61
+230340,Carnaubal,2025,zika_casos,0,,0
+230340,Carnaubal,2026,populacao,17869,,17869
+230340,Carnaubal,2026,nascidos_vivos,138,,138
+230340,Carnaubal,2026,tmi,3,138,21.74
+230340,Carnaubal,2026,tmi_3a,6,545,11.01
+230340,Carnaubal,2026,tmn,1,138,7.25
+230340,Carnaubal,2026,tmn_3a,3,545,5.5
+230340,Carnaubal,2026,obitos_maternos,0,,0
+230340,Carnaubal,2026,rmm_3a,1,545,183.49
+230340,Carnaubal,2026,pct_cesarea,73,138,52.9
+230340,Carnaubal,2026,pct_prenatal7,134,138,97.1
+230340,Carnaubal,2026,pct_prenatal_1tri,127,137,92.7
+230340,Carnaubal,2026,pct_baixo_peso,12,138,8.7
+230340,Carnaubal,2026,pct_prematuro,18,137,13.14
+230340,Carnaubal,2026,pct_mae_adolescente,16,138,11.59
+230340,Carnaubal,2026,obitos,85,,85
+230340,Carnaubal,2026,tx_mortalidade,85,17869,4.76
+230340,Carnaubal,2026,obitos_dcnt_prematuros,13,,13
+230340,Carnaubal,2026,tx_causas_externas,9,17869,50.37
+230340,Carnaubal,2026,tx_homicidio,2,17869,11.19
+230340,Carnaubal,2026,tx_transito,1,17869,5.6
+230340,Carnaubal,2026,obitos_covid,0,,0
+230340,Carnaubal,2026,internacoes,1003,,1003
+230340,Carnaubal,2026,tx_internacao,1003,17869,56.13
+230340,Carnaubal,2026,pct_icsap,80,928,8.62
+230340,Carnaubal,2026,pct_fora_serra,195,1003,19.44
+230340,Carnaubal,2026,pct_obito_hospitalar,43,1003,4.29
+230340,Carnaubal,2026,gasto_sih_per_capita,1340304.7,17869,75.01
+230340,Carnaubal,2026,dengue_casos,28,,28
+230340,Carnaubal,2026,dengue_incidencia,28,17869,156.7
+230340,Carnaubal,2026,dengue_graves,0,,0
+230340,Carnaubal,2026,dengue_obitos,0,,0
+230340,Carnaubal,2026,chik_casos,6,,6
+230340,Carnaubal,2026,chik_incidencia,6,17869,33.58
+230340,Carnaubal,2026,zika_casos,0,,0
+230423,Croatá,2019,populacao,18063,,18063
+230423,Croatá,2019,nascidos_vivos,265,,265
+230423,Croatá,2019,tmi,5,265,18.87
+230423,Croatá,2019,tmn,4,265,15.09
+230423,Croatá,2019,obitos_maternos,0,,0
+230423,Croatá,2019,pct_cesarea,101,265,38.11
+230423,Croatá,2019,pct_prenatal7,241,264,91.29
+230423,Croatá,2019,pct_prenatal_1tri,240,263,91.25
+230423,Croatá,2019,pct_baixo_peso,16,265,6.04
+230423,Croatá,2019,pct_prematuro,30,260,11.54
+230423,Croatá,2019,pct_mae_adolescente,51,265,19.25
+230423,Croatá,2019,obitos,134,,134
+230423,Croatá,2019,tx_mortalidade,134,18063,7.42
+230423,Croatá,2019,obitos_dcnt_prematuros,29,,29
+230423,Croatá,2019,tx_causas_externas,14,18063,77.51
+230423,Croatá,2019,tx_homicidio,1,18063,5.54
+230423,Croatá,2019,tx_transito,10,18063,55.36
+230423,Croatá,2019,obitos_covid,0,,0
+230423,Croatá,2019,internacoes,819,,819
+230423,Croatá,2019,tx_internacao,819,18063,45.34
+230423,Croatá,2019,pct_icsap,168,692,24.28
+230423,Croatá,2019,pct_fora_serra,308,819,37.61
+230423,Croatá,2019,pct_obito_hospitalar,35,819,4.27
+230423,Croatá,2019,gasto_sih_per_capita,923883.25,18063,51.15
+230423,Croatá,2019,dengue_casos,0,,0
+230423,Croatá,2019,dengue_incidencia,0,18063,0.0
+230423,Croatá,2019,dengue_graves,0,,0
+230423,Croatá,2019,dengue_obitos,0,,0
+230423,Croatá,2019,chik_casos,0,,0
+230423,Croatá,2019,chik_incidencia,0,18063,0.0
+230423,Croatá,2019,zika_casos,0,,0
+230423,Croatá,2020,populacao,18133,,18133
+230423,Croatá,2020,nascidos_vivos,256,,256
+230423,Croatá,2020,tmi,5,256,19.53
+230423,Croatá,2020,tmn,4,256,15.62
+230423,Croatá,2020,obitos_maternos,1,,1
+230423,Croatá,2020,pct_cesarea,120,256,46.88
+230423,Croatá,2020,pct_prenatal7,231,254,90.94
+230423,Croatá,2020,pct_prenatal_1tri,225,253,88.93
+230423,Croatá,2020,pct_baixo_peso,17,256,6.64
+230423,Croatá,2020,pct_prematuro,25,246,10.16
+230423,Croatá,2020,pct_mae_adolescente,43,256,16.8
+230423,Croatá,2020,obitos,142,,142
+230423,Croatá,2020,tx_mortalidade,142,18133,7.83
+230423,Croatá,2020,obitos_dcnt_prematuros,21,,21
+230423,Croatá,2020,tx_causas_externas,21,18133,115.81
+230423,Croatá,2020,tx_homicidio,2,18133,11.03
+230423,Croatá,2020,tx_transito,11,18133,60.66
+230423,Croatá,2020,obitos_covid,7,,7
+230423,Croatá,2020,internacoes,706,,706
+230423,Croatá,2020,tx_internacao,706,18133,38.93
+230423,Croatá,2020,pct_icsap,113,583,19.38
+230423,Croatá,2020,pct_fora_serra,271,706,38.39
+230423,Croatá,2020,pct_obito_hospitalar,42,706,5.95
+230423,Croatá,2020,gasto_sih_per_capita,988517.24,18133,54.51
+230423,Croatá,2020,dengue_casos,1,,1
+230423,Croatá,2020,dengue_incidencia,1,18133,5.51
+230423,Croatá,2020,dengue_graves,0,,0
+230423,Croatá,2020,dengue_obitos,0,,0
+230423,Croatá,2020,chik_casos,1,,1
+230423,Croatá,2020,chik_incidencia,1,18133,5.51
+230423,Croatá,2020,zika_casos,0,,0
+230423,Croatá,2021,populacao,18201,,18201
+230423,Croatá,2021,nascidos_vivos,263,,263
+230423,Croatá,2021,tmi,2,263,7.6
+230423,Croatá,2021,tmi_3a,12,784,15.31
+230423,Croatá,2021,tmn,2,263,7.6
+230423,Croatá,2021,tmn_3a,10,784,12.76
+230423,Croatá,2021,obitos_maternos,0,,0
+230423,Croatá,2021,rmm_3a,1,784,127.55
+230423,Croatá,2021,pct_cesarea,142,262,54.2
+230423,Croatá,2021,pct_prenatal7,245,261,93.87
+230423,Croatá,2021,pct_prenatal_1tri,233,260,89.62
+230423,Croatá,2021,pct_baixo_peso,17,263,6.46
+230423,Croatá,2021,pct_prematuro,33,254,12.99
+230423,Croatá,2021,pct_mae_adolescente,48,263,18.25
+230423,Croatá,2021,obitos,150,,150
+230423,Croatá,2021,tx_mortalidade,150,18201,8.24
+230423,Croatá,2021,obitos_dcnt_prematuros,25,,25
+230423,Croatá,2021,tx_causas_externas,12,18201,65.93
+230423,Croatá,2021,tx_homicidio,4,18201,21.98
+230423,Croatá,2021,tx_transito,4,18201,21.98
+230423,Croatá,2021,obitos_covid,35,,35
+230423,Croatá,2021,internacoes,895,,895
+230423,Croatá,2021,tx_internacao,895,18201,49.17
+230423,Croatá,2021,pct_icsap,147,776,18.94
+230423,Croatá,2021,pct_fora_serra,303,895,33.85
+230423,Croatá,2021,pct_obito_hospitalar,62,895,6.93
+230423,Croatá,2021,gasto_sih_per_capita,1721643.6,18201,94.59
+230423,Croatá,2021,dengue_casos,3,,3
+230423,Croatá,2021,dengue_incidencia,3,18201,16.48
+230423,Croatá,2021,dengue_graves,0,,0
+230423,Croatá,2021,dengue_obitos,0,,0
+230423,Croatá,2021,chik_casos,0,,0
+230423,Croatá,2021,chik_incidencia,0,18201,0.0
+230423,Croatá,2021,zika_casos,0,,0
+230423,Croatá,2022,populacao,17481,,17481
+230423,Croatá,2022,nascidos_vivos,210,,210
+230423,Croatá,2022,tmi,3,210,14.29
+230423,Croatá,2022,tmi_3a,10,729,13.72
+230423,Croatá,2022,tmn,1,210,4.76
+230423,Croatá,2022,tmn_3a,7,729,9.6
+230423,Croatá,2022,obitos_maternos,1,,1
+230423,Croatá,2022,rmm_3a,2,729,274.35
+230423,Croatá,2022,pct_cesarea,95,210,45.24
+230423,Croatá,2022,pct_prenatal7,197,210,93.81
+230423,Croatá,2022,pct_prenatal_1tri,186,210,88.57
+230423,Croatá,2022,pct_baixo_peso,19,210,9.05
+230423,Croatá,2022,pct_prematuro,22,209,10.53
+230423,Croatá,2022,pct_mae_adolescente,35,210,16.67
+230423,Croatá,2022,obitos,170,,170
+230423,Croatá,2022,tx_mortalidade,170,17481,9.72
+230423,Croatá,2022,obitos_dcnt_prematuros,23,,23
+230423,Croatá,2022,tx_causas_externas,21,17481,120.13
+230423,Croatá,2022,tx_homicidio,6,17481,34.32
+230423,Croatá,2022,tx_transito,7,17481,40.04
+230423,Croatá,2022,obitos_covid,3,,3
+230423,Croatá,2022,internacoes,960,,960
+230423,Croatá,2022,tx_internacao,960,17481,54.92
+230423,Croatá,2022,pct_icsap,224,841,26.63
+230423,Croatá,2022,pct_fora_serra,283,960,29.48
+230423,Croatá,2022,pct_obito_hospitalar,57,960,5.94
+230423,Croatá,2022,gasto_sih_per_capita,906821.91,17481,51.87
+230423,Croatá,2022,dengue_casos,484,,484
+230423,Croatá,2022,dengue_incidencia,484,17481,2768.72
+230423,Croatá,2022,dengue_graves,3,,3
+230423,Croatá,2022,dengue_obitos,0,,0
+230423,Croatá,2022,chik_casos,0,,0
+230423,Croatá,2022,chik_incidencia,0,17481,0.0
+230423,Croatá,2022,zika_casos,0,,0
+230423,Croatá,2023,populacao,17744,,17744
+230423,Croatá,2023,nascidos_vivos,215,,215
+230423,Croatá,2023,tmi,3,215,13.95
+230423,Croatá,2023,tmi_3a,8,688,11.63
+230423,Croatá,2023,tmn,2,215,9.3
+230423,Croatá,2023,tmn_3a,5,688,7.27
+230423,Croatá,2023,obitos_maternos,0,,0
+230423,Croatá,2023,rmm_3a,1,688,145.35
+230423,Croatá,2023,pct_cesarea,113,215,52.56
+230423,Croatá,2023,pct_prenatal7,201,214,93.93
+230423,Croatá,2023,pct_prenatal_1tri,191,210,90.95
+230423,Croatá,2023,pct_baixo_peso,13,215,6.05
+230423,Croatá,2023,pct_prematuro,26,211,12.32
+230423,Croatá,2023,pct_mae_adolescente,20,215,9.3
+230423,Croatá,2023,obitos,154,,154
+230423,Croatá,2023,tx_mortalidade,154,17744,8.68
+230423,Croatá,2023,obitos_dcnt_prematuros,31,,31
+230423,Croatá,2023,tx_causas_externas,16,17744,90.17
+230423,Croatá,2023,tx_homicidio,2,17744,11.27
+230423,Croatá,2023,tx_transito,5,17744,28.18
+230423,Croatá,2023,obitos_covid,0,,0
+230423,Croatá,2023,internacoes,1137,,1137
+230423,Croatá,2023,tx_internacao,1137,17744,64.08
+230423,Croatá,2023,pct_icsap,225,1033,21.78
+230423,Croatá,2023,pct_fora_serra,271,1137,23.83
+230423,Croatá,2023,pct_obito_hospitalar,52,1137,4.57
+230423,Croatá,2023,gasto_sih_per_capita,1292927.65,17744,72.87
+230423,Croatá,2023,dengue_casos,3,,3
+230423,Croatá,2023,dengue_incidencia,3,17744,16.91
+230423,Croatá,2023,dengue_graves,0,,0
+230423,Croatá,2023,dengue_obitos,0,,0
+230423,Croatá,2023,chik_casos,0,,0
+230423,Croatá,2023,chik_incidencia,0,17744,0.0
+230423,Croatá,2023,zika_casos,0,,0
+230423,Croatá,2024,populacao,18007,,18007
+230423,Croatá,2024,nascidos_vivos,199,,199
+230423,Croatá,2024,tmi,3,199,15.08
+230423,Croatá,2024,tmi_3a,9,624,14.42
+230423,Croatá,2024,tmn,1,199,5.03
+230423,Croatá,2024,tmn_3a,4,624,6.41
+230423,Croatá,2024,obitos_maternos,0,,0
+230423,Croatá,2024,rmm_3a,1,624,160.26
+230423,Croatá,2024,pct_cesarea,115,199,57.79
+230423,Croatá,2024,pct_prenatal7,194,198,97.98
+230423,Croatá,2024,pct_prenatal_1tri,164,197,83.25
+230423,Croatá,2024,pct_baixo_peso,13,199,6.53
+230423,Croatá,2024,pct_prematuro,26,197,13.2
+230423,Croatá,2024,pct_mae_adolescente,24,199,12.06
+230423,Croatá,2024,obitos,137,,137
+230423,Croatá,2024,tx_mortalidade,137,18007,7.61
+230423,Croatá,2024,obitos_dcnt_prematuros,19,,19
+230423,Croatá,2024,tx_causas_externas,11,18007,61.09
+230423,Croatá,2024,tx_homicidio,1,18007,5.55
+230423,Croatá,2024,tx_transito,6,18007,33.32
+230423,Croatá,2024,obitos_covid,0,,0
+230423,Croatá,2024,internacoes,1255,,1255
+230423,Croatá,2024,tx_internacao,1255,18007,69.7
+230423,Croatá,2024,pct_icsap,245,1150,21.3
+230423,Croatá,2024,pct_fora_serra,284,1255,22.63
+230423,Croatá,2024,pct_obito_hospitalar,56,1255,4.46
+230423,Croatá,2024,gasto_sih_per_capita,1628294.64,18007,90.43
+230423,Croatá,2024,dengue_casos,3,,3
+230423,Croatá,2024,dengue_incidencia,3,18007,16.66
+230423,Croatá,2024,dengue_graves,0,,0
+230423,Croatá,2024,dengue_obitos,0,,0
+230423,Croatá,2024,chik_casos,0,,0
+230423,Croatá,2024,chik_incidencia,0,18007,0.0
+230423,Croatá,2024,zika_casos,0,,0
+230423,Croatá,2025,populacao,18050,,18050
+230423,Croatá,2025,nascidos_vivos,203,,203
+230423,Croatá,2025,tmi,2,203,9.85
+230423,Croatá,2025,tmi_3a,8,617,12.97
+230423,Croatá,2025,tmn,2,203,9.85
+230423,Croatá,2025,tmn_3a,5,617,8.1
+230423,Croatá,2025,obitos_maternos,0,,0
+230423,Croatá,2025,rmm_3a,0,617,0.0
+230423,Croatá,2025,pct_cesarea,107,203,52.71
+230423,Croatá,2025,pct_prenatal7,193,202,95.54
+230423,Croatá,2025,pct_prenatal_1tri,179,197,90.86
+230423,Croatá,2025,pct_baixo_peso,15,203,7.39
+230423,Croatá,2025,pct_prematuro,20,201,9.95
+230423,Croatá,2025,pct_mae_adolescente,26,203,12.81
+230423,Croatá,2025,obitos,133,,133
+230423,Croatá,2025,tx_mortalidade,133,18050,7.37
+230423,Croatá,2025,obitos_dcnt_prematuros,20,,20
+230423,Croatá,2025,tx_causas_externas,8,18050,44.32
+230423,Croatá,2025,tx_homicidio,1,18050,5.54
+230423,Croatá,2025,tx_transito,3,18050,16.62
+230423,Croatá,2025,obitos_covid,0,,0
+230423,Croatá,2025,internacoes,1500,,1500
+230423,Croatá,2025,tx_internacao,1500,18050,83.1
+230423,Croatá,2025,pct_icsap,237,1371,17.29
+230423,Croatá,2025,pct_fora_serra,260,1500,17.33
+230423,Croatá,2025,pct_obito_hospitalar,66,1500,4.4
+230423,Croatá,2025,gasto_sih_per_capita,1699483.57,18050,94.15
+230423,Croatá,2025,dengue_casos,5,,5
+230423,Croatá,2025,dengue_incidencia,5,18050,27.7
+230423,Croatá,2025,dengue_graves,0,,0
+230423,Croatá,2025,dengue_obitos,0,,0
+230423,Croatá,2025,chik_casos,0,,0
+230423,Croatá,2025,chik_incidencia,0,18050,0.0
+230423,Croatá,2025,zika_casos,0,,0
+230423,Croatá,2026,populacao,18090,,18090
+230423,Croatá,2026,nascidos_vivos,114,,114
+230423,Croatá,2026,tmi,4,114,35.09
+230423,Croatá,2026,tmi_3a,9,516,17.44
+230423,Croatá,2026,tmn,3,114,26.32
+230423,Croatá,2026,tmn_3a,6,516,11.63
+230423,Croatá,2026,obitos_maternos,0,,0
+230423,Croatá,2026,rmm_3a,0,516,0.0
+230423,Croatá,2026,pct_cesarea,63,114,55.26
+230423,Croatá,2026,pct_prenatal7,109,114,95.61
+230423,Croatá,2026,pct_prenatal_1tri,102,114,89.47
+230423,Croatá,2026,pct_baixo_peso,10,114,8.77
+230423,Croatá,2026,pct_prematuro,7,112,6.25
+230423,Croatá,2026,pct_mae_adolescente,17,114,14.91
+230423,Croatá,2026,obitos,126,,126
+230423,Croatá,2026,tx_mortalidade,126,18090,6.97
+230423,Croatá,2026,obitos_dcnt_prematuros,14,,14
+230423,Croatá,2026,tx_causas_externas,18,18090,99.5
+230423,Croatá,2026,tx_homicidio,1,18090,5.53
+230423,Croatá,2026,tx_transito,10,18090,55.28
+230423,Croatá,2026,obitos_covid,0,,0
+230423,Croatá,2026,internacoes,1101,,1101
+230423,Croatá,2026,tx_internacao,1101,18090,60.86
+230423,Croatá,2026,pct_icsap,134,1040,12.88
+230423,Croatá,2026,pct_fora_serra,181,1101,16.44
+230423,Croatá,2026,pct_obito_hospitalar,53,1101,4.81
+230423,Croatá,2026,gasto_sih_per_capita,1536967.22,18090,84.96
+230423,Croatá,2026,dengue_casos,213,,213
+230423,Croatá,2026,dengue_incidencia,213,18090,1177.45
+230423,Croatá,2026,dengue_graves,0,,0
+230423,Croatá,2026,dengue_obitos,0,,0
+230423,Croatá,2026,chik_casos,13,,13
+230423,Croatá,2026,chik_incidencia,13,18090,71.86
+230423,Croatá,2026,zika_casos,0,,0
+230500,Guaraciaba do Norte,2019,populacao,40642,,40642
+230500,Guaraciaba do Norte,2019,nascidos_vivos,693,,693
+230500,Guaraciaba do Norte,2019,tmi,13,693,18.76
+230500,Guaraciaba do Norte,2019,tmn,8,693,11.54
+230500,Guaraciaba do Norte,2019,obitos_maternos,0,,0
+230500,Guaraciaba do Norte,2019,pct_cesarea,267,687,38.86
+230500,Guaraciaba do Norte,2019,pct_prenatal7,577,681,84.73
+230500,Guaraciaba do Norte,2019,pct_prenatal_1tri,547,666,82.13
+230500,Guaraciaba do Norte,2019,pct_baixo_peso,56,693,8.08
+230500,Guaraciaba do Norte,2019,pct_prematuro,63,667,9.45
+230500,Guaraciaba do Norte,2019,pct_mae_adolescente,126,693,18.18
+230500,Guaraciaba do Norte,2019,obitos,289,,289
+230500,Guaraciaba do Norte,2019,tx_mortalidade,289,40642,7.11
+230500,Guaraciaba do Norte,2019,obitos_dcnt_prematuros,64,,64
+230500,Guaraciaba do Norte,2019,tx_causas_externas,26,40642,63.97
+230500,Guaraciaba do Norte,2019,tx_homicidio,5,40642,12.3
+230500,Guaraciaba do Norte,2019,tx_transito,17,40642,41.83
+230500,Guaraciaba do Norte,2019,obitos_covid,0,,0
+230500,Guaraciaba do Norte,2019,internacoes,2409,,2409
+230500,Guaraciaba do Norte,2019,tx_internacao,2409,40642,59.27
+230500,Guaraciaba do Norte,2019,pct_icsap,272,1891,14.38
+230500,Guaraciaba do Norte,2019,pct_fora_serra,740,2409,30.72
+230500,Guaraciaba do Norte,2019,pct_obito_hospitalar,69,2409,2.86
+230500,Guaraciaba do Norte,2019,gasto_sih_per_capita,2605188.76,40642,64.1
+230500,Guaraciaba do Norte,2019,dengue_casos,1,,1
+230500,Guaraciaba do Norte,2019,dengue_incidencia,1,40642,2.46
+230500,Guaraciaba do Norte,2019,dengue_graves,0,,0
+230500,Guaraciaba do Norte,2019,dengue_obitos,0,,0
+230500,Guaraciaba do Norte,2019,chik_casos,0,,0
+230500,Guaraciaba do Norte,2019,chik_incidencia,0,40642,0.0
+230500,Guaraciaba do Norte,2019,zika_casos,0,,0
+230500,Guaraciaba do Norte,2020,populacao,40784,,40784
+230500,Guaraciaba do Norte,2020,nascidos_vivos,659,,659
+230500,Guaraciaba do Norte,2020,tmi,6,659,9.1
+230500,Guaraciaba do Norte,2020,tmn,5,659,7.59
+230500,Guaraciaba do Norte,2020,obitos_maternos,0,,0
+230500,Guaraciaba do Norte,2020,pct_cesarea,232,655,35.42
+230500,Guaraciaba do Norte,2020,pct_prenatal7,534,651,82.03
+230500,Guaraciaba do Norte,2020,pct_prenatal_1tri,491,649,75.65
+230500,Guaraciaba do Norte,2020,pct_baixo_peso,54,659,8.19
+230500,Guaraciaba do Norte,2020,pct_prematuro,82,639,12.83
+230500,Guaraciaba do Norte,2020,pct_mae_adolescente,118,659,17.91
+230500,Guaraciaba do Norte,2020,obitos,332,,332
+230500,Guaraciaba do Norte,2020,tx_mortalidade,332,40784,8.14
+230500,Guaraciaba do Norte,2020,obitos_dcnt_prematuros,53,,53
+230500,Guaraciaba do Norte,2020,tx_causas_externas,36,40784,88.27
+230500,Guaraciaba do Norte,2020,tx_homicidio,4,40784,9.81
+230500,Guaraciaba do Norte,2020,tx_transito,19,40784,46.59
+230500,Guaraciaba do Norte,2020,obitos_covid,23,,23
+230500,Guaraciaba do Norte,2020,internacoes,1618,,1618
+230500,Guaraciaba do Norte,2020,tx_internacao,1618,40784,39.67
+230500,Guaraciaba do Norte,2020,pct_icsap,169,1220,13.85
+230500,Guaraciaba do Norte,2020,pct_fora_serra,609,1618,37.64
+230500,Guaraciaba do Norte,2020,pct_obito_hospitalar,73,1618,4.51
+230500,Guaraciaba do Norte,2020,gasto_sih_per_capita,2144712.81,40784,52.59
+230500,Guaraciaba do Norte,2020,dengue_casos,1,,1
+230500,Guaraciaba do Norte,2020,dengue_incidencia,1,40784,2.45
+230500,Guaraciaba do Norte,2020,dengue_graves,0,,0
+230500,Guaraciaba do Norte,2020,dengue_obitos,0,,0
+230500,Guaraciaba do Norte,2020,chik_casos,0,,0
+230500,Guaraciaba do Norte,2020,chik_incidencia,0,40784,0.0
+230500,Guaraciaba do Norte,2020,zika_casos,0,,0
+230500,Guaraciaba do Norte,2021,populacao,40921,,40921
+230500,Guaraciaba do Norte,2021,nascidos_vivos,677,,677
+230500,Guaraciaba do Norte,2021,tmi,9,677,13.29
+230500,Guaraciaba do Norte,2021,tmi_3a,28,2029,13.8
+230500,Guaraciaba do Norte,2021,tmn,8,677,11.82
+230500,Guaraciaba do Norte,2021,tmn_3a,21,2029,10.35
+230500,Guaraciaba do Norte,2021,obitos_maternos,2,,2
+230500,Guaraciaba do Norte,2021,rmm_3a,2,2029,98.57
+230500,Guaraciaba do Norte,2021,pct_cesarea,266,677,39.29
+230500,Guaraciaba do Norte,2021,pct_prenatal7,584,666,87.69
+230500,Guaraciaba do Norte,2021,pct_prenatal_1tri,548,661,82.9
+230500,Guaraciaba do Norte,2021,pct_baixo_peso,69,677,10.19
+230500,Guaraciaba do Norte,2021,pct_prematuro,78,644,12.11
+230500,Guaraciaba do Norte,2021,pct_mae_adolescente,112,677,16.54
+230500,Guaraciaba do Norte,2021,obitos,385,,385
+230500,Guaraciaba do Norte,2021,tx_mortalidade,385,40921,9.41
+230500,Guaraciaba do Norte,2021,obitos_dcnt_prematuros,59,,59
+230500,Guaraciaba do Norte,2021,tx_causas_externas,36,40921,87.97
+230500,Guaraciaba do Norte,2021,tx_homicidio,13,40921,31.77
+230500,Guaraciaba do Norte,2021,tx_transito,14,40921,34.21
+230500,Guaraciaba do Norte,2021,obitos_covid,59,,59
+230500,Guaraciaba do Norte,2021,internacoes,1928,,1928
+230500,Guaraciaba do Norte,2021,tx_internacao,1928,40921,47.12
+230500,Guaraciaba do Norte,2021,pct_icsap,197,1523,12.93
+230500,Guaraciaba do Norte,2021,pct_fora_serra,709,1928,36.77
+230500,Guaraciaba do Norte,2021,pct_obito_hospitalar,104,1928,5.39
+230500,Guaraciaba do Norte,2021,gasto_sih_per_capita,3626570.06,40921,88.62
+230500,Guaraciaba do Norte,2021,dengue_casos,4,,4
+230500,Guaraciaba do Norte,2021,dengue_incidencia,4,40921,9.77
+230500,Guaraciaba do Norte,2021,dengue_graves,0,,0
+230500,Guaraciaba do Norte,2021,dengue_obitos,0,,0
+230500,Guaraciaba do Norte,2021,chik_casos,0,,0
+230500,Guaraciaba do Norte,2021,chik_incidencia,0,40921,0.0
+230500,Guaraciaba do Norte,2021,zika_casos,0,,0
+230500,Guaraciaba do Norte,2022,populacao,42053,,42053
+230500,Guaraciaba do Norte,2022,nascidos_vivos,594,,594
+230500,Guaraciaba do Norte,2022,tmi,5,594,8.42
+230500,Guaraciaba do Norte,2022,tmi_3a,20,1930,10.36
+230500,Guaraciaba do Norte,2022,tmn,4,594,6.73
+230500,Guaraciaba do Norte,2022,tmn_3a,17,1930,8.81
+230500,Guaraciaba do Norte,2022,obitos_maternos,0,,0
+230500,Guaraciaba do Norte,2022,rmm_3a,2,1930,103.63
+230500,Guaraciaba do Norte,2022,pct_cesarea,246,594,41.41
+230500,Guaraciaba do Norte,2022,pct_prenatal7,521,590,88.31
+230500,Guaraciaba do Norte,2022,pct_prenatal_1tri,472,586,80.55
+230500,Guaraciaba do Norte,2022,pct_baixo_peso,55,594,9.26
+230500,Guaraciaba do Norte,2022,pct_prematuro,89,585,15.21
+230500,Guaraciaba do Norte,2022,pct_mae_adolescente,75,594,12.63
+230500,Guaraciaba do Norte,2022,obitos,345,,345
+230500,Guaraciaba do Norte,2022,tx_mortalidade,345,42053,8.2
+230500,Guaraciaba do Norte,2022,obitos_dcnt_prematuros,60,,60
+230500,Guaraciaba do Norte,2022,tx_causas_externas,36,42053,85.61
+230500,Guaraciaba do Norte,2022,tx_homicidio,6,42053,14.27
+230500,Guaraciaba do Norte,2022,tx_transito,17,42053,40.43
+230500,Guaraciaba do Norte,2022,obitos_covid,7,,7
+230500,Guaraciaba do Norte,2022,internacoes,2175,,2175
+230500,Guaraciaba do Norte,2022,tx_internacao,2175,42053,51.72
+230500,Guaraciaba do Norte,2022,pct_icsap,283,1828,15.48
+230500,Guaraciaba do Norte,2022,pct_fora_serra,746,2175,34.3
+230500,Guaraciaba do Norte,2022,pct_obito_hospitalar,81,2175,3.72
+230500,Guaraciaba do Norte,2022,gasto_sih_per_capita,2798420.92,42053,66.55
+230500,Guaraciaba do Norte,2022,dengue_casos,92,,92
+230500,Guaraciaba do Norte,2022,dengue_incidencia,92,42053,218.77
+230500,Guaraciaba do Norte,2022,dengue_graves,0,,0
+230500,Guaraciaba do Norte,2022,dengue_obitos,0,,0
+230500,Guaraciaba do Norte,2022,chik_casos,3,,3
+230500,Guaraciaba do Norte,2022,chik_incidencia,3,42053,7.13
+230500,Guaraciaba do Norte,2022,zika_casos,0,,0
+230500,Guaraciaba do Norte,2023,populacao,43174,,43174
+230500,Guaraciaba do Norte,2023,nascidos_vivos,570,,570
+230500,Guaraciaba do Norte,2023,tmi,5,570,8.77
+230500,Guaraciaba do Norte,2023,tmi_3a,19,1841,10.32
+230500,Guaraciaba do Norte,2023,tmn,3,570,5.26
+230500,Guaraciaba do Norte,2023,tmn_3a,15,1841,8.15
+230500,Guaraciaba do Norte,2023,obitos_maternos,1,,1
+230500,Guaraciaba do Norte,2023,rmm_3a,3,1841,162.95
+230500,Guaraciaba do Norte,2023,pct_cesarea,268,570,47.02
+230500,Guaraciaba do Norte,2023,pct_prenatal7,522,567,92.06
+230500,Guaraciaba do Norte,2023,pct_prenatal_1tri,482,565,85.31
+230500,Guaraciaba do Norte,2023,pct_baixo_peso,47,570,8.25
+230500,Guaraciaba do Norte,2023,pct_prematuro,73,561,13.01
+230500,Guaraciaba do Norte,2023,pct_mae_adolescente,78,570,13.68
+230500,Guaraciaba do Norte,2023,obitos,288,,288
+230500,Guaraciaba do Norte,2023,tx_mortalidade,288,43174,6.67
+230500,Guaraciaba do Norte,2023,obitos_dcnt_prematuros,46,,46
+230500,Guaraciaba do Norte,2023,tx_causas_externas,31,43174,71.8
+230500,Guaraciaba do Norte,2023,tx_homicidio,1,43174,2.32
+230500,Guaraciaba do Norte,2023,tx_transito,17,43174,39.38
+230500,Guaraciaba do Norte,2023,obitos_covid,3,,3
+230500,Guaraciaba do Norte,2023,internacoes,2309,,2309
+230500,Guaraciaba do Norte,2023,tx_internacao,2309,43174,53.48
+230500,Guaraciaba do Norte,2023,pct_icsap,280,2005,13.97
+230500,Guaraciaba do Norte,2023,pct_fora_serra,594,2309,25.73
+230500,Guaraciaba do Norte,2023,pct_obito_hospitalar,80,2309,3.46
+230500,Guaraciaba do Norte,2023,gasto_sih_per_capita,2845273.09,43174,65.9
+230500,Guaraciaba do Norte,2023,dengue_casos,9,,9
+230500,Guaraciaba do Norte,2023,dengue_incidencia,9,43174,20.85
+230500,Guaraciaba do Norte,2023,dengue_graves,0,,0
+230500,Guaraciaba do Norte,2023,dengue_obitos,0,,0
+230500,Guaraciaba do Norte,2023,chik_casos,1,,1
+230500,Guaraciaba do Norte,2023,chik_incidencia,1,43174,2.32
+230500,Guaraciaba do Norte,2023,zika_casos,0,,0
+230500,Guaraciaba do Norte,2024,populacao,44294,,44294
+230500,Guaraciaba do Norte,2024,nascidos_vivos,590,,590
+230500,Guaraciaba do Norte,2024,tmi,6,590,10.17
+230500,Guaraciaba do Norte,2024,tmi_3a,16,1754,9.12
+230500,Guaraciaba do Norte,2024,tmn,4,590,6.78
+230500,Guaraciaba do Norte,2024,tmn_3a,11,1754,6.27
+230500,Guaraciaba do Norte,2024,obitos_maternos,0,,0
+230500,Guaraciaba do Norte,2024,rmm_3a,1,1754,57.01
+230500,Guaraciaba do Norte,2024,pct_cesarea,295,590,50.0
+230500,Guaraciaba do Norte,2024,pct_prenatal7,534,579,92.23
+230500,Guaraciaba do Norte,2024,pct_prenatal_1tri,509,585,87.01
+230500,Guaraciaba do Norte,2024,pct_baixo_peso,40,590,6.78
+230500,Guaraciaba do Norte,2024,pct_prematuro,77,578,13.32
+230500,Guaraciaba do Norte,2024,pct_mae_adolescente,80,590,13.56
+230500,Guaraciaba do Norte,2024,obitos,304,,304
+230500,Guaraciaba do Norte,2024,tx_mortalidade,304,44294,6.86
+230500,Guaraciaba do Norte,2024,obitos_dcnt_prematuros,43,,43
+230500,Guaraciaba do Norte,2024,tx_causas_externas,34,44294,76.76
+230500,Guaraciaba do Norte,2024,tx_homicidio,3,44294,6.77
+230500,Guaraciaba do Norte,2024,tx_transito,18,44294,40.64
+230500,Guaraciaba do Norte,2024,obitos_covid,1,,1
+230500,Guaraciaba do Norte,2024,internacoes,2340,,2340
+230500,Guaraciaba do Norte,2024,tx_internacao,2340,44294,52.83
+230500,Guaraciaba do Norte,2024,pct_icsap,280,2025,13.83
+230500,Guaraciaba do Norte,2024,pct_fora_serra,704,2340,30.09
+230500,Guaraciaba do Norte,2024,pct_obito_hospitalar,85,2340,3.63
+230500,Guaraciaba do Norte,2024,gasto_sih_per_capita,3490771.53,44294,78.81
+230500,Guaraciaba do Norte,2024,dengue_casos,5,,5
+230500,Guaraciaba do Norte,2024,dengue_incidencia,5,44294,11.29
+230500,Guaraciaba do Norte,2024,dengue_graves,0,,0
+230500,Guaraciaba do Norte,2024,dengue_obitos,0,,0
+230500,Guaraciaba do Norte,2024,chik_casos,4,,4
+230500,Guaraciaba do Norte,2024,chik_incidencia,4,44294,9.03
+230500,Guaraciaba do Norte,2024,zika_casos,0,,0
+230500,Guaraciaba do Norte,2025,populacao,44565,,44565
+230500,Guaraciaba do Norte,2025,nascidos_vivos,596,,596
+230500,Guaraciaba do Norte,2025,tmi,8,596,13.42
+230500,Guaraciaba do Norte,2025,tmi_3a,19,1756,10.82
+230500,Guaraciaba do Norte,2025,tmn,6,596,10.07
+230500,Guaraciaba do Norte,2025,tmn_3a,13,1756,7.4
+230500,Guaraciaba do Norte,2025,obitos_maternos,0,,0
+230500,Guaraciaba do Norte,2025,rmm_3a,1,1756,56.95
+230500,Guaraciaba do Norte,2025,pct_cesarea,307,595,51.6
+230500,Guaraciaba do Norte,2025,pct_prenatal7,542,593,91.4
+230500,Guaraciaba do Norte,2025,pct_prenatal_1tri,514,592,86.82
+230500,Guaraciaba do Norte,2025,pct_baixo_peso,55,596,9.23
+230500,Guaraciaba do Norte,2025,pct_prematuro,84,589,14.26
+230500,Guaraciaba do Norte,2025,pct_mae_adolescente,85,596,14.26
+230500,Guaraciaba do Norte,2025,obitos,323,,323
+230500,Guaraciaba do Norte,2025,tx_mortalidade,323,44565,7.25
+230500,Guaraciaba do Norte,2025,obitos_dcnt_prematuros,49,,49
+230500,Guaraciaba do Norte,2025,tx_causas_externas,38,44565,85.27
+230500,Guaraciaba do Norte,2025,tx_homicidio,6,44565,13.46
+230500,Guaraciaba do Norte,2025,tx_transito,24,44565,53.85
+230500,Guaraciaba do Norte,2025,obitos_covid,0,,0
+230500,Guaraciaba do Norte,2025,internacoes,2602,,2602
+230500,Guaraciaba do Norte,2025,tx_internacao,2602,44565,58.39
+230500,Guaraciaba do Norte,2025,pct_icsap,390,2192,17.79
+230500,Guaraciaba do Norte,2025,pct_fora_serra,516,2602,19.83
+230500,Guaraciaba do Norte,2025,pct_obito_hospitalar,119,2602,4.57
+230500,Guaraciaba do Norte,2025,gasto_sih_per_capita,3134819.74,44565,70.34
+230500,Guaraciaba do Norte,2025,dengue_casos,41,,41
+230500,Guaraciaba do Norte,2025,dengue_incidencia,41,44565,92.0
+230500,Guaraciaba do Norte,2025,dengue_graves,1,,1
+230500,Guaraciaba do Norte,2025,dengue_obitos,0,,0
+230500,Guaraciaba do Norte,2025,chik_casos,0,,0
+230500,Guaraciaba do Norte,2025,chik_incidencia,0,44565,0.0
+230500,Guaraciaba do Norte,2025,zika_casos,0,,0
+230500,Guaraciaba do Norte,2026,populacao,44823,,44823
+230500,Guaraciaba do Norte,2026,nascidos_vivos,375,,375
+230500,Guaraciaba do Norte,2026,tmi,1,375,2.67
+230500,Guaraciaba do Norte,2026,tmi_3a,15,1561,9.61
+230500,Guaraciaba do Norte,2026,tmn,1,375,2.67
+230500,Guaraciaba do Norte,2026,tmn_3a,11,1561,7.05
+230500,Guaraciaba do Norte,2026,obitos_maternos,0,,0
+230500,Guaraciaba do Norte,2026,rmm_3a,0,1561,0.0
+230500,Guaraciaba do Norte,2026,pct_cesarea,253,375,67.47
+230500,Guaraciaba do Norte,2026,pct_prenatal7,344,373,92.23
+230500,Guaraciaba do Norte,2026,pct_prenatal_1tri,303,373,81.23
+230500,Guaraciaba do Norte,2026,pct_baixo_peso,29,375,7.73
+230500,Guaraciaba do Norte,2026,pct_prematuro,67,369,18.16
+230500,Guaraciaba do Norte,2026,pct_mae_adolescente,49,375,13.07
+230500,Guaraciaba do Norte,2026,obitos,211,,211
+230500,Guaraciaba do Norte,2026,tx_mortalidade,211,44823,4.71
+230500,Guaraciaba do Norte,2026,obitos_dcnt_prematuros,42,,42
+230500,Guaraciaba do Norte,2026,tx_causas_externas,24,44823,53.54
+230500,Guaraciaba do Norte,2026,tx_homicidio,8,44823,17.85
+230500,Guaraciaba do Norte,2026,tx_transito,7,44823,15.62
+230500,Guaraciaba do Norte,2026,obitos_covid,0,,0
+230500,Guaraciaba do Norte,2026,internacoes,2105,,2105
+230500,Guaraciaba do Norte,2026,tx_internacao,2105,44823,46.96
+230500,Guaraciaba do Norte,2026,pct_icsap,243,1817,13.37
+230500,Guaraciaba do Norte,2026,pct_fora_serra,320,2105,15.2
+230500,Guaraciaba do Norte,2026,pct_obito_hospitalar,86,2105,4.09
+230500,Guaraciaba do Norte,2026,gasto_sih_per_capita,3264658.79,44823,72.83
+230500,Guaraciaba do Norte,2026,dengue_casos,435,,435
+230500,Guaraciaba do Norte,2026,dengue_incidencia,435,44823,970.48
+230500,Guaraciaba do Norte,2026,dengue_graves,3,,3
+230500,Guaraciaba do Norte,2026,dengue_obitos,0,,0
+230500,Guaraciaba do Norte,2026,chik_casos,4,,4
+230500,Guaraciaba do Norte,2026,chik_incidencia,4,44823,8.92
+230500,Guaraciaba do Norte,2026,zika_casos,0,,0
+230530,Ibiapina,2019,populacao,24997,,24997
+230530,Ibiapina,2019,nascidos_vivos,376,,376
+230530,Ibiapina,2019,tmi,3,376,7.98
+230530,Ibiapina,2019,tmn,2,376,5.32
+230530,Ibiapina,2019,obitos_maternos,1,,1
+230530,Ibiapina,2019,pct_cesarea,158,376,42.02
+230530,Ibiapina,2019,pct_prenatal7,333,370,90.0
+230530,Ibiapina,2019,pct_prenatal_1tri,294,363,80.99
+230530,Ibiapina,2019,pct_baixo_peso,35,376,9.31
+230530,Ibiapina,2019,pct_prematuro,48,367,13.08
+230530,Ibiapina,2019,pct_mae_adolescente,62,376,16.49
+230530,Ibiapina,2019,obitos,174,,174
+230530,Ibiapina,2019,tx_mortalidade,174,24997,6.96
+230530,Ibiapina,2019,obitos_dcnt_prematuros,36,,36
+230530,Ibiapina,2019,tx_causas_externas,16,24997,64.01
+230530,Ibiapina,2019,tx_homicidio,1,24997,4.0
+230530,Ibiapina,2019,tx_transito,9,24997,36.0
+230530,Ibiapina,2019,obitos_covid,0,,0
+230530,Ibiapina,2019,internacoes,1650,,1650
+230530,Ibiapina,2019,tx_internacao,1650,24997,66.01
+230530,Ibiapina,2019,pct_icsap,275,1401,19.63
+230530,Ibiapina,2019,pct_fora_serra,446,1650,27.03
+230530,Ibiapina,2019,pct_obito_hospitalar,76,1650,4.61
+230530,Ibiapina,2019,gasto_sih_per_capita,1925934.13,24997,77.05
+230530,Ibiapina,2019,dengue_casos,1,,1
+230530,Ibiapina,2019,dengue_incidencia,1,24997,4.0
+230530,Ibiapina,2019,dengue_graves,0,,0
+230530,Ibiapina,2019,dengue_obitos,0,,0
+230530,Ibiapina,2019,chik_casos,1,,1
+230530,Ibiapina,2019,chik_incidencia,1,24997,4.0
+230530,Ibiapina,2019,zika_casos,0,,0
+230530,Ibiapina,2020,populacao,25082,,25082
+230530,Ibiapina,2020,nascidos_vivos,383,,383
+230530,Ibiapina,2020,tmi,1,383,2.61
+230530,Ibiapina,2020,tmn,1,383,2.61
+230530,Ibiapina,2020,obitos_maternos,0,,0
+230530,Ibiapina,2020,pct_cesarea,138,383,36.03
+230530,Ibiapina,2020,pct_prenatal7,334,380,87.89
+230530,Ibiapina,2020,pct_prenatal_1tri,297,375,79.2
+230530,Ibiapina,2020,pct_baixo_peso,17,383,4.44
+230530,Ibiapina,2020,pct_prematuro,33,375,8.8
+230530,Ibiapina,2020,pct_mae_adolescente,62,383,16.19
+230530,Ibiapina,2020,obitos,171,,171
+230530,Ibiapina,2020,tx_mortalidade,171,25082,6.82
+230530,Ibiapina,2020,obitos_dcnt_prematuros,24,,24
+230530,Ibiapina,2020,tx_causas_externas,17,25082,67.78
+230530,Ibiapina,2020,tx_homicidio,2,25082,7.97
+230530,Ibiapina,2020,tx_transito,10,25082,39.87
+230530,Ibiapina,2020,obitos_covid,12,,12
+230530,Ibiapina,2020,internacoes,1267,,1267
+230530,Ibiapina,2020,tx_internacao,1267,25082,50.51
+230530,Ibiapina,2020,pct_icsap,177,1004,17.63
+230530,Ibiapina,2020,pct_fora_serra,384,1267,30.31
+230530,Ibiapina,2020,pct_obito_hospitalar,64,1267,5.05
+230530,Ibiapina,2020,gasto_sih_per_capita,1602572.4,25082,63.89
+230530,Ibiapina,2021,populacao,25165,,25165
+230530,Ibiapina,2021,nascidos_vivos,378,,378
+230530,Ibiapina,2021,tmi,1,378,2.65
+230530,Ibiapina,2021,tmi_3a,5,1137,4.4
+230530,Ibiapina,2021,tmn,1,378,2.65
+230530,Ibiapina,2021,tmn_3a,4,1137,3.52
+230530,Ibiapina,2021,obitos_maternos,0,,0
+230530,Ibiapina,2021,rmm_3a,1,1137,87.95
+230530,Ibiapina,2021,pct_cesarea,148,378,39.15
+230530,Ibiapina,2021,pct_prenatal7,314,350,89.71
+230530,Ibiapina,2021,pct_prenatal_1tri,301,364,82.69
+230530,Ibiapina,2021,pct_baixo_peso,32,378,8.47
+230530,Ibiapina,2021,pct_prematuro,44,359,12.26
+230530,Ibiapina,2021,pct_mae_adolescente,65,378,17.2
+230530,Ibiapina,2021,obitos,188,,188
+230530,Ibiapina,2021,tx_mortalidade,188,25165,7.47
+230530,Ibiapina,2021,obitos_dcnt_prematuros,33,,33
+230530,Ibiapina,2021,tx_causas_externas,18,25165,71.53
+230530,Ibiapina,2021,tx_homicidio,5,25165,19.87
+230530,Ibiapina,2021,tx_transito,5,25165,19.87
+230530,Ibiapina,2021,obitos_covid,21,,21
+230530,Ibiapina,2021,internacoes,1637,,1637
+230530,Ibiapina,2021,tx_internacao,1637,25165,65.05
+230530,Ibiapina,2021,pct_icsap,308,1410,21.84
+230530,Ibiapina,2021,pct_fora_serra,421,1637,25.72
+230530,Ibiapina,2021,pct_obito_hospitalar,73,1637,4.46
+230530,Ibiapina,2021,gasto_sih_per_capita,2057473.58,25165,81.76
+230530,Ibiapina,2021,dengue_casos,5,,5
+230530,Ibiapina,2021,dengue_incidencia,5,25165,19.87
+230530,Ibiapina,2021,dengue_graves,0,,0
+230530,Ibiapina,2021,dengue_obitos,0,,0
+230530,Ibiapina,2021,chik_casos,1,,1
+230530,Ibiapina,2021,chik_incidencia,1,25165,3.97
+230530,Ibiapina,2021,zika_casos,0,,0
+230530,Ibiapina,2022,populacao,23965,,23965
+230530,Ibiapina,2022,nascidos_vivos,384,,384
+230530,Ibiapina,2022,tmi,2,384,5.21
+230530,Ibiapina,2022,tmi_3a,4,1145,3.49
+230530,Ibiapina,2022,tmn,0,384,0.0
+230530,Ibiapina,2022,tmn_3a,2,1145,1.75
+230530,Ibiapina,2022,obitos_maternos,0,,0
+230530,Ibiapina,2022,rmm_3a,0,1145,0.0
+230530,Ibiapina,2022,pct_cesarea,153,384,39.84
+230530,Ibiapina,2022,pct_prenatal7,343,379,90.5
+230530,Ibiapina,2022,pct_prenatal_1tri,333,377,88.33
+230530,Ibiapina,2022,pct_baixo_peso,38,384,9.9
+230530,Ibiapina,2022,pct_prematuro,47,378,12.43
+230530,Ibiapina,2022,pct_mae_adolescente,46,384,11.98
+230530,Ibiapina,2022,obitos,190,,190
+230530,Ibiapina,2022,tx_mortalidade,190,23965,7.93
+230530,Ibiapina,2022,obitos_dcnt_prematuros,34,,34
+230530,Ibiapina,2022,tx_causas_externas,22,23965,91.8
+230530,Ibiapina,2022,tx_homicidio,6,23965,25.04
+230530,Ibiapina,2022,tx_transito,12,23965,50.07
+230530,Ibiapina,2022,obitos_covid,6,,6
+230530,Ibiapina,2022,internacoes,2196,,2196
+230530,Ibiapina,2022,tx_internacao,2196,23965,91.63
+230530,Ibiapina,2022,pct_icsap,235,1965,11.96
+230530,Ibiapina,2022,pct_fora_serra,464,2196,21.13
+230530,Ibiapina,2022,pct_obito_hospitalar,83,2196,3.78
+230530,Ibiapina,2022,gasto_sih_per_capita,2103846.13,23965,87.79
+230530,Ibiapina,2022,dengue_casos,12,,12
+230530,Ibiapina,2022,dengue_incidencia,12,23965,50.07
+230530,Ibiapina,2022,dengue_graves,0,,0
+230530,Ibiapina,2022,dengue_obitos,0,,0
+230530,Ibiapina,2022,chik_casos,1,,1
+230530,Ibiapina,2022,chik_incidencia,1,23965,4.17
+230530,Ibiapina,2022,zika_casos,0,,0
+230530,Ibiapina,2023,populacao,24307,,24307
+230530,Ibiapina,2023,nascidos_vivos,341,,341
+230530,Ibiapina,2023,tmi,6,341,17.6
+230530,Ibiapina,2023,tmi_3a,9,1103,8.16
+230530,Ibiapina,2023,tmn,4,341,11.73
+230530,Ibiapina,2023,tmn_3a,5,1103,4.53
+230530,Ibiapina,2023,obitos_maternos,0,,0
+230530,Ibiapina,2023,rmm_3a,0,1103,0.0
+230530,Ibiapina,2023,pct_cesarea,159,341,46.63
+230530,Ibiapina,2023,pct_prenatal7,316,340,92.94
+230530,Ibiapina,2023,pct_prenatal_1tri,305,336,90.77
+230530,Ibiapina,2023,pct_baixo_peso,32,341,9.38
+230530,Ibiapina,2023,pct_prematuro,39,325,12.0
+230530,Ibiapina,2023,pct_mae_adolescente,53,341,15.54
+230530,Ibiapina,2023,obitos,184,,184
+230530,Ibiapina,2023,tx_mortalidade,184,24307,7.57
+230530,Ibiapina,2023,obitos_dcnt_prematuros,23,,23
+230530,Ibiapina,2023,tx_causas_externas,29,24307,119.31
+230530,Ibiapina,2023,tx_homicidio,1,24307,4.11
+230530,Ibiapina,2023,tx_transito,13,24307,53.48
+230530,Ibiapina,2023,obitos_covid,1,,1
+230530,Ibiapina,2023,internacoes,2237,,2237
+230530,Ibiapina,2023,tx_internacao,2237,24307,92.03
+230530,Ibiapina,2023,pct_icsap,140,2042,6.86
+230530,Ibiapina,2023,pct_fora_serra,455,2237,20.34
+230530,Ibiapina,2023,pct_obito_hospitalar,62,2237,2.77
+230530,Ibiapina,2023,gasto_sih_per_capita,1876421.61,24307,77.2
+230530,Ibiapina,2023,dengue_casos,2,,2
+230530,Ibiapina,2023,dengue_incidencia,2,24307,8.23
+230530,Ibiapina,2023,dengue_graves,0,,0
+230530,Ibiapina,2023,dengue_obitos,0,,0
+230530,Ibiapina,2023,chik_casos,0,,0
+230530,Ibiapina,2023,chik_incidencia,0,24307,0.0
+230530,Ibiapina,2023,zika_casos,0,,0
+230530,Ibiapina,2024,populacao,24649,,24649
+230530,Ibiapina,2024,nascidos_vivos,312,,312
+230530,Ibiapina,2024,tmi,5,312,16.03
+230530,Ibiapina,2024,tmi_3a,13,1037,12.54
+230530,Ibiapina,2024,tmn,2,312,6.41
+230530,Ibiapina,2024,tmn_3a,6,1037,5.79
+230530,Ibiapina,2024,obitos_maternos,0,,0
+230530,Ibiapina,2024,rmm_3a,0,1037,0.0
+230530,Ibiapina,2024,pct_cesarea,143,312,45.83
+230530,Ibiapina,2024,pct_prenatal7,287,310,92.58
+230530,Ibiapina,2024,pct_prenatal_1tri,277,305,90.82
+230530,Ibiapina,2024,pct_baixo_peso,29,312,9.29
+230530,Ibiapina,2024,pct_prematuro,44,303,14.52
+230530,Ibiapina,2024,pct_mae_adolescente,49,312,15.71
+230530,Ibiapina,2024,obitos,180,,180
+230530,Ibiapina,2024,tx_mortalidade,180,24649,7.3
+230530,Ibiapina,2024,obitos_dcnt_prematuros,31,,31
+230530,Ibiapina,2024,tx_causas_externas,28,24649,113.59
+230530,Ibiapina,2024,tx_homicidio,5,24649,20.28
+230530,Ibiapina,2024,tx_transito,13,24649,52.74
+230530,Ibiapina,2024,obitos_covid,0,,0
+230530,Ibiapina,2024,internacoes,2572,,2572
+230530,Ibiapina,2024,tx_internacao,2572,24649,104.35
+230530,Ibiapina,2024,pct_icsap,282,2384,11.83
+230530,Ibiapina,2024,pct_fora_serra,443,2572,17.22
+230530,Ibiapina,2024,pct_obito_hospitalar,81,2572,3.15
+230530,Ibiapina,2024,gasto_sih_per_capita,2576319.49,24649,104.52
+230530,Ibiapina,2024,dengue_casos,2,,2
+230530,Ibiapina,2024,dengue_incidencia,2,24649,8.11
+230530,Ibiapina,2024,dengue_graves,0,,0
+230530,Ibiapina,2024,dengue_obitos,0,,0
+230530,Ibiapina,2024,chik_casos,1,,1
+230530,Ibiapina,2024,chik_incidencia,1,24649,4.06
+230530,Ibiapina,2024,zika_casos,0,,0
+230530,Ibiapina,2025,populacao,24689,,24689
+230530,Ibiapina,2025,nascidos_vivos,349,,349
+230530,Ibiapina,2025,tmi,1,349,2.87
+230530,Ibiapina,2025,tmi_3a,12,1002,11.98
+230530,Ibiapina,2025,tmn,0,349,0.0
+230530,Ibiapina,2025,tmn_3a,6,1002,5.99
+230530,Ibiapina,2025,obitos_maternos,0,,0
+230530,Ibiapina,2025,rmm_3a,0,1002,0.0
+230530,Ibiapina,2025,pct_cesarea,146,348,41.95
+230530,Ibiapina,2025,pct_prenatal7,316,347,91.07
+230530,Ibiapina,2025,pct_prenatal_1tri,306,345,88.7
+230530,Ibiapina,2025,pct_baixo_peso,27,349,7.74
+230530,Ibiapina,2025,pct_prematuro,46,339,13.57
+230530,Ibiapina,2025,pct_mae_adolescente,54,349,15.47
+230530,Ibiapina,2025,obitos,199,,199
+230530,Ibiapina,2025,tx_mortalidade,199,24689,8.06
+230530,Ibiapina,2025,obitos_dcnt_prematuros,25,,25
+230530,Ibiapina,2025,tx_causas_externas,35,24689,141.76
+230530,Ibiapina,2025,tx_homicidio,11,24689,44.55
+230530,Ibiapina,2025,tx_transito,16,24689,64.81
+230530,Ibiapina,2025,obitos_covid,0,,0
+230530,Ibiapina,2025,internacoes,2756,,2756
+230530,Ibiapina,2025,tx_internacao,2756,24689,111.63
+230530,Ibiapina,2025,pct_icsap,304,2527,12.03
+230530,Ibiapina,2025,pct_fora_serra,346,2756,12.55
+230530,Ibiapina,2025,pct_obito_hospitalar,86,2756,3.12
+230530,Ibiapina,2025,gasto_sih_per_capita,2415293.87,24689,97.83
+230530,Ibiapina,2025,dengue_casos,3,,3
+230530,Ibiapina,2025,dengue_incidencia,3,24689,12.15
+230530,Ibiapina,2025,dengue_graves,0,,0
+230530,Ibiapina,2025,dengue_obitos,0,,0
+230530,Ibiapina,2025,chik_casos,0,,0
+230530,Ibiapina,2025,chik_incidencia,0,24689,0.0
+230530,Ibiapina,2025,zika_casos,0,,0
+230530,Ibiapina,2026,populacao,24727,,24727
+230530,Ibiapina,2026,nascidos_vivos,190,,190
+230530,Ibiapina,2026,tmi,2,190,10.53
+230530,Ibiapina,2026,tmi_3a,8,851,9.4
+230530,Ibiapina,2026,tmn,2,190,10.53
+230530,Ibiapina,2026,tmn_3a,4,851,4.7
+230530,Ibiapina,2026,obitos_maternos,0,,0
+230530,Ibiapina,2026,rmm_3a,0,851,0.0
+230530,Ibiapina,2026,pct_cesarea,82,189,43.39
+230530,Ibiapina,2026,pct_prenatal7,175,189,92.59
+230530,Ibiapina,2026,pct_prenatal_1tri,165,189,87.3
+230530,Ibiapina,2026,pct_baixo_peso,15,190,7.89
+230530,Ibiapina,2026,pct_prematuro,30,181,16.57
+230530,Ibiapina,2026,pct_mae_adolescente,22,190,11.58
+230530,Ibiapina,2026,obitos,120,,120
+230530,Ibiapina,2026,tx_mortalidade,120,24727,4.85
+230530,Ibiapina,2026,obitos_dcnt_prematuros,23,,23
+230530,Ibiapina,2026,tx_causas_externas,20,24727,80.88
+230530,Ibiapina,2026,tx_homicidio,8,24727,32.35
+230530,Ibiapina,2026,tx_transito,6,24727,24.26
+230530,Ibiapina,2026,obitos_covid,0,,0
+230530,Ibiapina,2026,internacoes,1891,,1891
+230530,Ibiapina,2026,tx_internacao,1891,24727,76.48
+230530,Ibiapina,2026,pct_icsap,184,1773,10.38
+230530,Ibiapina,2026,pct_fora_serra,255,1891,13.48
+230530,Ibiapina,2026,pct_obito_hospitalar,56,1891,2.96
+230530,Ibiapina,2026,gasto_sih_per_capita,2213418.28,24727,89.51
+230530,Ibiapina,2026,dengue_casos,7,,7
+230530,Ibiapina,2026,dengue_incidencia,7,24727,28.31
+230530,Ibiapina,2026,dengue_graves,0,,0
+230530,Ibiapina,2026,dengue_obitos,0,,0
+230530,Ibiapina,2026,chik_casos,1,,1
+230530,Ibiapina,2026,chik_incidencia,1,24727,4.04
+230530,Ibiapina,2026,zika_casos,0,,0
+231230,São Benedito,2019,populacao,47903,,47903
+231230,São Benedito,2019,nascidos_vivos,828,,828
+231230,São Benedito,2019,tmi,13,828,15.7
+231230,São Benedito,2019,tmn,10,828,12.08
+231230,São Benedito,2019,obitos_maternos,0,,0
+231230,São Benedito,2019,pct_cesarea,437,828,52.78
+231230,São Benedito,2019,pct_prenatal7,641,824,77.79
+231230,São Benedito,2019,pct_prenatal_1tri,684,815,83.93
+231230,São Benedito,2019,pct_baixo_peso,71,828,8.57
+231230,São Benedito,2019,pct_prematuro,104,810,12.84
+231230,São Benedito,2019,pct_mae_adolescente,138,828,16.67
+231230,São Benedito,2019,obitos,327,,327
+231230,São Benedito,2019,tx_mortalidade,327,47903,6.83
+231230,São Benedito,2019,obitos_dcnt_prematuros,64,,64
+231230,São Benedito,2019,tx_causas_externas,38,47903,79.33
+231230,São Benedito,2019,tx_homicidio,13,47903,27.14
+231230,São Benedito,2019,tx_transito,14,47903,29.23
+231230,São Benedito,2019,obitos_covid,0,,0
+231230,São Benedito,2019,internacoes,2848,,2848
+231230,São Benedito,2019,tx_internacao,2848,47903,59.45
+231230,São Benedito,2019,pct_icsap,418,2142,19.51
+231230,São Benedito,2019,pct_fora_serra,749,2848,26.3
+231230,São Benedito,2019,pct_obito_hospitalar,95,2848,3.34
+231230,São Benedito,2019,gasto_sih_per_capita,2716606.12,47903,56.71
+231230,São Benedito,2019,dengue_casos,0,,0
+231230,São Benedito,2019,dengue_incidencia,0,47903,0.0
+231230,São Benedito,2019,dengue_graves,0,,0
+231230,São Benedito,2019,dengue_obitos,0,,0
+231230,São Benedito,2019,chik_casos,0,,0
+231230,São Benedito,2019,chik_incidencia,0,47903,0.0
+231230,São Benedito,2019,zika_casos,0,,0
+231230,São Benedito,2020,populacao,48131,,48131
+231230,São Benedito,2020,nascidos_vivos,767,,767
+231230,São Benedito,2020,tmi,7,767,9.13
+231230,São Benedito,2020,tmn,6,767,7.82
+231230,São Benedito,2020,obitos_maternos,2,,2
+231230,São Benedito,2020,pct_cesarea,302,766,39.43
+231230,São Benedito,2020,pct_prenatal7,583,762,76.51
+231230,São Benedito,2020,pct_prenatal_1tri,605,749,80.77
+231230,São Benedito,2020,pct_baixo_peso,61,767,7.95
+231230,São Benedito,2020,pct_prematuro,94,759,12.38
+231230,São Benedito,2020,pct_mae_adolescente,146,767,19.04
+231230,São Benedito,2020,obitos,384,,384
+231230,São Benedito,2020,tx_mortalidade,384,48131,7.98
+231230,São Benedito,2020,obitos_dcnt_prematuros,63,,63
+231230,São Benedito,2020,tx_causas_externas,51,48131,105.96
+231230,São Benedito,2020,tx_homicidio,14,48131,29.09
+231230,São Benedito,2020,tx_transito,17,48131,35.32
+231230,São Benedito,2020,obitos_covid,45,,45
+231230,São Benedito,2020,internacoes,2213,,2213
+231230,São Benedito,2020,tx_internacao,2213,48131,45.98
+231230,São Benedito,2020,pct_icsap,296,1703,17.38
+231230,São Benedito,2020,pct_fora_serra,708,2213,31.99
+231230,São Benedito,2020,pct_obito_hospitalar,114,2213,5.15
+231230,São Benedito,2020,gasto_sih_per_capita,3160759.14,48131,65.67
+231230,São Benedito,2020,dengue_casos,1,,1
+231230,São Benedito,2020,dengue_incidencia,1,48131,2.08
+231230,São Benedito,2020,dengue_graves,0,,0
+231230,São Benedito,2020,dengue_obitos,0,,0
+231230,São Benedito,2020,chik_casos,0,,0
+231230,São Benedito,2020,chik_incidencia,0,48131,0.0
+231230,São Benedito,2020,zika_casos,0,,0
+231230,São Benedito,2021,populacao,48354,,48354
+231230,São Benedito,2021,nascidos_vivos,733,,733
+231230,São Benedito,2021,tmi,11,733,15.01
+231230,São Benedito,2021,tmi_3a,31,2328,13.32
+231230,São Benedito,2021,tmn,6,733,8.19
+231230,São Benedito,2021,tmn_3a,22,2328,9.45
+231230,São Benedito,2021,obitos_maternos,0,,0
+231230,São Benedito,2021,rmm_3a,2,2328,85.91
+231230,São Benedito,2021,pct_cesarea,309,732,42.21
+231230,São Benedito,2021,pct_prenatal7,563,725,77.66
+231230,São Benedito,2021,pct_prenatal_1tri,590,709,83.22
+231230,São Benedito,2021,pct_baixo_peso,72,733,9.82
+231230,São Benedito,2021,pct_prematuro,98,708,13.84
+231230,São Benedito,2021,pct_mae_adolescente,94,733,12.82
+231230,São Benedito,2021,obitos,413,,413
+231230,São Benedito,2021,tx_mortalidade,413,48354,8.54
+231230,São Benedito,2021,obitos_dcnt_prematuros,66,,66
+231230,São Benedito,2021,tx_causas_externas,40,48354,82.72
+231230,São Benedito,2021,tx_homicidio,17,48354,35.16
+231230,São Benedito,2021,tx_transito,9,48354,18.61
+231230,São Benedito,2021,obitos_covid,70,,70
+231230,São Benedito,2021,internacoes,2490,,2490
+231230,São Benedito,2021,tx_internacao,2490,48354,51.5
+231230,São Benedito,2021,pct_icsap,283,2039,13.88
+231230,São Benedito,2021,pct_fora_serra,881,2490,35.38
+231230,São Benedito,2021,pct_obito_hospitalar,147,2490,5.9
+231230,São Benedito,2021,gasto_sih_per_capita,3964653.17,48354,81.99
+231230,São Benedito,2021,dengue_casos,4,,4
+231230,São Benedito,2021,dengue_incidencia,4,48354,8.27
+231230,São Benedito,2021,dengue_graves,0,,0
+231230,São Benedito,2021,dengue_obitos,0,,0
+231230,São Benedito,2021,chik_casos,0,,0
+231230,São Benedito,2021,chik_incidencia,0,48354,0.0
+231230,São Benedito,2021,zika_casos,0,,0
+231230,São Benedito,2022,populacao,47640,,47640
+231230,São Benedito,2022,nascidos_vivos,763,,763
+231230,São Benedito,2022,tmi,9,763,11.8
+231230,São Benedito,2022,tmi_3a,27,2263,11.93
+231230,São Benedito,2022,tmn,6,763,7.86
+231230,São Benedito,2022,tmn_3a,18,2263,7.95
+231230,São Benedito,2022,obitos_maternos,2,,2
+231230,São Benedito,2022,rmm_3a,4,2263,176.76
+231230,São Benedito,2022,pct_cesarea,435,763,57.01
+231230,São Benedito,2022,pct_prenatal7,623,758,82.19
+231230,São Benedito,2022,pct_prenatal_1tri,598,743,80.48
+231230,São Benedito,2022,pct_baixo_peso,69,763,9.04
+231230,São Benedito,2022,pct_prematuro,104,760,13.68
+231230,São Benedito,2022,pct_mae_adolescente,98,763,12.84
+231230,São Benedito,2022,obitos,373,,373
+231230,São Benedito,2022,tx_mortalidade,373,47640,7.83
+231230,São Benedito,2022,obitos_dcnt_prematuros,77,,77
+231230,São Benedito,2022,tx_causas_externas,53,47640,111.25
+231230,São Benedito,2022,tx_homicidio,21,47640,44.08
+231230,São Benedito,2022,tx_transito,17,47640,35.68
+231230,São Benedito,2022,obitos_covid,6,,6
+231230,São Benedito,2022,internacoes,2919,,2919
+231230,São Benedito,2022,tx_internacao,2919,47640,61.27
+231230,São Benedito,2022,pct_icsap,397,2434,16.31
+231230,São Benedito,2022,pct_fora_serra,632,2919,21.65
+231230,São Benedito,2022,pct_obito_hospitalar,110,2919,3.77
+231230,São Benedito,2022,gasto_sih_per_capita,3084230.09,47640,64.74
+231230,São Benedito,2022,dengue_casos,18,,18
+231230,São Benedito,2022,dengue_incidencia,18,47640,37.78
+231230,São Benedito,2022,dengue_graves,0,,0
+231230,São Benedito,2022,dengue_obitos,0,,0
+231230,São Benedito,2022,chik_casos,5,,5
+231230,São Benedito,2022,chik_incidencia,5,47640,10.5
+231230,São Benedito,2022,zika_casos,0,,0
+231230,São Benedito,2023,populacao,48734,,48734
+231230,São Benedito,2023,nascidos_vivos,672,,672
+231230,São Benedito,2023,tmi,4,672,5.95
+231230,São Benedito,2023,tmi_3a,24,2168,11.07
+231230,São Benedito,2023,tmn,3,672,4.46
+231230,São Benedito,2023,tmn_3a,15,2168,6.92
+231230,São Benedito,2023,obitos_maternos,0,,0
+231230,São Benedito,2023,rmm_3a,2,2168,92.25
+231230,São Benedito,2023,pct_cesarea,409,672,60.86
+231230,São Benedito,2023,pct_prenatal7,580,672,86.31
+231230,São Benedito,2023,pct_prenatal_1tri,536,663,80.84
+231230,São Benedito,2023,pct_baixo_peso,50,672,7.44
+231230,São Benedito,2023,pct_prematuro,71,670,10.6
+231230,São Benedito,2023,pct_mae_adolescente,99,672,14.73
+231230,São Benedito,2023,obitos,411,,411
+231230,São Benedito,2023,tx_mortalidade,411,48734,8.43
+231230,São Benedito,2023,obitos_dcnt_prematuros,78,,78
+231230,São Benedito,2023,tx_causas_externas,58,48734,119.01
+231230,São Benedito,2023,tx_homicidio,25,48734,51.3
+231230,São Benedito,2023,tx_transito,18,48734,36.94
+231230,São Benedito,2023,obitos_covid,0,,0
+231230,São Benedito,2023,internacoes,2596,,2596
+231230,São Benedito,2023,tx_internacao,2596,48734,53.27
+231230,São Benedito,2023,pct_icsap,357,2235,15.97
+231230,São Benedito,2023,pct_fora_serra,637,2596,24.54
+231230,São Benedito,2023,pct_obito_hospitalar,101,2596,3.89
+231230,São Benedito,2023,gasto_sih_per_capita,2970707.9,48734,60.96
+231230,São Benedito,2023,dengue_casos,4,,4
+231230,São Benedito,2023,dengue_incidencia,4,48734,8.21
+231230,São Benedito,2023,dengue_graves,0,,0
+231230,São Benedito,2023,dengue_obitos,0,,0
+231230,São Benedito,2023,chik_casos,0,,0
+231230,São Benedito,2023,chik_incidencia,0,48734,0.0
+231230,São Benedito,2023,zika_casos,0,,0
+231230,São Benedito,2024,populacao,49829,,49829
+231230,São Benedito,2024,nascidos_vivos,640,,640
+231230,São Benedito,2024,tmi,10,640,15.62
+231230,São Benedito,2024,tmi_3a,23,2075,11.08
+231230,São Benedito,2024,tmn,8,640,12.5
+231230,São Benedito,2024,tmn_3a,17,2075,8.19
+231230,São Benedito,2024,obitos_maternos,0,,0
+231230,São Benedito,2024,rmm_3a,2,2075,96.39
+231230,São Benedito,2024,pct_cesarea,405,640,63.28
+231230,São Benedito,2024,pct_prenatal7,586,638,91.85
+231230,São Benedito,2024,pct_prenatal_1tri,550,632,87.03
+231230,São Benedito,2024,pct_baixo_peso,55,640,8.59
+231230,São Benedito,2024,pct_prematuro,76,637,11.93
+231230,São Benedito,2024,pct_mae_adolescente,67,640,10.47
+231230,São Benedito,2024,obitos,411,,411
+231230,São Benedito,2024,tx_mortalidade,411,49829,8.25
+231230,São Benedito,2024,obitos_dcnt_prematuros,69,,69
+231230,São Benedito,2024,tx_causas_externas,55,49829,110.38
+231230,São Benedito,2024,tx_homicidio,17,49829,34.12
+231230,São Benedito,2024,tx_transito,23,49829,46.16
+231230,São Benedito,2024,obitos_covid,0,,0
+231230,São Benedito,2024,internacoes,2523,,2523
+231230,São Benedito,2024,tx_internacao,2523,49829,50.63
+231230,São Benedito,2024,pct_icsap,391,2182,17.92
+231230,São Benedito,2024,pct_fora_serra,631,2523,25.01
+231230,São Benedito,2024,pct_obito_hospitalar,132,2523,5.23
+231230,São Benedito,2024,gasto_sih_per_capita,3421618.99,49829,68.67
+231230,São Benedito,2024,dengue_casos,24,,24
+231230,São Benedito,2024,dengue_incidencia,24,49829,48.16
+231230,São Benedito,2024,dengue_graves,0,,0
+231230,São Benedito,2024,dengue_obitos,0,,0
+231230,São Benedito,2024,chik_casos,7,,7
+231230,São Benedito,2024,chik_incidencia,7,49829,14.05
+231230,São Benedito,2024,zika_casos,0,,0
+231230,São Benedito,2025,populacao,50058,,50058
+231230,São Benedito,2025,nascidos_vivos,680,,680
+231230,São Benedito,2025,tmi,9,680,13.24
+231230,São Benedito,2025,tmi_3a,23,1992,11.55
+231230,São Benedito,2025,tmn,8,680,11.76
+231230,São Benedito,2025,tmn_3a,19,1992,9.54
+231230,São Benedito,2025,obitos_maternos,0,,0
+231230,São Benedito,2025,rmm_3a,0,1992,0.0
+231230,São Benedito,2025,pct_cesarea,423,680,62.21
+231230,São Benedito,2025,pct_prenatal7,626,679,92.19
+231230,São Benedito,2025,pct_prenatal_1tri,588,668,88.02
+231230,São Benedito,2025,pct_baixo_peso,52,680,7.65
+231230,São Benedito,2025,pct_prematuro,65,675,9.63
+231230,São Benedito,2025,pct_mae_adolescente,95,680,13.97
+231230,São Benedito,2025,obitos,394,,394
+231230,São Benedito,2025,tx_mortalidade,394,50058,7.87
+231230,São Benedito,2025,obitos_dcnt_prematuros,73,,73
+231230,São Benedito,2025,tx_causas_externas,62,50058,123.86
+231230,São Benedito,2025,tx_homicidio,28,50058,55.94
+231230,São Benedito,2025,tx_transito,22,50058,43.95
+231230,São Benedito,2025,obitos_covid,0,,0
+231230,São Benedito,2025,internacoes,2780,,2780
+231230,São Benedito,2025,tx_internacao,2780,50058,55.54
+231230,São Benedito,2025,pct_icsap,482,2402,20.07
+231230,São Benedito,2025,pct_fora_serra,584,2780,21.01
+231230,São Benedito,2025,pct_obito_hospitalar,121,2780,4.35
+231230,São Benedito,2025,gasto_sih_per_capita,3801460.99,50058,75.94
+231230,São Benedito,2025,dengue_casos,8,,8
+231230,São Benedito,2025,dengue_incidencia,8,50058,15.98
+231230,São Benedito,2025,dengue_graves,0,,0
+231230,São Benedito,2025,dengue_obitos,0,,0
+231230,São Benedito,2025,chik_casos,0,,0
+231230,São Benedito,2025,chik_incidencia,0,50058,0.0
+231230,São Benedito,2025,zika_casos,0,,0
+231230,São Benedito,2026,populacao,50274,,50274
+231230,São Benedito,2026,nascidos_vivos,382,,382
+231230,São Benedito,2026,tmi,7,382,18.32
+231230,São Benedito,2026,tmi_3a,26,1702,15.28
+231230,São Benedito,2026,tmn,6,382,15.71
+231230,São Benedito,2026,tmn_3a,22,1702,12.93
+231230,São Benedito,2026,obitos_maternos,0,,0
+231230,São Benedito,2026,rmm_3a,0,1702,0.0
+231230,São Benedito,2026,pct_cesarea,238,382,62.3
+231230,São Benedito,2026,pct_prenatal7,351,382,91.88
+231230,São Benedito,2026,pct_prenatal_1tri,345,377,91.51
+231230,São Benedito,2026,pct_baixo_peso,34,382,8.9
+231230,São Benedito,2026,pct_prematuro,50,381,13.12
+231230,São Benedito,2026,pct_mae_adolescente,49,382,12.83
+231230,São Benedito,2026,obitos,259,,259
+231230,São Benedito,2026,tx_mortalidade,259,50274,5.15
+231230,São Benedito,2026,obitos_dcnt_prematuros,43,,43
+231230,São Benedito,2026,tx_causas_externas,29,50274,57.68
+231230,São Benedito,2026,tx_homicidio,9,50274,17.9
+231230,São Benedito,2026,tx_transito,11,50274,21.88
+231230,São Benedito,2026,obitos_covid,0,,0
+231230,São Benedito,2026,internacoes,2239,,2239
+231230,São Benedito,2026,tx_internacao,2239,50274,44.54
+231230,São Benedito,2026,pct_icsap,385,2004,19.21
+231230,São Benedito,2026,pct_fora_serra,417,2239,18.62
+231230,São Benedito,2026,pct_obito_hospitalar,93,2239,4.15
+231230,São Benedito,2026,gasto_sih_per_capita,3414850.12,50274,67.92
+231230,São Benedito,2026,dengue_casos,31,,31
+231230,São Benedito,2026,dengue_incidencia,31,50274,61.66
+231230,São Benedito,2026,dengue_graves,0,,0
+231230,São Benedito,2026,dengue_obitos,0,,0
+231230,São Benedito,2026,chik_casos,7,,7
+231230,São Benedito,2026,chik_incidencia,7,50274,13.92
+231230,São Benedito,2026,zika_casos,0,,0
+231340,Tianguá,2019,populacao,75946,,75946
+231340,Tianguá,2019,nascidos_vivos,1471,,1471
+231340,Tianguá,2019,tmi,17,1471,11.56
+231340,Tianguá,2019,tmn,10,1471,6.8
+231340,Tianguá,2019,obitos_maternos,2,,2
+231340,Tianguá,2019,pct_cesarea,636,1471,43.24
+231340,Tianguá,2019,pct_prenatal7,1176,1463,80.38
+231340,Tianguá,2019,pct_prenatal_1tri,1175,1448,81.15
+231340,Tianguá,2019,pct_baixo_peso,105,1471,7.14
+231340,Tianguá,2019,pct_prematuro,153,1405,10.89
+231340,Tianguá,2019,pct_mae_adolescente,214,1471,14.55
+231340,Tianguá,2019,obitos,443,,443
+231340,Tianguá,2019,tx_mortalidade,443,75946,5.83
+231340,Tianguá,2019,obitos_dcnt_prematuros,81,,81
+231340,Tianguá,2019,tx_causas_externas,62,75946,81.64
+231340,Tianguá,2019,tx_homicidio,12,75946,15.8
+231340,Tianguá,2019,tx_transito,32,75946,42.14
+231340,Tianguá,2019,obitos_covid,0,,0
+231340,Tianguá,2019,internacoes,5532,,5532
+231340,Tianguá,2019,tx_internacao,5532,75946,72.84
+231340,Tianguá,2019,pct_icsap,1170,4686,24.97
+231340,Tianguá,2019,pct_fora_serra,1202,5532,21.73
+231340,Tianguá,2019,pct_obito_hospitalar,198,5532,3.58
+231340,Tianguá,2019,gasto_sih_per_capita,4843986.09,75946,63.78
+231340,Tianguá,2019,dengue_casos,7,,7
+231340,Tianguá,2019,dengue_incidencia,7,75946,9.22
+231340,Tianguá,2019,dengue_graves,0,,0
+231340,Tianguá,2019,dengue_obitos,0,,0
+231340,Tianguá,2019,chik_casos,0,,0
+231340,Tianguá,2019,chik_incidencia,0,75946,0.0
+231340,Tianguá,2019,zika_casos,0,,0
+231340,Tianguá,2020,populacao,76537,,76537
+231340,Tianguá,2020,nascidos_vivos,1422,,1422
+231340,Tianguá,2020,tmi,10,1422,7.03
+231340,Tianguá,2020,tmn,5,1422,3.52
+231340,Tianguá,2020,obitos_maternos,0,,0
+231340,Tianguá,2020,pct_cesarea,641,1422,45.08
+231340,Tianguá,2020,pct_prenatal7,992,1411,70.3
+231340,Tianguá,2020,pct_prenatal_1tri,1095,1388,78.89
+231340,Tianguá,2020,pct_baixo_peso,133,1422,9.35
+231340,Tianguá,2020,pct_prematuro,173,1418,12.2
+231340,Tianguá,2020,pct_mae_adolescente,207,1422,14.56
+231340,Tianguá,2020,obitos,563,,563
+231340,Tianguá,2020,tx_mortalidade,563,76537,7.36
+231340,Tianguá,2020,obitos_dcnt_prematuros,107,,107
+231340,Tianguá,2020,tx_causas_externas,73,76537,95.38
+231340,Tianguá,2020,tx_homicidio,20,76537,26.13
+231340,Tianguá,2020,tx_transito,23,76537,30.05
+231340,Tianguá,2020,obitos_covid,92,,92
+231340,Tianguá,2020,internacoes,4763,,4763
+231340,Tianguá,2020,tx_internacao,4763,76537,62.23
+231340,Tianguá,2020,pct_icsap,693,3950,17.54
+231340,Tianguá,2020,pct_fora_serra,1112,4763,23.35
+231340,Tianguá,2020,pct_obito_hospitalar,250,4763,5.25
+231340,Tianguá,2020,gasto_sih_per_capita,6188509.52,76537,80.86
+231340,Tianguá,2020,dengue_casos,7,,7
+231340,Tianguá,2020,dengue_incidencia,7,76537,9.15
+231340,Tianguá,2020,dengue_graves,0,,0
+231340,Tianguá,2020,dengue_obitos,0,,0
+231340,Tianguá,2020,chik_casos,0,,0
+231340,Tianguá,2020,chik_incidencia,0,76537,0.0
+231340,Tianguá,2020,zika_casos,0,,0
+231340,Tianguá,2021,populacao,77111,,77111
+231340,Tianguá,2021,nascidos_vivos,1495,,1495
+231340,Tianguá,2021,tmi,17,1495,11.37
+231340,Tianguá,2021,tmi_3a,44,4388,10.03
+231340,Tianguá,2021,tmn,10,1495,6.69
+231340,Tianguá,2021,tmn_3a,25,4388,5.7
+231340,Tianguá,2021,obitos_maternos,3,,3
+231340,Tianguá,2021,rmm_3a,5,4388,113.95
+231340,Tianguá,2021,pct_cesarea,697,1495,46.62
+231340,Tianguá,2021,pct_prenatal7,1143,1481,77.18
+231340,Tianguá,2021,pct_prenatal_1tri,1192,1449,82.26
+231340,Tianguá,2021,pct_baixo_peso,139,1495,9.3
+231340,Tianguá,2021,pct_prematuro,203,1436,14.14
+231340,Tianguá,2021,pct_mae_adolescente,217,1495,14.52
+231340,Tianguá,2021,obitos,610,,610
+231340,Tianguá,2021,tx_mortalidade,610,77111,7.91
+231340,Tianguá,2021,obitos_dcnt_prematuros,100,,100
+231340,Tianguá,2021,tx_causas_externas,83,77111,107.64
+231340,Tianguá,2021,tx_homicidio,34,77111,44.09
+231340,Tianguá,2021,tx_transito,23,77111,29.83
+231340,Tianguá,2021,obitos_covid,112,,112
+231340,Tianguá,2021,internacoes,5272,,5272
+231340,Tianguá,2021,tx_internacao,5272,77111,68.37
+231340,Tianguá,2021,pct_icsap,586,4465,13.12
+231340,Tianguá,2021,pct_fora_serra,1338,5272,25.38
+231340,Tianguá,2021,pct_obito_hospitalar,289,5272,5.48
+231340,Tianguá,2021,gasto_sih_per_capita,9231108.56,77111,119.71
+231340,Tianguá,2021,dengue_casos,425,,425
+231340,Tianguá,2021,dengue_incidencia,425,77111,551.15
+231340,Tianguá,2021,dengue_graves,0,,0
+231340,Tianguá,2021,dengue_obitos,0,,0
+231340,Tianguá,2021,chik_casos,0,,0
+231340,Tianguá,2021,chik_incidencia,0,77111,0.0
+231340,Tianguá,2021,zika_casos,0,,0
+231340,Tianguá,2022,populacao,81506,,81506
+231340,Tianguá,2022,nascidos_vivos,1357,,1357
+231340,Tianguá,2022,tmi,17,1357,12.53
+231340,Tianguá,2022,tmi_3a,44,4274,10.29
+231340,Tianguá,2022,tmn,11,1357,8.11
+231340,Tianguá,2022,tmn_3a,26,4274,6.08
+231340,Tianguá,2022,obitos_maternos,1,,1
+231340,Tianguá,2022,rmm_3a,4,4274,93.59
+231340,Tianguá,2022,pct_cesarea,682,1357,50.26
+231340,Tianguá,2022,pct_prenatal7,1086,1356,80.09
+231340,Tianguá,2022,pct_prenatal_1tri,1129,1353,83.44
+231340,Tianguá,2022,pct_baixo_peso,139,1357,10.24
+231340,Tianguá,2022,pct_prematuro,194,1349,14.38
+231340,Tianguá,2022,pct_mae_adolescente,169,1357,12.45
+231340,Tianguá,2022,obitos,527,,527
+231340,Tianguá,2022,tx_mortalidade,527,81506,6.47
+231340,Tianguá,2022,obitos_dcnt_prematuros,85,,85
+231340,Tianguá,2022,tx_causas_externas,100,81506,122.69
+231340,Tianguá,2022,tx_homicidio,53,81506,65.03
+231340,Tianguá,2022,tx_transito,27,81506,33.13
+231340,Tianguá,2022,obitos_covid,11,,11
+231340,Tianguá,2022,internacoes,5887,,5887
+231340,Tianguá,2022,tx_internacao,5887,81506,72.23
+231340,Tianguá,2022,pct_icsap,901,5167,17.44
+231340,Tianguá,2022,pct_fora_serra,1040,5887,17.67
+231340,Tianguá,2022,pct_obito_hospitalar,237,5887,4.03
+231340,Tianguá,2022,gasto_sih_per_capita,6259049.43,81506,76.79
+231340,Tianguá,2022,dengue_casos,164,,164
+231340,Tianguá,2022,dengue_incidencia,164,81506,201.21
+231340,Tianguá,2022,dengue_graves,0,,0
+231340,Tianguá,2022,dengue_obitos,0,,0
+231340,Tianguá,2022,chik_casos,8,,8
+231340,Tianguá,2022,chik_incidencia,8,81506,9.82
+231340,Tianguá,2022,zika_casos,0,,0
+231340,Tianguá,2023,populacao,83822,,83822
+231340,Tianguá,2023,nascidos_vivos,1399,,1399
+231340,Tianguá,2023,tmi,16,1399,11.44
+231340,Tianguá,2023,tmi_3a,50,4251,11.76
+231340,Tianguá,2023,tmn,8,1399,5.72
+231340,Tianguá,2023,tmn_3a,29,4251,6.82
+231340,Tianguá,2023,obitos_maternos,1,,1
+231340,Tianguá,2023,rmm_3a,5,4251,117.62
+231340,Tianguá,2023,pct_cesarea,756,1399,54.04
+231340,Tianguá,2023,pct_prenatal7,1131,1389,81.43
+231340,Tianguá,2023,pct_prenatal_1tri,1203,1383,86.98
+231340,Tianguá,2023,pct_baixo_peso,137,1399,9.79
+231340,Tianguá,2023,pct_prematuro,205,1390,14.75
+231340,Tianguá,2023,pct_mae_adolescente,173,1399,12.37
+231340,Tianguá,2023,obitos,526,,526
+231340,Tianguá,2023,tx_mortalidade,526,83822,6.28
+231340,Tianguá,2023,obitos_dcnt_prematuros,99,,99
+231340,Tianguá,2023,tx_causas_externas,71,83822,84.7
+231340,Tianguá,2023,tx_homicidio,27,83822,32.21
+231340,Tianguá,2023,tx_transito,30,83822,35.79
+231340,Tianguá,2023,obitos_covid,1,,1
+231340,Tianguá,2023,internacoes,5916,,5916
+231340,Tianguá,2023,tx_internacao,5916,83822,70.58
+231340,Tianguá,2023,pct_icsap,752,5253,14.32
+231340,Tianguá,2023,pct_fora_serra,868,5916,14.67
+231340,Tianguá,2023,pct_obito_hospitalar,227,5916,3.84
+231340,Tianguá,2023,gasto_sih_per_capita,6911501.19,83822,82.45
+231340,Tianguá,2023,dengue_casos,807,,807
+231340,Tianguá,2023,dengue_incidencia,807,83822,962.75
+231340,Tianguá,2023,dengue_graves,1,,1
+231340,Tianguá,2023,dengue_obitos,0,,0
+231340,Tianguá,2023,chik_casos,1,,1
+231340,Tianguá,2023,chik_incidencia,1,83822,1.19
+231340,Tianguá,2023,zika_casos,0,,0
+231340,Tianguá,2024,populacao,86137,,86137
+231340,Tianguá,2024,nascidos_vivos,1360,,1360
+231340,Tianguá,2024,tmi,19,1360,13.97
+231340,Tianguá,2024,tmi_3a,52,4116,12.63
+231340,Tianguá,2024,tmn,13,1360,9.56
+231340,Tianguá,2024,tmn_3a,32,4116,7.77
+231340,Tianguá,2024,obitos_maternos,1,,1
+231340,Tianguá,2024,rmm_3a,3,4116,72.89
+231340,Tianguá,2024,pct_cesarea,809,1360,59.49
+231340,Tianguá,2024,pct_prenatal7,1144,1354,84.49
+231340,Tianguá,2024,pct_prenatal_1tri,1197,1347,88.86
+231340,Tianguá,2024,pct_baixo_peso,113,1360,8.31
+231340,Tianguá,2024,pct_prematuro,209,1352,15.46
+231340,Tianguá,2024,pct_mae_adolescente,175,1360,12.87
+231340,Tianguá,2024,obitos,540,,540
+231340,Tianguá,2024,tx_mortalidade,540,86137,6.27
+231340,Tianguá,2024,obitos_dcnt_prematuros,106,,106
+231340,Tianguá,2024,tx_causas_externas,87,86137,101.0
+231340,Tianguá,2024,tx_homicidio,41,86137,47.6
+231340,Tianguá,2024,tx_transito,22,86137,25.54
+231340,Tianguá,2024,obitos_covid,2,,2
+231340,Tianguá,2024,internacoes,6421,,6421
+231340,Tianguá,2024,tx_internacao,6421,86137,74.54
+231340,Tianguá,2024,pct_icsap,783,5852,13.38
+231340,Tianguá,2024,pct_fora_serra,968,6421,15.08
+231340,Tianguá,2024,pct_obito_hospitalar,224,6421,3.49
+231340,Tianguá,2024,gasto_sih_per_capita,7863161.05,86137,91.29
+231340,Tianguá,2024,dengue_casos,183,,183
+231340,Tianguá,2024,dengue_incidencia,183,86137,212.45
+231340,Tianguá,2024,dengue_graves,0,,0
+231340,Tianguá,2024,dengue_obitos,0,,0
+231340,Tianguá,2024,chik_casos,0,,0
+231340,Tianguá,2024,chik_incidencia,0,86137,0.0
+231340,Tianguá,2024,zika_casos,0,,0
+231340,Tianguá,2025,populacao,86968,,86968
+231340,Tianguá,2025,nascidos_vivos,1459,,1459
+231340,Tianguá,2025,tmi,20,1459,13.71
+231340,Tianguá,2025,tmi_3a,55,4218,13.04
+231340,Tianguá,2025,tmn,11,1459,7.54
+231340,Tianguá,2025,tmn_3a,32,4218,7.59
+231340,Tianguá,2025,obitos_maternos,0,,0
+231340,Tianguá,2025,rmm_3a,2,4218,47.42
+231340,Tianguá,2025,pct_cesarea,820,1459,56.2
+231340,Tianguá,2025,pct_prenatal7,1253,1456,86.06
+231340,Tianguá,2025,pct_prenatal_1tri,1300,1444,90.03
+231340,Tianguá,2025,pct_baixo_peso,122,1459,8.36
+231340,Tianguá,2025,pct_prematuro,185,1450,12.76
+231340,Tianguá,2025,pct_mae_adolescente,171,1459,11.72
+231340,Tianguá,2025,obitos,541,,541
+231340,Tianguá,2025,tx_mortalidade,541,86968,6.22
+231340,Tianguá,2025,obitos_dcnt_prematuros,98,,98
+231340,Tianguá,2025,tx_causas_externas,72,86968,82.79
+231340,Tianguá,2025,tx_homicidio,26,86968,29.9
+231340,Tianguá,2025,tx_transito,29,86968,33.35
+231340,Tianguá,2025,obitos_covid,0,,0
+231340,Tianguá,2025,internacoes,7043,,7043
+231340,Tianguá,2025,tx_internacao,7043,86968,80.98
+231340,Tianguá,2025,pct_icsap,740,6398,11.57
+231340,Tianguá,2025,pct_fora_serra,1029,7043,14.61
+231340,Tianguá,2025,pct_obito_hospitalar,247,7043,3.51
+231340,Tianguá,2025,gasto_sih_per_capita,10337981.75,86968,118.87
+231340,Tianguá,2025,dengue_casos,137,,137
+231340,Tianguá,2025,dengue_incidencia,137,86968,157.53
+231340,Tianguá,2025,dengue_graves,0,,0
+231340,Tianguá,2025,dengue_obitos,0,,0
+231340,Tianguá,2025,chik_casos,1,,1
+231340,Tianguá,2025,chik_incidencia,1,86968,1.15
+231340,Tianguá,2025,zika_casos,0,,0
+231340,Tianguá,2026,populacao,87757,,87757
+231340,Tianguá,2026,nascidos_vivos,805,,805
+231340,Tianguá,2026,tmi,0,805,0.0
+231340,Tianguá,2026,tmi_3a,39,3624,10.76
+231340,Tianguá,2026,tmn,0,805,0.0
+231340,Tianguá,2026,tmn_3a,24,3624,6.62
+231340,Tianguá,2026,obitos_maternos,0,,0
+231340,Tianguá,2026,rmm_3a,1,3624,27.59
+231340,Tianguá,2026,pct_cesarea,500,802,62.34
+231340,Tianguá,2026,pct_prenatal7,723,804,89.93
+231340,Tianguá,2026,pct_prenatal_1tri,720,795,90.57
+231340,Tianguá,2026,pct_baixo_peso,74,805,9.19
+231340,Tianguá,2026,pct_prematuro,128,786,16.28
+231340,Tianguá,2026,pct_mae_adolescente,80,805,9.94
+231340,Tianguá,2026,obitos,318,,318
+231340,Tianguá,2026,tx_mortalidade,318,87757,3.62
+231340,Tianguá,2026,obitos_dcnt_prematuros,63,,63
+231340,Tianguá,2026,tx_causas_externas,54,87757,61.53
+231340,Tianguá,2026,tx_homicidio,17,87757,19.37
+231340,Tianguá,2026,tx_transito,22,87757,25.07
+231340,Tianguá,2026,obitos_covid,0,,0
+231340,Tianguá,2026,internacoes,5083,,5083
+231340,Tianguá,2026,tx_internacao,5083,87757,57.92
+231340,Tianguá,2026,pct_icsap,573,4723,12.13
+231340,Tianguá,2026,pct_fora_serra,640,5083,12.59
+231340,Tianguá,2026,pct_obito_hospitalar,157,5083,3.09
+231340,Tianguá,2026,gasto_sih_per_capita,8680113.98,87757,98.91
+231340,Tianguá,2026,dengue_casos,1181,,1181
+231340,Tianguá,2026,dengue_incidencia,1181,87757,1345.76
+231340,Tianguá,2026,dengue_graves,3,,3
+231340,Tianguá,2026,dengue_obitos,2,,2
+231340,Tianguá,2026,chik_casos,3,,3
+231340,Tianguá,2026,chik_incidencia,3,87757,3.42
+231340,Tianguá,2026,zika_casos,0,,0
+231360,Ubajara,2019,populacao,34792,,34792
+231360,Ubajara,2019,nascidos_vivos,596,,596
+231360,Ubajara,2019,tmi,8,596,13.42
+231360,Ubajara,2019,tmn,5,596,8.39
+231360,Ubajara,2019,obitos_maternos,0,,0
+231360,Ubajara,2019,pct_cesarea,224,595,37.65
+231360,Ubajara,2019,pct_prenatal7,537,595,90.25
+231360,Ubajara,2019,pct_prenatal_1tri,486,588,82.65
+231360,Ubajara,2019,pct_baixo_peso,36,596,6.04
+231360,Ubajara,2019,pct_prematuro,62,589,10.53
+231360,Ubajara,2019,pct_mae_adolescente,102,596,17.11
+231360,Ubajara,2019,obitos,221,,221
+231360,Ubajara,2019,tx_mortalidade,221,34792,6.35
+231360,Ubajara,2019,obitos_dcnt_prematuros,36,,36
+231360,Ubajara,2019,tx_causas_externas,20,34792,57.48
+231360,Ubajara,2019,tx_homicidio,3,34792,8.62
+231360,Ubajara,2019,tx_transito,7,34792,20.12
+231360,Ubajara,2019,obitos_covid,0,,0
+231360,Ubajara,2019,internacoes,2032,,2032
+231360,Ubajara,2019,tx_internacao,2032,34792,58.4
+231360,Ubajara,2019,pct_icsap,279,1635,17.06
+231360,Ubajara,2019,pct_fora_serra,628,2032,30.91
+231360,Ubajara,2019,pct_obito_hospitalar,87,2032,4.28
+231360,Ubajara,2019,gasto_sih_per_capita,2255996.52,34792,64.84
+231360,Ubajara,2019,dengue_casos,2,,2
+231360,Ubajara,2019,dengue_incidencia,2,34792,5.75
+231360,Ubajara,2019,dengue_graves,0,,0
+231360,Ubajara,2019,dengue_obitos,0,,0
+231360,Ubajara,2019,chik_casos,1,,1
+231360,Ubajara,2019,chik_incidencia,1,34792,2.87
+231360,Ubajara,2019,zika_casos,0,,0
+231360,Ubajara,2020,populacao,35047,,35047
+231360,Ubajara,2020,nascidos_vivos,496,,496
+231360,Ubajara,2020,tmi,9,496,18.15
+231360,Ubajara,2020,tmn,7,496,14.11
+231360,Ubajara,2020,obitos_maternos,1,,1
+231360,Ubajara,2020,pct_cesarea,206,495,41.62
+231360,Ubajara,2020,pct_prenatal7,431,488,88.32
+231360,Ubajara,2020,pct_prenatal_1tri,395,487,81.11
+231360,Ubajara,2020,pct_baixo_peso,46,496,9.27
+231360,Ubajara,2020,pct_prematuro,79,492,16.06
+231360,Ubajara,2020,pct_mae_adolescente,66,496,13.31
+231360,Ubajara,2020,obitos,265,,265
+231360,Ubajara,2020,tx_mortalidade,265,35047,7.56
+231360,Ubajara,2020,obitos_dcnt_prematuros,40,,40
+231360,Ubajara,2020,tx_causas_externas,39,35047,111.28
+231360,Ubajara,2020,tx_homicidio,11,35047,31.39
+231360,Ubajara,2020,tx_transito,14,35047,39.95
+231360,Ubajara,2020,obitos_covid,31,,31
+231360,Ubajara,2020,internacoes,2107,,2107
+231360,Ubajara,2020,tx_internacao,2107,35047,60.12
+231360,Ubajara,2020,pct_icsap,304,1774,17.14
+231360,Ubajara,2020,pct_fora_serra,484,2107,22.97
+231360,Ubajara,2020,pct_obito_hospitalar,79,2107,3.75
+231360,Ubajara,2020,gasto_sih_per_capita,2206966.09,35047,62.97
+231360,Ubajara,2020,dengue_casos,0,,0
+231360,Ubajara,2020,dengue_incidencia,0,35047,0.0
+231360,Ubajara,2020,dengue_graves,0,,0
+231360,Ubajara,2020,dengue_obitos,0,,0
+231360,Ubajara,2020,chik_casos,1,,1
+231360,Ubajara,2020,chik_incidencia,1,35047,2.85
+231360,Ubajara,2020,zika_casos,0,,0
+231360,Ubajara,2021,populacao,35295,,35295
+231360,Ubajara,2021,nascidos_vivos,481,,481
+231360,Ubajara,2021,tmi,5,481,10.4
+231360,Ubajara,2021,tmi_3a,22,1573,13.99
+231360,Ubajara,2021,tmn,4,481,8.32
+231360,Ubajara,2021,tmn_3a,16,1573,10.17
+231360,Ubajara,2021,obitos_maternos,0,,0
+231360,Ubajara,2021,rmm_3a,1,1573,63.57
+231360,Ubajara,2021,pct_cesarea,206,478,43.1
+231360,Ubajara,2021,pct_prenatal7,422,464,90.95
+231360,Ubajara,2021,pct_prenatal_1tri,395,467,84.58
+231360,Ubajara,2021,pct_baixo_peso,50,481,10.4
+231360,Ubajara,2021,pct_prematuro,64,471,13.59
+231360,Ubajara,2021,pct_mae_adolescente,66,481,13.72
+231360,Ubajara,2021,obitos,277,,277
+231360,Ubajara,2021,tx_mortalidade,277,35295,7.85
+231360,Ubajara,2021,obitos_dcnt_prematuros,41,,41
+231360,Ubajara,2021,tx_causas_externas,36,35295,102.0
+231360,Ubajara,2021,tx_homicidio,21,35295,59.5
+231360,Ubajara,2021,tx_transito,8,35295,22.67
+231360,Ubajara,2021,obitos_covid,39,,39
+231360,Ubajara,2021,internacoes,2953,,2953
+231360,Ubajara,2021,tx_internacao,2953,35295,83.67
+231360,Ubajara,2021,pct_icsap,387,2643,14.64
+231360,Ubajara,2021,pct_fora_serra,686,2953,23.23
+231360,Ubajara,2021,pct_obito_hospitalar,111,2953,3.76
+231360,Ubajara,2021,gasto_sih_per_capita,3659434.41,35295,103.68
+231360,Ubajara,2021,dengue_casos,94,,94
+231360,Ubajara,2021,dengue_incidencia,94,35295,266.33
+231360,Ubajara,2021,dengue_graves,0,,0
+231360,Ubajara,2021,dengue_obitos,0,,0
+231360,Ubajara,2021,chik_casos,0,,0
+231360,Ubajara,2021,chik_incidencia,0,35295,0.0
+231360,Ubajara,2021,zika_casos,1,,1
+231360,Ubajara,2022,populacao,32767,,32767
+231360,Ubajara,2022,nascidos_vivos,458,,458
+231360,Ubajara,2022,tmi,4,458,8.73
+231360,Ubajara,2022,tmi_3a,18,1435,12.54
+231360,Ubajara,2022,tmn,1,458,2.18
+231360,Ubajara,2022,tmn_3a,12,1435,8.36
+231360,Ubajara,2022,obitos_maternos,0,,0
+231360,Ubajara,2022,rmm_3a,1,1435,69.69
+231360,Ubajara,2022,pct_cesarea,214,458,46.72
+231360,Ubajara,2022,pct_prenatal7,419,453,92.49
+231360,Ubajara,2022,pct_prenatal_1tri,383,454,84.36
+231360,Ubajara,2022,pct_baixo_peso,40,458,8.73
+231360,Ubajara,2022,pct_prematuro,51,453,11.26
+231360,Ubajara,2022,pct_mae_adolescente,63,458,13.76
+231360,Ubajara,2022,obitos,228,,228
+231360,Ubajara,2022,tx_mortalidade,228,32767,6.96
+231360,Ubajara,2022,obitos_dcnt_prematuros,34,,34
+231360,Ubajara,2022,tx_causas_externas,31,32767,94.61
+231360,Ubajara,2022,tx_homicidio,11,32767,33.57
+231360,Ubajara,2022,tx_transito,14,32767,42.73
+231360,Ubajara,2022,obitos_covid,7,,7
+231360,Ubajara,2022,internacoes,2909,,2909
+231360,Ubajara,2022,tx_internacao,2909,32767,88.78
+231360,Ubajara,2022,pct_icsap,400,2666,15.0
+231360,Ubajara,2022,pct_fora_serra,646,2909,22.21
+231360,Ubajara,2022,pct_obito_hospitalar,106,2909,3.64
+231360,Ubajara,2022,gasto_sih_per_capita,2874086.73,32767,87.71
+231360,Ubajara,2022,dengue_casos,48,,48
+231360,Ubajara,2022,dengue_incidencia,48,32767,146.49
+231360,Ubajara,2022,dengue_graves,1,,1
+231360,Ubajara,2022,dengue_obitos,0,,0
+231360,Ubajara,2022,chik_casos,5,,5
+231360,Ubajara,2022,chik_incidencia,5,32767,15.26
+231360,Ubajara,2022,zika_casos,0,,0
+231360,Ubajara,2023,populacao,33540,,33540
+231360,Ubajara,2023,nascidos_vivos,472,,472
+231360,Ubajara,2023,tmi,4,472,8.47
+231360,Ubajara,2023,tmi_3a,13,1411,9.21
+231360,Ubajara,2023,tmn,3,472,6.36
+231360,Ubajara,2023,tmn_3a,8,1411,5.67
+231360,Ubajara,2023,obitos_maternos,0,,0
+231360,Ubajara,2023,rmm_3a,0,1411,0.0
+231360,Ubajara,2023,pct_cesarea,235,472,49.79
+231360,Ubajara,2023,pct_prenatal7,343,366,93.72
+231360,Ubajara,2023,pct_prenatal_1tri,324,366,88.52
+231360,Ubajara,2023,pct_baixo_peso,46,472,9.75
+231360,Ubajara,2023,pct_prematuro,58,468,12.39
+231360,Ubajara,2023,pct_mae_adolescente,65,472,13.77
+231360,Ubajara,2023,obitos,228,,228
+231360,Ubajara,2023,tx_mortalidade,228,33540,6.8
+231360,Ubajara,2023,obitos_dcnt_prematuros,42,,42
+231360,Ubajara,2023,tx_causas_externas,28,33540,83.48
+231360,Ubajara,2023,tx_homicidio,11,33540,32.8
+231360,Ubajara,2023,tx_transito,11,33540,32.8
+231360,Ubajara,2023,obitos_covid,0,,0
+231360,Ubajara,2023,internacoes,2637,,2637
+231360,Ubajara,2023,tx_internacao,2637,33540,78.62
+231360,Ubajara,2023,pct_icsap,389,2378,16.36
+231360,Ubajara,2023,pct_fora_serra,618,2637,23.44
+231360,Ubajara,2023,pct_obito_hospitalar,68,2637,2.58
+231360,Ubajara,2023,gasto_sih_per_capita,2721465.34,33540,81.14
+231360,Ubajara,2023,dengue_casos,8,,8
+231360,Ubajara,2023,dengue_incidencia,8,33540,23.85
+231360,Ubajara,2023,dengue_graves,0,,0
+231360,Ubajara,2023,dengue_obitos,0,,0
+231360,Ubajara,2023,chik_casos,0,,0
+231360,Ubajara,2023,chik_incidencia,0,33540,0.0
+231360,Ubajara,2023,zika_casos,0,,0
+231360,Ubajara,2024,populacao,34312,,34312
+231360,Ubajara,2024,nascidos_vivos,469,,469
+231360,Ubajara,2024,tmi,9,469,19.19
+231360,Ubajara,2024,tmi_3a,17,1399,12.15
+231360,Ubajara,2024,tmn,7,469,14.93
+231360,Ubajara,2024,tmn_3a,11,1399,7.86
+231360,Ubajara,2024,obitos_maternos,0,,0
+231360,Ubajara,2024,rmm_3a,0,1399,0.0
+231360,Ubajara,2024,pct_cesarea,250,469,53.3
+231360,Ubajara,2024,pct_prenatal7,294,313,93.93
+231360,Ubajara,2024,pct_prenatal_1tri,296,312,94.87
+231360,Ubajara,2024,pct_baixo_peso,42,469,8.96
+231360,Ubajara,2024,pct_prematuro,67,469,14.29
+231360,Ubajara,2024,pct_mae_adolescente,51,469,10.87
+231360,Ubajara,2024,obitos,224,,224
+231360,Ubajara,2024,tx_mortalidade,224,34312,6.53
+231360,Ubajara,2024,obitos_dcnt_prematuros,32,,32
+231360,Ubajara,2024,tx_causas_externas,42,34312,122.41
+231360,Ubajara,2024,tx_homicidio,19,34312,55.37
+231360,Ubajara,2024,tx_transito,13,34312,37.89
+231360,Ubajara,2024,obitos_covid,0,,0
+231360,Ubajara,2024,internacoes,2258,,2258
+231360,Ubajara,2024,tx_internacao,2258,34312,65.81
+231360,Ubajara,2024,pct_icsap,286,2026,14.12
+231360,Ubajara,2024,pct_fora_serra,603,2258,26.71
+231360,Ubajara,2024,pct_obito_hospitalar,84,2258,3.72
+231360,Ubajara,2024,gasto_sih_per_capita,2599624.05,34312,75.76
+231360,Ubajara,2024,dengue_casos,53,,53
+231360,Ubajara,2024,dengue_incidencia,53,34312,154.46
+231360,Ubajara,2024,dengue_graves,5,,5
+231360,Ubajara,2024,dengue_obitos,0,,0
+231360,Ubajara,2024,chik_casos,1,,1
+231360,Ubajara,2024,chik_incidencia,1,34312,2.91
+231360,Ubajara,2024,zika_casos,0,,0
+231360,Ubajara,2025,populacao,34424,,34424
+231360,Ubajara,2025,nascidos_vivos,437,,437
+231360,Ubajara,2025,tmi,8,437,18.31
+231360,Ubajara,2025,tmi_3a,21,1378,15.24
+231360,Ubajara,2025,tmn,8,437,18.31
+231360,Ubajara,2025,tmn_3a,18,1378,13.06
+231360,Ubajara,2025,obitos_maternos,0,,0
+231360,Ubajara,2025,rmm_3a,0,1378,0.0
+231360,Ubajara,2025,pct_cesarea,235,437,53.78
+231360,Ubajara,2025,pct_prenatal7,422,436,96.79
+231360,Ubajara,2025,pct_prenatal_1tri,393,436,90.14
+231360,Ubajara,2025,pct_baixo_peso,41,437,9.38
+231360,Ubajara,2025,pct_prematuro,56,434,12.9
+231360,Ubajara,2025,pct_mae_adolescente,51,437,11.67
+231360,Ubajara,2025,obitos,225,,225
+231360,Ubajara,2025,tx_mortalidade,225,34424,6.54
+231360,Ubajara,2025,obitos_dcnt_prematuros,30,,30
+231360,Ubajara,2025,tx_causas_externas,38,34424,110.39
+231360,Ubajara,2025,tx_homicidio,7,34424,20.33
+231360,Ubajara,2025,tx_transito,20,34424,58.1
+231360,Ubajara,2025,obitos_covid,0,,0
+231360,Ubajara,2025,internacoes,3598,,3598
+231360,Ubajara,2025,tx_internacao,3598,34424,104.52
+231360,Ubajara,2025,pct_icsap,323,3388,9.53
+231360,Ubajara,2025,pct_fora_serra,582,3598,16.18
+231360,Ubajara,2025,pct_obito_hospitalar,117,3598,3.25
+231360,Ubajara,2025,gasto_sih_per_capita,4120964.49,34424,119.71
+231360,Ubajara,2025,dengue_casos,1,,1
+231360,Ubajara,2025,dengue_incidencia,1,34424,2.9
+231360,Ubajara,2025,dengue_graves,0,,0
+231360,Ubajara,2025,dengue_obitos,0,,0
+231360,Ubajara,2025,chik_casos,0,,0
+231360,Ubajara,2025,chik_incidencia,0,34424,0.0
+231360,Ubajara,2025,zika_casos,0,,0
+231360,Ubajara,2026,populacao,34531,,34531
+231360,Ubajara,2026,nascidos_vivos,293,,293
+231360,Ubajara,2026,tmi,5,293,17.06
+231360,Ubajara,2026,tmi_3a,22,1199,18.35
+231360,Ubajara,2026,tmn,4,293,13.65
+231360,Ubajara,2026,tmn_3a,19,1199,15.85
+231360,Ubajara,2026,obitos_maternos,0,,0
+231360,Ubajara,2026,rmm_3a,0,1199,0.0
+231360,Ubajara,2026,pct_cesarea,197,293,67.24
+231360,Ubajara,2026,pct_prenatal7,274,292,93.84
+231360,Ubajara,2026,pct_prenatal_1tri,269,292,92.12
+231360,Ubajara,2026,pct_baixo_peso,24,293,8.19
+231360,Ubajara,2026,pct_prematuro,47,290,16.21
+231360,Ubajara,2026,pct_mae_adolescente,42,293,14.33
+231360,Ubajara,2026,obitos,158,,158
+231360,Ubajara,2026,tx_mortalidade,158,34531,4.58
+231360,Ubajara,2026,obitos_dcnt_prematuros,22,,22
+231360,Ubajara,2026,tx_causas_externas,18,34531,52.13
+231360,Ubajara,2026,tx_homicidio,5,34531,14.48
+231360,Ubajara,2026,tx_transito,6,34531,17.38
+231360,Ubajara,2026,obitos_covid,0,,0
+231360,Ubajara,2026,internacoes,2715,,2715
+231360,Ubajara,2026,tx_internacao,2715,34531,78.63
+231360,Ubajara,2026,pct_icsap,197,2596,7.59
+231360,Ubajara,2026,pct_fora_serra,389,2715,14.33
+231360,Ubajara,2026,pct_obito_hospitalar,79,2715,2.91
+231360,Ubajara,2026,gasto_sih_per_capita,2985733.53,34531,86.47
+231360,Ubajara,2026,dengue_casos,46,,46
+231360,Ubajara,2026,dengue_incidencia,46,34531,133.21
+231360,Ubajara,2026,dengue_graves,0,,0
+231360,Ubajara,2026,dengue_obitos,0,,0
+231360,Ubajara,2026,chik_casos,1,,1
+231360,Ubajara,2026,chik_incidencia,1,34531,2.9
+231360,Ubajara,2026,zika_casos,0,,0
+231410,Viçosa do Ceará,2019,populacao,60889,,60889
+231410,Viçosa do Ceará,2019,nascidos_vivos,986,,986
+231410,Viçosa do Ceará,2019,tmi,7,986,7.1
+231410,Viçosa do Ceará,2019,tmn,3,986,3.04
+231410,Viçosa do Ceará,2019,obitos_maternos,1,,1
+231410,Viçosa do Ceará,2019,pct_cesarea,500,986,50.71
+231410,Viçosa do Ceará,2019,pct_prenatal7,849,983,86.37
+231410,Viçosa do Ceará,2019,pct_prenatal_1tri,798,979,81.51
+231410,Viçosa do Ceará,2019,pct_baixo_peso,90,986,9.13
+231410,Viçosa do Ceará,2019,pct_prematuro,107,978,10.94
+231410,Viçosa do Ceará,2019,pct_mae_adolescente,167,986,16.94
+231410,Viçosa do Ceará,2019,obitos,342,,342
+231410,Viçosa do Ceará,2019,tx_mortalidade,342,60889,5.62
+231410,Viçosa do Ceará,2019,obitos_dcnt_prematuros,56,,56
+231410,Viçosa do Ceará,2019,tx_causas_externas,51,60889,83.76
+231410,Viçosa do Ceará,2019,tx_homicidio,5,60889,8.21
+231410,Viçosa do Ceará,2019,tx_transito,25,60889,41.06
+231410,Viçosa do Ceará,2019,obitos_covid,0,,0
+231410,Viçosa do Ceará,2019,internacoes,3555,,3555
+231410,Viçosa do Ceará,2019,tx_internacao,3555,60889,58.38
+231410,Viçosa do Ceará,2019,pct_icsap,611,2729,22.39
+231410,Viçosa do Ceará,2019,pct_fora_serra,905,3555,25.46
+231410,Viçosa do Ceará,2019,pct_obito_hospitalar,100,3555,2.81
+231410,Viçosa do Ceará,2019,gasto_sih_per_capita,3489142.14,60889,57.3
+231410,Viçosa do Ceará,2019,dengue_casos,8,,8
+231410,Viçosa do Ceará,2019,dengue_incidencia,8,60889,13.14
+231410,Viçosa do Ceará,2019,dengue_graves,0,,0
+231410,Viçosa do Ceará,2019,dengue_obitos,0,,0
+231410,Viçosa do Ceará,2019,chik_casos,3,,3
+231410,Viçosa do Ceará,2019,chik_incidencia,3,60889,4.93
+231410,Viçosa do Ceará,2019,zika_casos,0,,0
+231410,Viçosa do Ceará,2020,populacao,61410,,61410
+231410,Viçosa do Ceará,2020,nascidos_vivos,983,,983
+231410,Viçosa do Ceará,2020,tmi,8,983,8.14
+231410,Viçosa do Ceará,2020,tmn,8,983,8.14
+231410,Viçosa do Ceará,2020,obitos_maternos,2,,2
+231410,Viçosa do Ceará,2020,pct_cesarea,498,983,50.66
+231410,Viçosa do Ceará,2020,pct_prenatal7,843,980,86.02
+231410,Viçosa do Ceará,2020,pct_prenatal_1tri,806,974,82.75
+231410,Viçosa do Ceará,2020,pct_baixo_peso,83,983,8.44
+231410,Viçosa do Ceará,2020,pct_prematuro,135,982,13.75
+231410,Viçosa do Ceará,2020,pct_mae_adolescente,160,983,16.28
+231410,Viçosa do Ceará,2020,obitos,460,,460
+231410,Viçosa do Ceará,2020,tx_mortalidade,460,61410,7.49
+231410,Viçosa do Ceará,2020,obitos_dcnt_prematuros,53,,53
+231410,Viçosa do Ceará,2020,tx_causas_externas,59,61410,96.08
+231410,Viçosa do Ceará,2020,tx_homicidio,7,61410,11.4
+231410,Viçosa do Ceará,2020,tx_transito,28,61410,45.6
+231410,Viçosa do Ceará,2020,obitos_covid,67,,67
+231410,Viçosa do Ceará,2020,internacoes,3361,,3361
+231410,Viçosa do Ceará,2020,tx_internacao,3361,61410,54.73
+231410,Viçosa do Ceará,2020,pct_icsap,417,2499,16.69
+231410,Viçosa do Ceará,2020,pct_fora_serra,761,3361,22.64
+231410,Viçosa do Ceará,2020,pct_obito_hospitalar,135,3361,4.02
+231410,Viçosa do Ceará,2020,gasto_sih_per_capita,3866589.45,61410,62.96
+231410,Viçosa do Ceará,2020,dengue_casos,58,,58
+231410,Viçosa do Ceará,2020,dengue_incidencia,58,61410,94.45
+231410,Viçosa do Ceará,2020,dengue_graves,0,,0
+231410,Viçosa do Ceará,2020,dengue_obitos,0,,0
+231410,Viçosa do Ceará,2020,chik_casos,2,,2
+231410,Viçosa do Ceará,2020,chik_incidencia,2,61410,3.26
+231410,Viçosa do Ceará,2020,zika_casos,0,,0
+231410,Viçosa do Ceará,2021,populacao,61916,,61916
+231410,Viçosa do Ceará,2021,nascidos_vivos,991,,991
+231410,Viçosa do Ceará,2021,tmi,12,991,12.11
+231410,Viçosa do Ceará,2021,tmi_3a,27,2960,9.12
+231410,Viçosa do Ceará,2021,tmn,8,991,8.07
+231410,Viçosa do Ceará,2021,tmn_3a,19,2960,6.42
+231410,Viçosa do Ceará,2021,obitos_maternos,0,,0
+231410,Viçosa do Ceará,2021,rmm_3a,3,2960,101.35
+231410,Viçosa do Ceará,2021,pct_cesarea,514,991,51.87
+231410,Viçosa do Ceará,2021,pct_prenatal7,887,979,90.6
+231410,Viçosa do Ceará,2021,pct_prenatal_1tri,825,978,84.36
+231410,Viçosa do Ceará,2021,pct_baixo_peso,79,991,7.97
+231410,Viçosa do Ceará,2021,pct_prematuro,119,991,12.01
+231410,Viçosa do Ceará,2021,pct_mae_adolescente,167,991,16.85
+231410,Viçosa do Ceará,2021,obitos,443,,443
+231410,Viçosa do Ceará,2021,tx_mortalidade,443,61916,7.15
+231410,Viçosa do Ceará,2021,obitos_dcnt_prematuros,52,,52
+231410,Viçosa do Ceará,2021,tx_causas_externas,43,61916,69.45
+231410,Viçosa do Ceará,2021,tx_homicidio,13,61916,21.0
+231410,Viçosa do Ceará,2021,tx_transito,18,61916,29.07
+231410,Viçosa do Ceará,2021,obitos_covid,103,,103
+231410,Viçosa do Ceará,2021,internacoes,3950,,3950
+231410,Viçosa do Ceará,2021,tx_internacao,3950,61916,63.8
+231410,Viçosa do Ceará,2021,pct_icsap,428,3078,13.91
+231410,Viçosa do Ceará,2021,pct_fora_serra,927,3950,23.47
+231410,Viçosa do Ceará,2021,pct_obito_hospitalar,186,3950,4.71
+231410,Viçosa do Ceará,2021,gasto_sih_per_capita,5206892.98,61916,84.1
+231410,Viçosa do Ceará,2021,dengue_casos,779,,779
+231410,Viçosa do Ceará,2021,dengue_incidencia,779,61916,1258.16
+231410,Viçosa do Ceará,2021,dengue_graves,2,,2
+231410,Viçosa do Ceará,2021,dengue_obitos,2,,2
+231410,Viçosa do Ceará,2021,chik_casos,1,,1
+231410,Viçosa do Ceará,2021,chik_incidencia,1,61916,1.62
+231410,Viçosa do Ceará,2021,zika_casos,25,,25
+231410,Viçosa do Ceará,2022,populacao,59712,,59712
+231410,Viçosa do Ceará,2022,nascidos_vivos,868,,868
+231410,Viçosa do Ceará,2022,tmi,8,868,9.22
+231410,Viçosa do Ceará,2022,tmi_3a,28,2842,9.85
+231410,Viçosa do Ceará,2022,tmn,6,868,6.91
+231410,Viçosa do Ceará,2022,tmn_3a,22,2842,7.74
+231410,Viçosa do Ceará,2022,obitos_maternos,0,,0
+231410,Viçosa do Ceará,2022,rmm_3a,2,2842,70.37
+231410,Viçosa do Ceará,2022,pct_cesarea,496,868,57.14
+231410,Viçosa do Ceará,2022,pct_prenatal7,774,866,89.38
+231410,Viçosa do Ceará,2022,pct_prenatal_1tri,739,861,85.83
+231410,Viçosa do Ceará,2022,pct_baixo_peso,74,868,8.53
+231410,Viçosa do Ceará,2022,pct_prematuro,106,867,12.23
+231410,Viçosa do Ceará,2022,pct_mae_adolescente,118,868,13.59
+231410,Viçosa do Ceará,2022,obitos,383,,383
+231410,Viçosa do Ceará,2022,tx_mortalidade,383,59712,6.41
+231410,Viçosa do Ceará,2022,obitos_dcnt_prematuros,60,,60
+231410,Viçosa do Ceará,2022,tx_causas_externas,58,59712,97.13
+231410,Viçosa do Ceará,2022,tx_homicidio,14,59712,23.45
+231410,Viçosa do Ceará,2022,tx_transito,17,59712,28.47
+231410,Viçosa do Ceará,2022,obitos_covid,6,,6
+231410,Viçosa do Ceará,2022,internacoes,3396,,3396
+231410,Viçosa do Ceará,2022,tx_internacao,3396,59712,56.87
+231410,Viçosa do Ceará,2022,pct_icsap,321,2678,11.99
+231410,Viçosa do Ceará,2022,pct_fora_serra,796,3396,23.44
+231410,Viçosa do Ceará,2022,pct_obito_hospitalar,96,3396,2.83
+231410,Viçosa do Ceará,2022,gasto_sih_per_capita,3479738.59,59712,58.28
+231410,Viçosa do Ceará,2022,dengue_casos,56,,56
+231410,Viçosa do Ceará,2022,dengue_incidencia,56,59712,93.78
+231410,Viçosa do Ceará,2022,dengue_graves,0,,0
+231410,Viçosa do Ceará,2022,dengue_obitos,0,,0
+231410,Viçosa do Ceará,2022,chik_casos,15,,15
+231410,Viçosa do Ceará,2022,chik_incidencia,15,59712,25.12
+231410,Viçosa do Ceará,2022,zika_casos,0,,0
+231410,Viçosa do Ceará,2023,populacao,61160,,61160
+231410,Viçosa do Ceará,2023,nascidos_vivos,843,,843
+231410,Viçosa do Ceará,2023,tmi,15,843,17.79
+231410,Viçosa do Ceará,2023,tmi_3a,35,2702,12.95
+231410,Viçosa do Ceará,2023,tmn,11,843,13.05
+231410,Viçosa do Ceará,2023,tmn_3a,25,2702,9.25
+231410,Viçosa do Ceará,2023,obitos_maternos,0,,0
+231410,Viçosa do Ceará,2023,rmm_3a,0,2702,0.0
+231410,Viçosa do Ceará,2023,pct_cesarea,532,843,63.11
+231410,Viçosa do Ceará,2023,pct_prenatal7,764,842,90.74
+231410,Viçosa do Ceará,2023,pct_prenatal_1tri,742,838,88.54
+231410,Viçosa do Ceará,2023,pct_baixo_peso,65,843,7.71
+231410,Viçosa do Ceará,2023,pct_prematuro,108,840,12.86
+231410,Viçosa do Ceará,2023,pct_mae_adolescente,135,843,16.01
+231410,Viçosa do Ceará,2023,obitos,406,,406
+231410,Viçosa do Ceará,2023,tx_mortalidade,406,61160,6.64
+231410,Viçosa do Ceará,2023,obitos_dcnt_prematuros,68,,68
+231410,Viçosa do Ceará,2023,tx_causas_externas,57,61160,93.2
+231410,Viçosa do Ceará,2023,tx_homicidio,15,61160,24.53
+231410,Viçosa do Ceará,2023,tx_transito,29,61160,47.42
+231410,Viçosa do Ceará,2023,obitos_covid,4,,4
+231410,Viçosa do Ceará,2023,internacoes,3813,,3813
+231410,Viçosa do Ceará,2023,tx_internacao,3813,61160,62.34
+231410,Viçosa do Ceará,2023,pct_icsap,397,3092,12.84
+231410,Viçosa do Ceará,2023,pct_fora_serra,812,3813,21.3
+231410,Viçosa do Ceará,2023,pct_obito_hospitalar,143,3813,3.75
+231410,Viçosa do Ceará,2023,gasto_sih_per_capita,4421207.75,61160,72.29
+231410,Viçosa do Ceará,2023,dengue_casos,47,,47
+231410,Viçosa do Ceará,2023,dengue_incidencia,47,61160,76.85
+231410,Viçosa do Ceará,2023,dengue_graves,0,,0
+231410,Viçosa do Ceará,2023,dengue_obitos,0,,0
+231410,Viçosa do Ceará,2023,chik_casos,9,,9
+231410,Viçosa do Ceará,2023,chik_incidencia,9,61160,14.72
+231410,Viçosa do Ceará,2023,zika_casos,0,,0
+231410,Viçosa do Ceará,2024,populacao,62609,,62609
+231410,Viçosa do Ceará,2024,nascidos_vivos,846,,846
+231410,Viçosa do Ceará,2024,tmi,13,846,15.37
+231410,Viçosa do Ceará,2024,tmi_3a,36,2557,14.08
+231410,Viçosa do Ceará,2024,tmn,8,846,9.46
+231410,Viçosa do Ceará,2024,tmn_3a,25,2557,9.78
+231410,Viçosa do Ceará,2024,obitos_maternos,0,,0
+231410,Viçosa do Ceará,2024,rmm_3a,0,2557,0.0
+231410,Viçosa do Ceará,2024,pct_cesarea,589,846,69.62
+231410,Viçosa do Ceará,2024,pct_prenatal7,786,845,93.02
+231410,Viçosa do Ceará,2024,pct_prenatal_1tri,753,840,89.64
+231410,Viçosa do Ceará,2024,pct_baixo_peso,62,846,7.33
+231410,Viçosa do Ceará,2024,pct_prematuro,106,843,12.57
+231410,Viçosa do Ceará,2024,pct_mae_adolescente,113,846,13.36
+231410,Viçosa do Ceará,2024,obitos,391,,391
+231410,Viçosa do Ceará,2024,tx_mortalidade,391,62609,6.25
+231410,Viçosa do Ceará,2024,obitos_dcnt_prematuros,54,,54
+231410,Viçosa do Ceará,2024,tx_causas_externas,58,62609,92.64
+231410,Viçosa do Ceará,2024,tx_homicidio,20,62609,31.94
+231410,Viçosa do Ceará,2024,tx_transito,23,62609,36.74
+231410,Viçosa do Ceará,2024,obitos_covid,0,,0
+231410,Viçosa do Ceará,2024,internacoes,3880,,3880
+231410,Viçosa do Ceará,2024,tx_internacao,3880,62609,61.97
+231410,Viçosa do Ceará,2024,pct_icsap,436,3139,13.89
+231410,Viçosa do Ceará,2024,pct_fora_serra,807,3880,20.8
+231410,Viçosa do Ceará,2024,pct_obito_hospitalar,113,3880,2.91
+231410,Viçosa do Ceará,2024,gasto_sih_per_capita,4714424.34,62609,75.3
+231410,Viçosa do Ceará,2024,dengue_casos,107,,107
+231410,Viçosa do Ceará,2024,dengue_incidencia,107,62609,170.9
+231410,Viçosa do Ceará,2024,dengue_graves,1,,1
+231410,Viçosa do Ceará,2024,dengue_obitos,1,,1
+231410,Viçosa do Ceará,2024,chik_casos,40,,40
+231410,Viçosa do Ceará,2024,chik_incidencia,40,62609,63.89
+231410,Viçosa do Ceará,2024,zika_casos,0,,0
+231410,Viçosa do Ceará,2025,populacao,62972,,62972
+231410,Viçosa do Ceará,2025,nascidos_vivos,883,,883
+231410,Viçosa do Ceará,2025,tmi,7,883,7.93
+231410,Viçosa do Ceará,2025,tmi_3a,35,2572,13.61
+231410,Viçosa do Ceará,2025,tmn,3,883,3.4
+231410,Viçosa do Ceará,2025,tmn_3a,22,2572,8.55
+231410,Viçosa do Ceará,2025,obitos_maternos,1,,1
+231410,Viçosa do Ceará,2025,rmm_3a,1,2572,38.88
+231410,Viçosa do Ceará,2025,pct_cesarea,608,882,68.93
+231410,Viçosa do Ceará,2025,pct_prenatal7,818,878,93.17
+231410,Viçosa do Ceará,2025,pct_prenatal_1tri,773,868,89.06
+231410,Viçosa do Ceará,2025,pct_baixo_peso,53,883,6.0
+231410,Viçosa do Ceará,2025,pct_prematuro,102,876,11.64
+231410,Viçosa do Ceará,2025,pct_mae_adolescente,105,883,11.89
+231410,Viçosa do Ceará,2025,obitos,408,,408
+231410,Viçosa do Ceará,2025,tx_mortalidade,408,62972,6.48
+231410,Viçosa do Ceará,2025,obitos_dcnt_prematuros,82,,82
+231410,Viçosa do Ceará,2025,tx_causas_externas,59,62972,93.69
+231410,Viçosa do Ceará,2025,tx_homicidio,13,62972,20.64
+231410,Viçosa do Ceará,2025,tx_transito,31,62972,49.23
+231410,Viçosa do Ceará,2025,obitos_covid,0,,0
+231410,Viçosa do Ceará,2025,internacoes,3964,,3964
+231410,Viçosa do Ceará,2025,tx_internacao,3964,62972,62.95
+231410,Viçosa do Ceará,2025,pct_icsap,427,3209,13.31
+231410,Viçosa do Ceará,2025,pct_fora_serra,691,3964,17.43
+231410,Viçosa do Ceará,2025,pct_obito_hospitalar,109,3964,2.75
+231410,Viçosa do Ceará,2025,gasto_sih_per_capita,5020712.67,62972,79.73
+231410,Viçosa do Ceará,2025,dengue_casos,42,,42
+231410,Viçosa do Ceará,2025,dengue_incidencia,42,62972,66.7
+231410,Viçosa do Ceará,2025,dengue_graves,0,,0
+231410,Viçosa do Ceará,2025,dengue_obitos,0,,0
+231410,Viçosa do Ceará,2025,chik_casos,6,,6
+231410,Viçosa do Ceará,2025,chik_incidencia,6,62972,9.53
+231410,Viçosa do Ceará,2025,zika_casos,0,,0
+231410,Viçosa do Ceará,2026,populacao,63316,,63316
+231410,Viçosa do Ceará,2026,nascidos_vivos,514,,514
+231410,Viçosa do Ceará,2026,tmi,8,514,15.56
+231410,Viçosa do Ceará,2026,tmi_3a,28,2243,12.48
+231410,Viçosa do Ceará,2026,tmn,7,514,13.62
+231410,Viçosa do Ceará,2026,tmn_3a,18,2243,8.02
+231410,Viçosa do Ceará,2026,obitos_maternos,0,,0
+231410,Viçosa do Ceará,2026,rmm_3a,1,2243,44.58
+231410,Viçosa do Ceará,2026,pct_cesarea,375,512,73.24
+231410,Viçosa do Ceará,2026,pct_prenatal7,475,508,93.5
+231410,Viçosa do Ceará,2026,pct_prenatal_1tri,451,505,89.31
+231410,Viçosa do Ceará,2026,pct_baixo_peso,42,514,8.17
+231410,Viçosa do Ceará,2026,pct_prematuro,74,503,14.71
+231410,Viçosa do Ceará,2026,pct_mae_adolescente,51,514,9.92
+231410,Viçosa do Ceará,2026,obitos,251,,251
+231410,Viçosa do Ceará,2026,tx_mortalidade,251,63316,3.96
+231410,Viçosa do Ceará,2026,obitos_dcnt_prematuros,46,,46
+231410,Viçosa do Ceará,2026,tx_causas_externas,38,63316,60.02
+231410,Viçosa do Ceará,2026,tx_homicidio,3,63316,4.74
+231410,Viçosa do Ceará,2026,tx_transito,18,63316,28.43
+231410,Viçosa do Ceará,2026,obitos_covid,0,,0
+231410,Viçosa do Ceará,2026,internacoes,2337,,2337
+231410,Viçosa do Ceará,2026,tx_internacao,2337,63316,36.91
+231410,Viçosa do Ceará,2026,pct_icsap,221,1927,11.47
+231410,Viçosa do Ceará,2026,pct_fora_serra,372,2337,15.92
+231410,Viçosa do Ceará,2026,pct_obito_hospitalar,81,2337,3.47
+231410,Viçosa do Ceará,2026,gasto_sih_per_capita,3955847.12,63316,62.48
+231410,Viçosa do Ceará,2026,dengue_casos,179,,179
+231410,Viçosa do Ceará,2026,dengue_incidencia,179,63316,282.71
+231410,Viçosa do Ceará,2026,dengue_graves,0,,0
+231410,Viçosa do Ceará,2026,dengue_obitos,0,,0
+231410,Viçosa do Ceará,2026,chik_casos,5,,5
+231410,Viçosa do Ceará,2026,chik_incidencia,5,63316,7.9
+231410,Viçosa do Ceará,2026,zika_casos,0,,0
+CE,Ceará,2019,populacao,9132078,,9132078
+CE,Ceará,2019,nascidos_vivos,129185,,129185
+CE,Ceará,2019,tmi,1580,129185,12.23
+CE,Ceará,2019,tmn,1077,129185,8.34
+CE,Ceará,2019,obitos_maternos,75,,75
+CE,Ceará,2019,pct_cesarea,75485,128963,58.53
+CE,Ceará,2019,pct_prenatal7,95184,123401,77.13
+CE,Ceará,2019,pct_prenatal_1tri,97672,115939,84.24
+CE,Ceará,2019,pct_baixo_peso,10834,129182,8.39
+CE,Ceará,2019,pct_prematuro,14973,125110,11.97
+CE,Ceará,2019,pct_mae_adolescente,19743,129183,15.28
+CE,Ceará,2019,obitos,56580,,56580
+CE,Ceará,2019,tx_mortalidade,56580,9132078,6.2
+CE,Ceará,2019,obitos_dcnt_prematuros,11188,,11188
+CE,Ceará,2019,tx_causas_externas,6826,9132078,74.75
+CE,Ceará,2019,tx_homicidio,2399,9132078,26.27
+CE,Ceará,2019,tx_transito,1385,9132078,15.17
+CE,Ceará,2019,obitos_covid,0,,0
+CE,Ceará,2019,internacoes,528512,,528512
+CE,Ceará,2019,tx_internacao,528512,9132078,57.87
+CE,Ceará,2019,pct_icsap,96721,461345,20.97
+CE,Ceará,2019,pct_obito_hospitalar,19995,528512,3.78
+CE,Ceará,2019,gasto_sih_per_capita,595991319.31,9132078,65.26
+CE,Ceará,2019,dengue_casos,16249,,16249
+CE,Ceará,2019,dengue_incidencia,16249,9132078,177.93
+CE,Ceará,2019,dengue_graves,171,,171
+CE,Ceará,2019,dengue_obitos,13,,13
+CE,Ceará,2019,chik_casos,1284,,1284
+CE,Ceará,2019,chik_incidencia,1284,9132078,14.06
+CE,Ceará,2019,zika_casos,121,,121
+CE,Ceará,2020,populacao,9187103,,9187103
+CE,Ceará,2020,nascidos_vivos,121904,,121904
+CE,Ceará,2020,tmi,1417,121904,11.62
+CE,Ceará,2020,tmn,1015,121904,8.33
+CE,Ceará,2020,obitos_maternos,119,,119
+CE,Ceará,2020,pct_cesarea,73303,121777,60.19
+CE,Ceará,2020,pct_prenatal7,87787,115770,75.83
+CE,Ceará,2020,pct_prenatal_1tri,92584,111132,83.31
+CE,Ceará,2020,pct_baixo_peso,10048,121898,8.24
+CE,Ceará,2020,pct_prematuro,14934,118808,12.57
+CE,Ceará,2020,pct_mae_adolescente,17525,121901,14.38
+CE,Ceará,2020,obitos,69512,,69512
+CE,Ceará,2020,tx_mortalidade,69512,9187103,7.57
+CE,Ceará,2020,obitos_dcnt_prematuros,10972,,10972
+CE,Ceará,2020,tx_causas_externas,8671,9187103,94.38
+CE,Ceará,2020,tx_homicidio,3984,9187103,43.37
+CE,Ceará,2020,tx_transito,1327,9187103,14.44
+CE,Ceará,2020,obitos_covid,11848,,11848
+CE,Ceará,2020,internacoes,454911,,454911
+CE,Ceará,2020,tx_internacao,454911,9187103,49.52
+CE,Ceará,2020,pct_icsap,64821,395629,16.38
+CE,Ceará,2020,pct_obito_hospitalar,23345,454911,5.13
+CE,Ceará,2020,gasto_sih_per_capita,626253828.42,9187103,68.17
+CE,Ceará,2020,dengue_casos,24047,,24047
+CE,Ceará,2020,dengue_incidencia,24047,9187103,261.75
+CE,Ceará,2020,dengue_graves,290,,290
+CE,Ceará,2020,dengue_obitos,11,,11
+CE,Ceará,2020,chik_casos,1083,,1083
+CE,Ceará,2020,chik_incidencia,1083,9187103,11.79
+CE,Ceará,2020,zika_casos,251,,251
+CE,Ceará,2021,populacao,9240580,,9240580
+CE,Ceará,2021,nascidos_vivos,120266,,120266
+CE,Ceará,2021,tmi,1287,120266,10.7
+CE,Ceará,2021,tmi_3a,4284,371355,11.54
+CE,Ceará,2021,tmn,877,120266,7.29
+CE,Ceará,2021,tmn_3a,2969,371355,8.0
+CE,Ceará,2021,obitos_maternos,129,,129
+CE,Ceará,2021,rmm_3a,323,371355,86.98
+CE,Ceará,2021,pct_cesarea,73883,120135,61.5
+CE,Ceará,2021,pct_prenatal7,88562,111886,79.15
+CE,Ceará,2021,pct_prenatal_1tri,91005,106956,85.09
+CE,Ceará,2021,pct_baixo_peso,10406,120265,8.65
+CE,Ceará,2021,pct_prematuro,14917,116894,12.76
+CE,Ceará,2021,pct_mae_adolescente,16588,120266,13.79
+CE,Ceará,2021,obitos,73683,,73683
+CE,Ceará,2021,tx_mortalidade,73683,9240580,7.97
+CE,Ceará,2021,obitos_dcnt_prematuros,11199,,11199
+CE,Ceará,2021,tx_causas_externas,8157,9240580,88.27
+CE,Ceará,2021,tx_homicidio,3465,9240580,37.5
+CE,Ceará,2021,tx_transito,1314,9240580,14.22
+CE,Ceará,2021,obitos_covid,15754,,15754
+CE,Ceará,2021,internacoes,509794,,509794
+CE,Ceará,2021,tx_internacao,509794,9240580,55.17
+CE,Ceará,2021,pct_icsap,65628,453797,14.46
+CE,Ceará,2021,pct_obito_hospitalar,28727,509794,5.64
+CE,Ceará,2021,gasto_sih_per_capita,866942123.02,9240580,93.82
+CE,Ceará,2021,dengue_casos,35454,,35454
+CE,Ceará,2021,dengue_incidencia,35454,9240580,383.68
+CE,Ceará,2021,dengue_graves,634,,634
+CE,Ceará,2021,dengue_obitos,21,,21
+CE,Ceará,2021,chik_casos,1482,,1482
+CE,Ceará,2021,chik_incidencia,1482,9240580,16.04
+CE,Ceará,2021,zika_casos,382,,382
+CE,Ceará,2022,populacao,8794957,,8794957
+CE,Ceará,2022,nascidos_vivos,112308,,112308
+CE,Ceará,2022,tmi,1317,112308,11.73
+CE,Ceará,2022,tmi_3a,4021,354478,11.34
+CE,Ceará,2022,tmn,902,112308,8.03
+CE,Ceará,2022,tmn_3a,2794,354478,7.88
+CE,Ceará,2022,obitos_maternos,63,,63
+CE,Ceará,2022,rmm_3a,311,354478,87.73
+CE,Ceará,2022,pct_cesarea,71863,112255,64.02
+CE,Ceará,2022,pct_prenatal7,86456,106796,80.95
+CE,Ceará,2022,pct_prenatal_1tri,87784,103018,85.21
+CE,Ceará,2022,pct_baixo_peso,10388,112306,9.25
+CE,Ceará,2022,pct_prematuro,14961,110117,13.59
+CE,Ceará,2022,pct_mae_adolescente,14190,112308,12.63
+CE,Ceará,2022,obitos,64664,,64664
+CE,Ceará,2022,tx_mortalidade,64664,8794957,7.35
+CE,Ceará,2022,obitos_dcnt_prematuros,11590,,11590
+CE,Ceará,2022,tx_causas_externas,8181,8794957,93.02
+CE,Ceará,2022,tx_homicidio,3020,8794957,34.34
+CE,Ceará,2022,tx_transito,1424,8794957,16.19
+CE,Ceará,2022,obitos_covid,2343,,2343
+CE,Ceará,2022,internacoes,527595,,527595
+CE,Ceará,2022,tx_internacao,527595,8794957,59.99
+CE,Ceará,2022,pct_icsap,89059,480040,18.55
+CE,Ceará,2022,pct_obito_hospitalar,23777,527595,4.51
+CE,Ceará,2022,gasto_sih_per_capita,715246739.73,8794957,81.32
+CE,Ceará,2022,dengue_casos,42779,,42779
+CE,Ceará,2022,dengue_incidencia,42779,8794957,486.4
+CE,Ceará,2022,dengue_graves,275,,275
+CE,Ceará,2022,dengue_obitos,21,,21
+CE,Ceará,2022,chik_casos,52032,,52032
+CE,Ceará,2022,chik_incidencia,52032,8794957,591.61
+CE,Ceará,2022,zika_casos,418,,418
+CE,Ceará,2023,populacao,9014306,,9014306
+CE,Ceará,2023,nascidos_vivos,111091,,111091
+CE,Ceará,2023,tmi,1302,111091,11.72
+CE,Ceará,2023,tmi_3a,3906,343665,11.37
+CE,Ceará,2023,tmn,930,111091,8.37
+CE,Ceará,2023,tmn_3a,2709,343665,7.88
+CE,Ceará,2023,obitos_maternos,51,,51
+CE,Ceará,2023,rmm_3a,243,343665,70.71
+CE,Ceará,2023,pct_cesarea,74207,111032,66.83
+CE,Ceará,2023,pct_prenatal7,88659,106299,83.41
+CE,Ceará,2023,pct_prenatal_1tri,88235,101954,86.54
+CE,Ceará,2023,pct_baixo_peso,10090,111089,9.08
+CE,Ceará,2023,pct_prematuro,15003,108746,13.8
+CE,Ceará,2023,pct_mae_adolescente,13384,111091,12.05
+CE,Ceará,2023,obitos,60635,,60635
+CE,Ceará,2023,tx_mortalidade,60635,9014306,6.73
+CE,Ceará,2023,obitos_dcnt_prematuros,11716,,11716
+CE,Ceará,2023,tx_causas_externas,8306,9014306,92.14
+CE,Ceará,2023,tx_homicidio,2980,9014306,33.06
+CE,Ceará,2023,tx_transito,1394,9014306,15.46
+CE,Ceará,2023,obitos_covid,239,,239
+CE,Ceará,2023,internacoes,556339,,556339
+CE,Ceará,2023,tx_internacao,556339,9014306,61.72
+CE,Ceará,2023,pct_icsap,92385,513320,18.0
+CE,Ceará,2023,pct_obito_hospitalar,22480,556339,4.04
+CE,Ceará,2023,gasto_sih_per_capita,753800624.09,9014306,83.62
+CE,Ceará,2023,dengue_casos,14464,,14464
+CE,Ceará,2023,dengue_incidencia,14464,9014306,160.46
+CE,Ceará,2023,dengue_graves,228,,228
+CE,Ceará,2023,dengue_obitos,8,,8
+CE,Ceará,2023,chik_casos,2129,,2129
+CE,Ceará,2023,chik_incidencia,2129,9014306,23.62
+CE,Ceará,2023,zika_casos,70,,70
+CE,Ceará,2024,populacao,9233656,,9233656
+CE,Ceará,2024,nascidos_vivos,105453,,105453
+CE,Ceará,2024,tmi,1180,105453,11.19
+CE,Ceará,2024,tmi_3a,3799,328852,11.55
+CE,Ceará,2024,tmn,798,105453,7.57
+CE,Ceará,2024,tmn_3a,2630,328852,8.0
+CE,Ceará,2024,obitos_maternos,54,,54
+CE,Ceará,2024,rmm_3a,168,328852,51.09
+CE,Ceará,2024,pct_cesarea,71947,105407,68.26
+CE,Ceará,2024,pct_prenatal7,85886,101688,84.46
+CE,Ceará,2024,pct_prenatal_1tri,84765,97462,86.97
+CE,Ceará,2024,pct_baixo_peso,9522,105452,9.03
+CE,Ceará,2024,pct_prematuro,14733,103331,14.26
+CE,Ceará,2024,pct_mae_adolescente,12235,105453,11.6
+CE,Ceará,2024,obitos,63496,,63496
+CE,Ceará,2024,tx_mortalidade,63496,9233656,6.88
+CE,Ceará,2024,obitos_dcnt_prematuros,11934,,11934
+CE,Ceará,2024,tx_causas_externas,9041,9233656,97.91
+CE,Ceará,2024,tx_homicidio,3152,9233656,34.14
+CE,Ceará,2024,tx_transito,1504,9233656,16.29
+CE,Ceará,2024,obitos_covid,145,,145
+CE,Ceará,2024,internacoes,584811,,584811
+CE,Ceará,2024,tx_internacao,584811,9233656,63.33
+CE,Ceará,2024,pct_icsap,97507,543361,17.95
+CE,Ceará,2024,pct_obito_hospitalar,23732,584811,4.06
+CE,Ceará,2024,gasto_sih_per_capita,834864410.56,9233656,90.42
+CE,Ceará,2024,dengue_casos,12555,,12555
+CE,Ceará,2024,dengue_incidencia,12555,9233656,135.97
+CE,Ceará,2024,dengue_graves,205,,205
+CE,Ceará,2024,dengue_obitos,9,,9
+CE,Ceará,2024,chik_casos,1081,,1081
+CE,Ceará,2024,chik_incidencia,1081,9233656,11.71
+CE,Ceará,2024,zika_casos,93,,93
+CE,Ceará,2025,populacao,9268836,,9268836
+CE,Ceará,2025,nascidos_vivos,107390,,107390
+CE,Ceará,2025,tmi,1203,107390,11.2
+CE,Ceará,2025,tmi_3a,3685,323934,11.38
+CE,Ceará,2025,tmn,810,107390,7.54
+CE,Ceará,2025,tmn_3a,2538,323934,7.83
+CE,Ceará,2025,obitos_maternos,43,,43
+CE,Ceará,2025,rmm_3a,148,323934,45.69
+CE,Ceará,2025,pct_cesarea,74123,107253,69.11
+CE,Ceará,2025,pct_prenatal7,88963,104495,85.14
+CE,Ceará,2025,pct_prenatal_1tri,87922,100865,87.17
+CE,Ceará,2025,pct_baixo_peso,9447,107387,8.8
+CE,Ceará,2025,pct_prematuro,14543,103906,14.0
+CE,Ceará,2025,pct_mae_adolescente,12228,107389,11.39
+CE,Ceará,2025,obitos,63900,,63900
+CE,Ceará,2025,tx_mortalidade,63900,9268836,6.89
+CE,Ceará,2025,obitos_dcnt_prematuros,11996,,11996
+CE,Ceará,2025,tx_causas_externas,9142,9268836,98.63
+CE,Ceará,2025,tx_homicidio,2588,9268836,27.92
+CE,Ceará,2025,tx_transito,1527,9268836,16.47
+CE,Ceará,2025,obitos_covid,51,,51
+CE,Ceará,2025,internacoes,596100,,596100
+CE,Ceará,2025,tx_internacao,596100,9268836,64.31
+CE,Ceará,2025,pct_icsap,101015,554344,18.22
+CE,Ceará,2025,pct_obito_hospitalar,23549,596100,3.95
+CE,Ceará,2025,gasto_sih_per_capita,921487159.29,9268836,99.42
+CE,Ceará,2025,dengue_casos,5454,,5454
+CE,Ceará,2025,dengue_incidencia,5454,9268836,58.84
+CE,Ceará,2025,dengue_graves,100,,100
+CE,Ceará,2025,dengue_obitos,3,,3
+CE,Ceará,2025,chik_casos,845,,845
+CE,Ceará,2025,chik_incidencia,845,9268836,9.12
+CE,Ceará,2025,zika_casos,72,,72
+CE,Ceará,2026,populacao,9302211,,9302211
+CE,Ceará,2026,nascidos_vivos,61451,,61451
+CE,Ceará,2026,tmi,645,61451,10.5
+CE,Ceará,2026,tmi_3a,3028,274294,11.04
+CE,Ceará,2026,tmn,448,61451,7.29
+CE,Ceará,2026,tmn_3a,2056,274294,7.5
+CE,Ceará,2026,obitos_maternos,29,,29
+CE,Ceará,2026,rmm_3a,126,274294,45.94
+CE,Ceará,2026,pct_cesarea,43454,61353,70.83
+CE,Ceará,2026,pct_prenatal7,51349,60225,85.26
+CE,Ceará,2026,pct_prenatal_1tri,51493,58718,87.7
+CE,Ceará,2026,pct_baixo_peso,5785,61448,9.41
+CE,Ceará,2026,pct_prematuro,9096,59957,15.17
+CE,Ceará,2026,pct_mae_adolescente,6711,61451,10.92
+CE,Ceará,2026,obitos,39412,,39412
+CE,Ceará,2026,tx_mortalidade,39412,9302211,4.24
+CE,Ceará,2026,obitos_dcnt_prematuros,7486,,7486
+CE,Ceará,2026,tx_causas_externas,4608,9302211,49.54
+CE,Ceará,2026,tx_homicidio,940,9302211,10.11
+CE,Ceará,2026,tx_transito,859,9302211,9.23
+CE,Ceará,2026,obitos_covid,23,,23
+CE,Ceará,2026,internacoes,411231,,411231
+CE,Ceará,2026,tx_internacao,411231,9302211,44.21
+CE,Ceará,2026,pct_icsap,64810,384498,16.86
+CE,Ceará,2026,pct_obito_hospitalar,16195,411231,3.94
+CE,Ceará,2026,gasto_sih_per_capita,696815790.63,9302211,74.91
+CE,Ceará,2026,dengue_casos,18531,,18531
+CE,Ceará,2026,dengue_incidencia,18531,9302211,199.21
+CE,Ceará,2026,dengue_graves,612,,612
+CE,Ceará,2026,dengue_obitos,27,,27
+CE,Ceará,2026,chik_casos,582,,582
+CE,Ceará,2026,chik_incidencia,582,9302211,6.26
+CE,Ceará,2026,zika_casos,264,,264
+IBIAPABA,Serra da Ibiapaba,2019,populacao,320838,,320838
+IBIAPABA,Serra da Ibiapaba,2019,nascidos_vivos,5481,,5481
+IBIAPABA,Serra da Ibiapaba,2019,tmi,69,5481,12.59
+IBIAPABA,Serra da Ibiapaba,2019,tmn,45,5481,8.21
+IBIAPABA,Serra da Ibiapaba,2019,obitos_maternos,4,,4
+IBIAPABA,Serra da Ibiapaba,2019,pct_cesarea,2429,5474,44.37
+IBIAPABA,Serra da Ibiapaba,2019,pct_prenatal7,4590,5438,84.41
+IBIAPABA,Serra da Ibiapaba,2019,pct_prenatal_1tri,4454,5379,82.8
+IBIAPABA,Serra da Ibiapaba,2019,pct_baixo_peso,431,5481,7.86
+IBIAPABA,Serra da Ibiapaba,2019,pct_prematuro,594,5336,11.13
+IBIAPABA,Serra da Ibiapaba,2019,pct_mae_adolescente,900,5481,16.42
+IBIAPABA,Serra da Ibiapaba,2019,obitos,2047,,2047
+IBIAPABA,Serra da Ibiapaba,2019,tx_mortalidade,2047,320838,6.38
+IBIAPABA,Serra da Ibiapaba,2019,obitos_dcnt_prematuros,389,,389
+IBIAPABA,Serra da Ibiapaba,2019,tx_causas_externas,244,320838,76.05
+IBIAPABA,Serra da Ibiapaba,2019,tx_homicidio,42,320838,13.09
+IBIAPABA,Serra da Ibiapaba,2019,tx_transito,120,320838,37.4
+IBIAPABA,Serra da Ibiapaba,2019,obitos_covid,0,,0
+IBIAPABA,Serra da Ibiapaba,2019,internacoes,19983,,19983
+IBIAPABA,Serra da Ibiapaba,2019,tx_internacao,19983,320838,62.28
+IBIAPABA,Serra da Ibiapaba,2019,pct_icsap,3508,16124,21.76
+IBIAPABA,Serra da Ibiapaba,2019,pct_fora_serra,5228,19983,26.16
+IBIAPABA,Serra da Ibiapaba,2019,pct_obito_hospitalar,699,19983,3.5
+IBIAPABA,Serra da Ibiapaba,2019,gasto_sih_per_capita,19733577.68,320838,61.51
+IBIAPABA,Serra da Ibiapaba,2019,dengue_casos,20,,20
+IBIAPABA,Serra da Ibiapaba,2019,dengue_incidencia,20,320838,6.23
+IBIAPABA,Serra da Ibiapaba,2019,dengue_graves,0,,0
+IBIAPABA,Serra da Ibiapaba,2019,dengue_obitos,0,,0
+IBIAPABA,Serra da Ibiapaba,2019,chik_casos,5,,5
+IBIAPABA,Serra da Ibiapaba,2019,chik_incidencia,5,320838,1.56
+IBIAPABA,Serra da Ibiapaba,2019,zika_casos,0,,0
+IBIAPABA,Serra da Ibiapaba,2020,populacao,322809,,322809
+IBIAPABA,Serra da Ibiapaba,2020,nascidos_vivos,5191,,5191
+IBIAPABA,Serra da Ibiapaba,2020,tmi,48,5191,9.25
+IBIAPABA,Serra da Ibiapaba,2020,tmn,38,5191,7.32
+IBIAPABA,Serra da Ibiapaba,2020,obitos_maternos,6,,6
+IBIAPABA,Serra da Ibiapaba,2020,pct_cesarea,2227,5185,42.95
+IBIAPABA,Serra da Ibiapaba,2020,pct_prenatal7,4143,5148,80.48
+IBIAPABA,Serra da Ibiapaba,2020,pct_prenatal_1tri,4102,5098,80.46
+IBIAPABA,Serra da Ibiapaba,2020,pct_baixo_peso,421,5191,8.11
+IBIAPABA,Serra da Ibiapaba,2020,pct_prematuro,645,5131,12.57
+IBIAPABA,Serra da Ibiapaba,2020,pct_mae_adolescente,833,5191,16.05
+IBIAPABA,Serra da Ibiapaba,2020,obitos,2430,,2430
+IBIAPABA,Serra da Ibiapaba,2020,tx_mortalidade,2430,322809,7.53
+IBIAPABA,Serra da Ibiapaba,2020,obitos_dcnt_prematuros,383,,383
+IBIAPABA,Serra da Ibiapaba,2020,tx_causas_externas,306,322809,94.79
+IBIAPABA,Serra da Ibiapaba,2020,tx_homicidio,61,322809,18.9
+IBIAPABA,Serra da Ibiapaba,2020,tx_transito,126,322809,39.03
+IBIAPABA,Serra da Ibiapaba,2020,obitos_covid,285,,285
+IBIAPABA,Serra da Ibiapaba,2020,internacoes,16912,,16912
+IBIAPABA,Serra da Ibiapaba,2020,tx_internacao,16912,322809,52.39
+IBIAPABA,Serra da Ibiapaba,2020,pct_icsap,2376,13467,17.64
+IBIAPABA,Serra da Ibiapaba,2020,pct_fora_serra,4585,16912,27.11
+IBIAPABA,Serra da Ibiapaba,2020,pct_obito_hospitalar,802,16912,4.74
+IBIAPABA,Serra da Ibiapaba,2020,gasto_sih_per_capita,21163171.47,322809,65.56
+IBIAPABA,Serra da Ibiapaba,2020,dengue_casos,72,,72
+IBIAPABA,Serra da Ibiapaba,2020,dengue_incidencia,72,322809,22.3
+IBIAPABA,Serra da Ibiapaba,2020,dengue_graves,0,,0
+IBIAPABA,Serra da Ibiapaba,2020,dengue_obitos,0,,0
+IBIAPABA,Serra da Ibiapaba,2020,chik_casos,4,,4
+IBIAPABA,Serra da Ibiapaba,2020,chik_incidencia,4,322809,1.24
+IBIAPABA,Serra da Ibiapaba,2020,zika_casos,0,,0
+IBIAPABA,Serra da Ibiapaba,2021,populacao,324726,,324726
+IBIAPABA,Serra da Ibiapaba,2021,nascidos_vivos,5294,,5294
+IBIAPABA,Serra da Ibiapaba,2021,tmi,57,5294,10.77
+IBIAPABA,Serra da Ibiapaba,2021,tmi_3a,174,15966,10.9
+IBIAPABA,Serra da Ibiapaba,2021,tmn,39,5294,7.37
+IBIAPABA,Serra da Ibiapaba,2021,tmn_3a,122,15966,7.64
+IBIAPABA,Serra da Ibiapaba,2021,obitos_maternos,5,,5
+IBIAPABA,Serra da Ibiapaba,2021,rmm_3a,15,15966,93.95
+IBIAPABA,Serra da Ibiapaba,2021,pct_cesarea,2392,5289,45.23
+IBIAPABA,Serra da Ibiapaba,2021,pct_prenatal7,4404,5201,84.68
+IBIAPABA,Serra da Ibiapaba,2021,pct_prenatal_1tri,4329,5160,83.9
+IBIAPABA,Serra da Ibiapaba,2021,pct_baixo_peso,477,5294,9.01
+IBIAPABA,Serra da Ibiapaba,2021,pct_prematuro,674,5134,13.13
+IBIAPABA,Serra da Ibiapaba,2021,pct_mae_adolescente,819,5294,15.47
+IBIAPABA,Serra da Ibiapaba,2021,obitos,2634,,2634
+IBIAPABA,Serra da Ibiapaba,2021,tx_mortalidade,2634,324726,8.11
+IBIAPABA,Serra da Ibiapaba,2021,obitos_dcnt_prematuros,401,,401
+IBIAPABA,Serra da Ibiapaba,2021,tx_causas_externas,288,324726,88.69
+IBIAPABA,Serra da Ibiapaba,2021,tx_homicidio,111,324726,34.18
+IBIAPABA,Serra da Ibiapaba,2021,tx_transito,91,324726,28.02
+IBIAPABA,Serra da Ibiapaba,2021,obitos_covid,471,,471
+IBIAPABA,Serra da Ibiapaba,2021,internacoes,20292,,20292
+IBIAPABA,Serra da Ibiapaba,2021,tx_internacao,20292,324726,62.49
+IBIAPABA,Serra da Ibiapaba,2021,pct_icsap,2542,16927,15.02
+IBIAPABA,Serra da Ibiapaba,2021,pct_fora_serra,5606,20292,27.63
+IBIAPABA,Serra da Ibiapaba,2021,pct_obito_hospitalar,1045,20292,5.15
+IBIAPABA,Serra da Ibiapaba,2021,gasto_sih_per_capita,31571648.66,324726,97.23
+IBIAPABA,Serra da Ibiapaba,2021,dengue_casos,1318,,1318
+IBIAPABA,Serra da Ibiapaba,2021,dengue_incidencia,1318,324726,405.88
+IBIAPABA,Serra da Ibiapaba,2021,dengue_graves,2,,2
+IBIAPABA,Serra da Ibiapaba,2021,dengue_obitos,2,,2
+IBIAPABA,Serra da Ibiapaba,2021,chik_casos,2,,2
+IBIAPABA,Serra da Ibiapaba,2021,chik_incidencia,2,324726,0.62
+IBIAPABA,Serra da Ibiapaba,2021,zika_casos,26,,26
+IBIAPABA,Serra da Ibiapaba,2022,populacao,322334,,322334
+IBIAPABA,Serra da Ibiapaba,2022,nascidos_vivos,4872,,4872
+IBIAPABA,Serra da Ibiapaba,2022,tmi,51,4872,10.47
+IBIAPABA,Serra da Ibiapaba,2022,tmi_3a,156,15357,10.16
+IBIAPABA,Serra da Ibiapaba,2022,tmn,31,4872,6.36
+IBIAPABA,Serra da Ibiapaba,2022,tmn_3a,108,15357,7.03
+IBIAPABA,Serra da Ibiapaba,2022,obitos_maternos,4,,4
+IBIAPABA,Serra da Ibiapaba,2022,rmm_3a,15,15357,97.68
+IBIAPABA,Serra da Ibiapaba,2022,pct_cesarea,2417,4872,49.61
+IBIAPABA,Serra da Ibiapaba,2022,pct_prenatal7,4182,4849,86.24
+IBIAPABA,Serra da Ibiapaba,2022,pct_prenatal_1tri,4052,4822,84.03
+IBIAPABA,Serra da Ibiapaba,2022,pct_baixo_peso,462,4872,9.48
+IBIAPABA,Serra da Ibiapaba,2022,pct_prematuro,653,4838,13.5
+IBIAPABA,Serra da Ibiapaba,2022,pct_mae_adolescente,632,4872,12.97
+IBIAPABA,Serra da Ibiapaba,2022,obitos,2362,,2362
+IBIAPABA,Serra da Ibiapaba,2022,tx_mortalidade,2362,322334,7.33
+IBIAPABA,Serra da Ibiapaba,2022,obitos_dcnt_prematuros,396,,396
+IBIAPABA,Serra da Ibiapaba,2022,tx_causas_externas,332,322334,103.0
+IBIAPABA,Serra da Ibiapaba,2022,tx_homicidio,121,322334,37.54
+IBIAPABA,Serra da Ibiapaba,2022,tx_transito,115,322334,35.68
+IBIAPABA,Serra da Ibiapaba,2022,obitos_covid,51,,51
+IBIAPABA,Serra da Ibiapaba,2022,internacoes,21694,,21694
+IBIAPABA,Serra da Ibiapaba,2022,tx_internacao,21694,322334,67.3
+IBIAPABA,Serra da Ibiapaba,2022,pct_icsap,2960,18681,15.84
+IBIAPABA,Serra da Ibiapaba,2022,pct_fora_serra,4875,21694,22.47
+IBIAPABA,Serra da Ibiapaba,2022,pct_obito_hospitalar,835,21694,3.85
+IBIAPABA,Serra da Ibiapaba,2022,gasto_sih_per_capita,22786832.16,322334,70.69
+IBIAPABA,Serra da Ibiapaba,2022,dengue_casos,887,,887
+IBIAPABA,Serra da Ibiapaba,2022,dengue_incidencia,887,322334,275.18
+IBIAPABA,Serra da Ibiapaba,2022,dengue_graves,4,,4
+IBIAPABA,Serra da Ibiapaba,2022,dengue_obitos,0,,0
+IBIAPABA,Serra da Ibiapaba,2022,chik_casos,47,,47
+IBIAPABA,Serra da Ibiapaba,2022,chik_incidencia,47,322334,14.58
+IBIAPABA,Serra da Ibiapaba,2022,zika_casos,0,,0
+IBIAPABA,Serra da Ibiapaba,2023,populacao,329965,,329965
+IBIAPABA,Serra da Ibiapaba,2023,nascidos_vivos,4745,,4745
+IBIAPABA,Serra da Ibiapaba,2023,tmi,53,4745,11.17
+IBIAPABA,Serra da Ibiapaba,2023,tmi_3a,161,14911,10.8
+IBIAPABA,Serra da Ibiapaba,2023,tmn,34,4745,7.17
+IBIAPABA,Serra da Ibiapaba,2023,tmn_3a,104,14911,6.97
+IBIAPABA,Serra da Ibiapaba,2023,obitos_maternos,2,,2
+IBIAPABA,Serra da Ibiapaba,2023,rmm_3a,11,14911,73.77
+IBIAPABA,Serra da Ibiapaba,2023,pct_cesarea,2567,4745,54.1
+IBIAPABA,Serra da Ibiapaba,2023,pct_prenatal7,4065,4620,87.99
+IBIAPABA,Serra da Ibiapaba,2023,pct_prenatal_1tri,3983,4590,86.78
+IBIAPABA,Serra da Ibiapaba,2023,pct_baixo_peso,410,4745,8.64
+IBIAPABA,Serra da Ibiapaba,2023,pct_prematuro,610,4695,12.99
+IBIAPABA,Serra da Ibiapaba,2023,pct_mae_adolescente,660,4745,13.91
+IBIAPABA,Serra da Ibiapaba,2023,obitos,2324,,2324
+IBIAPABA,Serra da Ibiapaba,2023,tx_mortalidade,2324,329965,7.04
+IBIAPABA,Serra da Ibiapaba,2023,obitos_dcnt_prematuros,408,,408
+IBIAPABA,Serra da Ibiapaba,2023,tx_causas_externas,301,329965,91.22
+IBIAPABA,Serra da Ibiapaba,2023,tx_homicidio,85,329965,25.76
+IBIAPABA,Serra da Ibiapaba,2023,tx_transito,128,329965,38.79
+IBIAPABA,Serra da Ibiapaba,2023,obitos_covid,10,,10
+IBIAPABA,Serra da Ibiapaba,2023,internacoes,22114,,22114
+IBIAPABA,Serra da Ibiapaba,2023,tx_internacao,22114,329965,67.02
+IBIAPABA,Serra da Ibiapaba,2023,pct_icsap,2656,19360,13.72
+IBIAPABA,Serra da Ibiapaba,2023,pct_fora_serra,4574,22114,20.68
+IBIAPABA,Serra da Ibiapaba,2023,pct_obito_hospitalar,789,22114,3.57
+IBIAPABA,Serra da Ibiapaba,2023,gasto_sih_per_capita,24553913.03,329965,74.41
+IBIAPABA,Serra da Ibiapaba,2023,dengue_casos,884,,884
+IBIAPABA,Serra da Ibiapaba,2023,dengue_incidencia,884,329965,267.91
+IBIAPABA,Serra da Ibiapaba,2023,dengue_graves,1,,1
+IBIAPABA,Serra da Ibiapaba,2023,dengue_obitos,0,,0
+IBIAPABA,Serra da Ibiapaba,2023,chik_casos,12,,12
+IBIAPABA,Serra da Ibiapaba,2023,chik_incidencia,12,329965,3.64
+IBIAPABA,Serra da Ibiapaba,2023,zika_casos,0,,0
+IBIAPABA,Serra da Ibiapaba,2024,populacao,337595,,337595
+IBIAPABA,Serra da Ibiapaba,2024,nascidos_vivos,4618,,4618
+IBIAPABA,Serra da Ibiapaba,2024,tmi,66,4618,14.29
+IBIAPABA,Serra da Ibiapaba,2024,tmi_3a,170,14235,11.94
+IBIAPABA,Serra da Ibiapaba,2024,tmn,44,4618,9.53
+IBIAPABA,Serra da Ibiapaba,2024,tmn_3a,109,14235,7.66
+IBIAPABA,Serra da Ibiapaba,2024,obitos_maternos,1,,1
+IBIAPABA,Serra da Ibiapaba,2024,rmm_3a,7,14235,49.17
+IBIAPABA,Serra da Ibiapaba,2024,pct_cesarea,2699,4618,58.45
+IBIAPABA,Serra da Ibiapaba,2024,pct_prenatal7,4017,4439,90.49
+IBIAPABA,Serra da Ibiapaba,2024,pct_prenatal_1tri,3922,4417,88.79
+IBIAPABA,Serra da Ibiapaba,2024,pct_baixo_peso,377,4617,8.17
+IBIAPABA,Serra da Ibiapaba,2024,pct_prematuro,641,4580,14.0
+IBIAPABA,Serra da Ibiapaba,2024,pct_mae_adolescente,577,4618,12.49
+IBIAPABA,Serra da Ibiapaba,2024,obitos,2310,,2310
+IBIAPABA,Serra da Ibiapaba,2024,tx_mortalidade,2310,337595,6.84
+IBIAPABA,Serra da Ibiapaba,2024,obitos_dcnt_prematuros,376,,376
+IBIAPABA,Serra da Ibiapaba,2024,tx_causas_externas,333,337595,98.64
+IBIAPABA,Serra da Ibiapaba,2024,tx_homicidio,113,337595,33.47
+IBIAPABA,Serra da Ibiapaba,2024,tx_transito,123,337595,36.43
+IBIAPABA,Serra da Ibiapaba,2024,obitos_covid,3,,3
+IBIAPABA,Serra da Ibiapaba,2024,internacoes,22825,,22825
+IBIAPABA,Serra da Ibiapaba,2024,tx_internacao,22825,337595,67.61
+IBIAPABA,Serra da Ibiapaba,2024,pct_icsap,2818,20209,13.94
+IBIAPABA,Serra da Ibiapaba,2024,pct_fora_serra,4733,22825,20.74
+IBIAPABA,Serra da Ibiapaba,2024,pct_obito_hospitalar,827,22825,3.62
+IBIAPABA,Serra da Ibiapaba,2024,gasto_sih_per_capita,27998740.75,337595,82.94
+IBIAPABA,Serra da Ibiapaba,2024,dengue_casos,381,,381
+IBIAPABA,Serra da Ibiapaba,2024,dengue_incidencia,381,337595,112.86
+IBIAPABA,Serra da Ibiapaba,2024,dengue_graves,6,,6
+IBIAPABA,Serra da Ibiapaba,2024,dengue_obitos,1,,1
+IBIAPABA,Serra da Ibiapaba,2024,chik_casos,59,,59
+IBIAPABA,Serra da Ibiapaba,2024,chik_incidencia,59,337595,17.48
+IBIAPABA,Serra da Ibiapaba,2024,zika_casos,0,,0
+IBIAPABA,Serra da Ibiapaba,2025,populacao,339541,,339541
+IBIAPABA,Serra da Ibiapaba,2025,nascidos_vivos,4812,,4812
+IBIAPABA,Serra da Ibiapaba,2025,tmi,57,4812,11.85
+IBIAPABA,Serra da Ibiapaba,2025,tmi_3a,176,14175,12.42
+IBIAPABA,Serra da Ibiapaba,2025,tmn,39,4812,8.1
+IBIAPABA,Serra da Ibiapaba,2025,tmn_3a,117,14175,8.25
+IBIAPABA,Serra da Ibiapaba,2025,obitos_maternos,2,,2
+IBIAPABA,Serra da Ibiapaba,2025,rmm_3a,5,14175,35.27
+IBIAPABA,Serra da Ibiapaba,2025,pct_cesarea,2760,4809,57.39
+IBIAPABA,Serra da Ibiapaba,2025,pct_prenatal7,4362,4793,91.01
+IBIAPABA,Serra da Ibiapaba,2025,pct_prenatal_1tri,4232,4749,89.11
+IBIAPABA,Serra da Ibiapaba,2025,pct_baixo_peso,383,4812,7.96
+IBIAPABA,Serra da Ibiapaba,2025,pct_prematuro,587,4769,12.31
+IBIAPABA,Serra da Ibiapaba,2025,pct_mae_adolescente,613,4812,12.74
+IBIAPABA,Serra da Ibiapaba,2025,obitos,2377,,2377
+IBIAPABA,Serra da Ibiapaba,2025,tx_mortalidade,2377,339541,7.0
+IBIAPABA,Serra da Ibiapaba,2025,obitos_dcnt_prematuros,402,,402
+IBIAPABA,Serra da Ibiapaba,2025,tx_causas_externas,326,339541,96.01
+IBIAPABA,Serra da Ibiapaba,2025,tx_homicidio,93,339541,27.39
+IBIAPABA,Serra da Ibiapaba,2025,tx_transito,156,339541,45.94
+IBIAPABA,Serra da Ibiapaba,2025,obitos_covid,1,,1
+IBIAPABA,Serra da Ibiapaba,2025,internacoes,25832,,25832
+IBIAPABA,Serra da Ibiapaba,2025,tx_internacao,25832,339541,76.08
+IBIAPABA,Serra da Ibiapaba,2025,pct_icsap,3020,22974,13.15
+IBIAPABA,Serra da Ibiapaba,2025,pct_fora_serra,4308,25832,16.68
+IBIAPABA,Serra da Ibiapaba,2025,pct_obito_hospitalar,939,25832,3.64
+IBIAPABA,Serra da Ibiapaba,2025,gasto_sih_per_capita,32400298.59,339541,95.42
+IBIAPABA,Serra da Ibiapaba,2025,dengue_casos,244,,244
+IBIAPABA,Serra da Ibiapaba,2025,dengue_incidencia,244,339541,71.86
+IBIAPABA,Serra da Ibiapaba,2025,dengue_graves,1,,1
+IBIAPABA,Serra da Ibiapaba,2025,dengue_obitos,0,,0
+IBIAPABA,Serra da Ibiapaba,2025,chik_casos,8,,8
+IBIAPABA,Serra da Ibiapaba,2025,chik_incidencia,8,339541,2.36
+IBIAPABA,Serra da Ibiapaba,2025,zika_casos,0,,0
+IBIAPABA,Serra da Ibiapaba,2026,populacao,341387,,341387
+IBIAPABA,Serra da Ibiapaba,2026,nascidos_vivos,2811,,2811
+IBIAPABA,Serra da Ibiapaba,2026,tmi,30,2811,10.67
+IBIAPABA,Serra da Ibiapaba,2026,tmi_3a,153,12241,12.5
+IBIAPABA,Serra da Ibiapaba,2026,tmn,24,2811,8.54
+IBIAPABA,Serra da Ibiapaba,2026,tmn_3a,107,12241,8.74
+IBIAPABA,Serra da Ibiapaba,2026,obitos_maternos,0,,0
+IBIAPABA,Serra da Ibiapaba,2026,rmm_3a,3,12241,24.51
+IBIAPABA,Serra da Ibiapaba,2026,pct_cesarea,1781,2805,63.49
+IBIAPABA,Serra da Ibiapaba,2026,pct_prenatal7,2585,2800,92.32
+IBIAPABA,Serra da Ibiapaba,2026,pct_prenatal_1tri,2482,2782,89.22
+IBIAPABA,Serra da Ibiapaba,2026,pct_baixo_peso,240,2811,8.54
+IBIAPABA,Serra da Ibiapaba,2026,pct_prematuro,421,2759,15.26
+IBIAPABA,Serra da Ibiapaba,2026,pct_mae_adolescente,326,2811,11.6
+IBIAPABA,Serra da Ibiapaba,2026,obitos,1528,,1528
+IBIAPABA,Serra da Ibiapaba,2026,tx_mortalidade,1528,341387,4.48
+IBIAPABA,Serra da Ibiapaba,2026,obitos_dcnt_prematuros,266,,266
+IBIAPABA,Serra da Ibiapaba,2026,tx_causas_externas,210,341387,61.51
+IBIAPABA,Serra da Ibiapaba,2026,tx_homicidio,53,341387,15.52
+IBIAPABA,Serra da Ibiapaba,2026,tx_transito,81,341387,23.73
+IBIAPABA,Serra da Ibiapaba,2026,obitos_covid,0,,0
+IBIAPABA,Serra da Ibiapaba,2026,internacoes,18474,,18474
+IBIAPABA,Serra da Ibiapaba,2026,tx_internacao,18474,341387,54.11
+IBIAPABA,Serra da Ibiapaba,2026,pct_icsap,2017,16808,12.0
+IBIAPABA,Serra da Ibiapaba,2026,pct_fora_serra,2769,18474,14.99
+IBIAPABA,Serra da Ibiapaba,2026,pct_obito_hospitalar,648,18474,3.51
+IBIAPABA,Serra da Ibiapaba,2026,gasto_sih_per_capita,27391893.74,341387,80.24
+IBIAPABA,Serra da Ibiapaba,2026,dengue_casos,2120,,2120
+IBIAPABA,Serra da Ibiapaba,2026,dengue_incidencia,2120,341387,621.0
+IBIAPABA,Serra da Ibiapaba,2026,dengue_graves,6,,6
+IBIAPABA,Serra da Ibiapaba,2026,dengue_obitos,2,,2
+IBIAPABA,Serra da Ibiapaba,2026,chik_casos,40,,40
+IBIAPABA,Serra da Ibiapaba,2026,chik_incidencia,40,341387,11.72
+IBIAPABA,Serra da Ibiapaba,2026,zika_casos,0,,0

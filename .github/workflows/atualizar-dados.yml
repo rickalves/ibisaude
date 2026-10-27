@@ -1,0 +1,65 @@
+name: Atualizar dados
+
+# Todo dia 5, baixa os arquivos novos do DATASUS, recalcula os indicadores e faz commit dos JSON em
+# web/public/dados. A hospedagem (Vercel) publica o site de novo a cada commit.
+on:
+  schedule:
+    - cron: "0 9 5 * *" # dia 5, 06h em Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atualizar-dados
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - run: pip install -r requirements.txt
+
+      # Microdados das execuções anteriores: evita baixar de novo o que não mudou no FTP.
+      # O GitHub apaga caches sem uso há 7 dias; nesse caso a coleta baixa tudo outra vez (~1 h).
+      - uses: actions/cache@v4
+        with:
+          path: |
+            data/datasus
+            data/datasus_ce
+          key: datasus-${{ github.run_id }}
+          restore-keys: datasus-
+
+      - name: Coletar DATASUS
+        run: python coleta/datasus.py
+
+      - name: População (IBGE)
+        run: python coleta/populacao_ibge.py
+
+      - name: Calcular indicadores
+        run: python indicadores/construir.py
+
+      - name: Commit dos dados novos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add web/public/dados data/indicadores data/referencia
+          if git diff --cached --quiet; then
+            echo "Nenhum dado novo."
+          else
+            git commit -m "Atualiza dados do DATASUS ($(date -u +%Y-%m-%d))"
+            git push
+          fi

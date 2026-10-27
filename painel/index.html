@@ -1,0 +1,907 @@
+<style>
+  .ob { position: relative; font-family: var(--font-anthropic-sans); color: var(--color-fg); display: grid; gap: var(--cds-gap-lg); }
+  .ob-head { display: grid; gap: var(--cds-gap-sm); }
+  .ob-title { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
+  .ob-takeaway { margin: 0; max-width: 72ch; color: var(--color-fg-muted); font-size: var(--cds-font-size-body); line-height: 1.5; }
+  .ob-takeaway b, .ob b { font-weight: 600; color: var(--color-fg); font-variant-numeric: tabular-nums; }
+  .ob-bar { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); align-items: end; }
+  .ob-field { display: grid; gap: 2px; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); min-width: 0; }
+  .ob-field select { font: inherit; font-size: var(--cds-font-size-body); color: var(--color-fg); background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); max-width: 100%; }
+  .ob-tabs { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); border-bottom: 1px solid var(--color-border-line); }
+  .ob-tab { font: inherit; font-size: var(--cds-font-size-body); background: none; border: 0; border-bottom: 2px solid transparent; color: var(--color-fg-muted); padding: var(--cds-pad-sm) var(--cds-pad-md); cursor: pointer; margin-bottom: -1px; }
+  .ob-tab[aria-selected="true"] { color: var(--color-fg); border-bottom-color: currentColor; font-weight: var(--cds-font-weight-medium); }
+  .ob-tab:focus-visible, .ob select:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+  .ob-page { display: grid; gap: var(--cds-gap-lg); }
+  .ob-h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; text-wrap: balance; }
+  .ob-note { margin: 0; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.45; max-width: 80ch; }
+  .ob-grid { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); }
+  .ob-grid.ob-small { grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }
+  .ob-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: grid; gap: var(--cds-gap-sm); align-content: start; min-width: 0; }
+  .ob-kpis { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); }
+  .ob-kpi { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); display: grid; gap: var(--cds-gap-xs); align-content: start; min-width: 0; }
+  .ob-kpi-label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); line-height: 1.35; min-height: 2.7em; }
+  .ob-kpi-value { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; line-height: 1.1; }
+  .ob-kpi-unit { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .ob-kpi-foot { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs) var(--cds-gap-sm); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+  .ob-good { color: var(--color-ok); } .ob-bad { color: var(--color-bad); } .ob-neutral { color: var(--color-fg-muted); }
+  .ob-alerts { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); align-items: center; }
+  .ob-chip { display: inline-flex; gap: 6px; align-items: center; border: 1px solid var(--color-border-line); border-radius: 999px; padding: 2px 10px; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; background: var(--color-bg); }
+  .ob-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; flex: none; }
+  .ob-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs) var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .ob-legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .ob-swatch { width: 14px; height: 3px; border-radius: 2px; display: inline-block; }
+  .ob-chart { min-height: 120px; width: 100%; }
+  .ob-chart svg { display: block; overflow: visible; }
+  .ob-chart text { fill: var(--color-fg-muted); font-size: 11px; font-family: var(--font-anthropic-sans); }
+  .ob-chart .ob-strong { fill: var(--color-fg); }
+  .ob-tablewrap { overflow: auto; max-height: 34rem; }
+  .ob table { border-collapse: collapse; width: 100%; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+  .ob th { text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); position: sticky; top: 0; background: var(--color-panel); white-space: nowrap; }
+  .ob td { padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+  .ob td.num, .ob th.num { text-align: right; white-space: nowrap; }
+  .ob tr.ob-hl td { background: color-mix(in srgb, var(--color-fg) 6%, transparent); }
+  .ob-tip { position: absolute; z-index: 5; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); max-width: 18rem; line-height: 1.4; }
+  .ob-tip .t { color: var(--cds-text-secondary); }
+  .ob-fail { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 120px; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .ob-fail::before { content: ""; width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+  .ob-meth { display: grid; gap: var(--cds-gap-sm); max-width: 80ch; font-size: var(--cds-font-size-body); line-height: 1.55; }
+  .ob-meth p, .ob-meth ul { margin: 0; }
+  [data-dash-source-state=empty] { color: transparent; }
+  [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+</style>
+
+<div class="ob" id="observatorio">
+  <header class="ob-head">
+    <h1 class="ob-title">Observatório de Saúde da Serra da Ibiapaba</h1>
+    <p class="ob-takeaway" id="ob-takeaway">
+      <span class="dash-skeleton" id="ob-tk1">—</span>
+      <span id="ob-tk2"></span>
+    </p>
+    <div class="ob-bar">
+      <label class="ob-field">Município
+        <select id="ob-unidade" data-source="anual"></select>
+      </label>
+      <label class="ob-field">Ano de referência
+        <select id="ob-ano" data-source="anual"></select>
+      </label>
+      <label class="ob-field">Indicador para comparar
+        <select id="ob-indicador" data-source="indicadores"></select>
+      </label>
+    </div>
+    <nav class="ob-tabs" role="tablist" aria-label="Seções do observatório">
+      <button class="ob-tab" role="tab" data-tab="inicio" aria-selected="true">Início</button>
+      <button class="ob-tab" role="tab" data-tab="municipio" aria-selected="false">Ficha do município</button>
+      <button class="ob-tab" role="tab" data-tab="materno" aria-selected="false">Materno-infantil</button>
+      <button class="ob-tab" role="tab" data-tab="arboviroses" aria-selected="false">Arboviroses</button>
+      <button class="ob-tab" role="tab" data-tab="metodologia" aria-selected="false">Metodologia</button>
+    </nav>
+  </header>
+
+  <!-- ============ INÍCIO ============ -->
+  <section class="ob-page" id="inicio">
+    <div class="ob-kpis" id="ob-kpis"></div>
+    <div class="ob-card" id="ob-alertas-card">
+      <h2 class="ob-h2" id="ob-alertas-titulo">Municípios acima do limiar de epidemia de dengue</h2>
+      <p class="ob-note">Incidência de casos prováveis no ano corrente, ainda parcial. O Ministério da Saúde considera epidemia acima de 300 casos por 100 mil habitantes.</p>
+      <div class="ob-alerts" id="ob-alertas" data-source="arbo_municipios"></div>
+    </div>
+    <div class="ob-card" id="ob-comparacao-card">
+      <h2 class="ob-h2" id="ob-comparacao-titulo">—</h2>
+      <p class="ob-note" id="ob-comparacao-nota">—</p>
+      <div class="ob-chart dash-skeleton" id="ob-comparacao" data-source="anual"></div>
+    </div>
+  </section>
+
+  <!-- ============ FICHA DO MUNICÍPIO ============ -->
+  <section class="ob-page" id="municipio" hidden>
+    <div class="ob-grid">
+      <div class="ob-card" id="ob-tendencia-card">
+        <h2 class="ob-h2" id="ob-tendencia-titulo">—</h2>
+        <div class="ob-legend" id="ob-tendencia-legenda"></div>
+        <div class="ob-chart dash-skeleton" id="ob-tendencia" data-source="anual"></div>
+      </div>
+      <div class="ob-card" id="ob-destino-card">
+        <h2 class="ob-h2">Onde os moradores se internam</h2>
+        <p class="ob-note">Internações SUS de residentes, pelo município do hospital.</p>
+        <div class="ob-legend" id="ob-destino-legenda"></div>
+        <div class="ob-chart dash-skeleton" id="ob-destino" data-source="destino_internacao"></div>
+      </div>
+      <div class="ob-card" id="ob-causas-obito-card">
+        <h2 class="ob-h2" id="ob-causas-obito-titulo">Principais causas de óbito</h2>
+        <p class="ob-note">Grupos de causa básica (capítulos da CID-10).</p>
+        <div class="ob-chart dash-skeleton" id="ob-causas-obito" data-source="causas_obito"></div>
+      </div>
+      <div class="ob-card" id="ob-causas-int-card">
+        <h2 class="ob-h2" id="ob-causas-int-titulo">Principais causas de internação</h2>
+        <p class="ob-note">Grupos do diagnóstico principal (capítulos da CID-10).</p>
+        <div class="ob-chart dash-skeleton" id="ob-causas-int" data-source="causas_internacao"></div>
+      </div>
+    </div>
+    <div class="ob-card" id="ob-ficha-card">
+      <h2 class="ob-h2" id="ob-ficha-titulo">Todos os indicadores</h2>
+      <p class="ob-note">Variação em relação ao ano anterior: verde quando melhora, vermelho quando piora.</p>
+      <div class="ob-tablewrap">
+        <table id="ob-ficha" data-source="ficha" data-row-key="id">
+          <thead><tr>
+            <th data-field="eixo">Eixo</th>
+            <th data-field="nome">Indicador</th>
+            <th class="num" data-field="valor">Valor</th>
+            <th class="num" data-field="anterior">Ano anterior</th>
+            <th class="num" data-field="variacao">Variação</th>
+            <th class="num" data-field="ibiapaba">Serra</th>
+            <th class="num" data-field="ceara">Ceará</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MATERNO-INFANTIL ============ -->
+  <section class="ob-page" id="materno" hidden>
+    <p class="ob-note" id="ob-materno-nota">—</p>
+    <div class="ob-grid ob-small" id="ob-materno-graficos"></div>
+    <div class="ob-card" id="ob-materno-tabela-card">
+      <h2 class="ob-h2" id="ob-materno-tabela-titulo">Municípios lado a lado</h2>
+      <p class="ob-note">Mortalidade infantil em média de 3 anos, para não oscilar com poucos casos.</p>
+      <div class="ob-tablewrap">
+        <table id="ob-materno-tabela" data-source="materno_municipios" data-row-key="chave">
+          <thead><tr>
+            <th data-field="nome">Município</th>
+            <th class="num" data-field="nascidos_vivos">Nascidos vivos</th>
+            <th class="num" data-field="tmi_3a">Mort. infantil (3 anos)</th>
+            <th class="num" data-field="pct_prenatal7">7+ consultas</th>
+            <th class="num" data-field="pct_cesarea">Cesáreas</th>
+            <th class="num" data-field="pct_baixo_peso">Baixo peso</th>
+            <th class="num" data-field="pct_mae_adolescente">Mães adolescentes</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ARBOVIROSES ============ -->
+  <section class="ob-page" id="arboviroses" hidden>
+    <div class="ob-bar">
+      <label class="ob-field">Doença
+        <select id="ob-agravo">
+          <option value="dengue">Dengue</option>
+          <option value="chik">Chikungunya</option>
+        </select>
+      </label>
+    </div>
+    <div class="ob-card" id="ob-semanal-card">
+      <h2 class="ob-h2" id="ob-semanal-titulo">—</h2>
+      <p class="ob-note">Casos prováveis por semana de início dos sintomas. A faixa mostra o máximo dos anos anteriores e a linha tracejada, a mediana. Barras em vermelho passaram do máximo histórico.</p>
+      <div class="ob-legend" id="ob-semanal-legenda"></div>
+      <div class="ob-chart dash-skeleton" id="ob-semanal" data-source="semanal canal_endemico"></div>
+    </div>
+    <div class="ob-grid">
+      <div class="ob-card" id="ob-arbo-anual-card">
+        <h2 class="ob-h2" id="ob-arbo-anual-titulo">Incidência por ano</h2>
+        <div class="ob-legend" id="ob-arbo-anual-legenda"></div>
+        <div class="ob-chart dash-skeleton" id="ob-arbo-anual" data-source="anual"></div>
+      </div>
+      <div class="ob-card" id="ob-arbo-tabela-card">
+        <h2 class="ob-h2" id="ob-arbo-tabela-titulo">Situação por município</h2>
+        <div class="ob-tablewrap">
+          <table id="ob-arbo-tabela" data-source="arbo_municipios" data-row-key="chave">
+            <thead><tr>
+              <th data-field="nome">Município</th>
+              <th class="num" data-field="dengue_casos">Dengue</th>
+              <th class="num" data-field="dengue_incidencia">Por 100 mil</th>
+              <th class="num" data-field="dengue_graves">Graves</th>
+              <th class="num" data-field="dengue_obitos">Óbitos</th>
+              <th class="num" data-field="chik_casos">Chikungunya</th>
+              <th data-field="situacao">Situação</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ METODOLOGIA ============ -->
+  <section class="ob-page" id="metodologia" hidden>
+    <div class="ob-meth">
+      <h2 class="ob-h2">Como os números são feitos</h2>
+      <p>Todos os indicadores contam pessoas pelo município onde moram, não onde foram atendidas. Os dados vêm dos microdados públicos do DATASUS (SIM, SINASC, SIH e SINAN), baixados e filtrados para os 8 municípios da serra e para o Ceará inteiro, que serve de referência. A população é do IBGE.</p>
+      <ul>
+        <li><b>Dados preliminares.</b> O ano corrente está incompleto e o anterior ainda pode ser revisado pelo Ministério da Saúde. Por isso o ano de referência padrão é o último ano fechado.</li>
+        <li><b>Municípios pequenos.</b> Em Carnaubal ou Croatá, um único óbito infantil muda a taxa em vários pontos. Para esses casos o painel usa médias de 3 anos e mostra sempre o total da serra.</li>
+        <li><b>Internações.</b> Contadas pelo mês de competência da AIH no SIH. Internações de moradores do Ceará em hospitais de outros estados não entram.</li>
+        <li><b>Dengue.</b> Casos prováveis são as notificações menos as descartadas, contadas pelo ano em que foram notificadas.</li>
+        <li><b>Privacidade.</b> O painel mostra apenas totais agregados; nenhum dado individual sai da base local.</li>
+      </ul>
+    </div>
+    <div class="ob-card" id="ob-definicoes-card">
+      <h2 class="ob-h2">Definição de cada indicador</h2>
+      <div class="ob-tablewrap">
+        <table id="ob-definicoes" data-source="indicadores" data-row-key="indicador">
+          <thead><tr>
+            <th data-field="nome">Indicador</th>
+            <th data-field="eixo">Eixo</th>
+            <th data-field="unidade_medida">Unidade</th>
+            <th data-field="fonte">Fonte</th>
+            <th data-field="nota">Como é calculado</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <div class="ob-tip" id="ob-tip" hidden></div>
+</div>
+
+<script>
+(() => {
+  const L = d3.formatLocale({ decimal: ',', thousands: '.', grouping: [3], currency: ['R$ ', ''] });
+  const F0 = L.format(',.0f'), F1 = L.format(',.1f'), F2 = L.format(',.2f');
+  const ANO_CORRENTE = new Date().getFullYear();
+  const SVG = 'http://www.w3.org/2000/svg';
+  const root = document.getElementById('observatorio');
+  const tip = document.getElementById('ob-tip');
+  const $ = (id) => document.getElementById(id);
+  const KPIS = ['tmi', 'pct_prenatal7', 'pct_icsap', 'pct_fora_serra', 'tx_homicidio', 'dengue_incidencia'];
+  const MATERNO = ['tmi', 'tmn_3a', 'pct_prenatal7', 'pct_prenatal_1tri', 'pct_cesarea', 'pct_baixo_peso', 'pct_prematuro', 'pct_mae_adolescente'];
+  const PEQUENAS = new Set(['tmi', 'tmn']); // nos municípios, trocar pela média de 3 anos
+  const DESTINOS = ['Próprio município', 'Outro município da serra', 'Sobral', 'Fortaleza', 'Outros municípios do CE'];
+
+  // ---------------------------------------------------------------- cálculos citáveis
+  dash.calc('materno_municipios', {
+    inputs: ['anual'],
+    title: 'Materno-infantil por município',
+    description: 'Os indicadores materno-infantis lado a lado, uma linha por município e ano.',
+    fn: (anual) => {
+      const campos = ['nascidos_vivos', 'tmi_3a', 'pct_prenatal7', 'pct_cesarea', 'pct_baixo_peso', 'pct_mae_adolescente'];
+      const m = new Map();
+      for (const r of anual) {
+        if (!campos.includes(r.indicador)) continue;
+        const k = r.unidade + '-' + r.ano;
+        if (!m.has(k)) m.set(k, { chave: k, unidade: r.unidade, nome: r.nome, ano: Number(r.ano) });
+        m.get(k)[r.indicador] = Number(r.valor);
+      }
+      return [...m.values()];
+    },
+  });
+
+  dash.calc('arbo_municipios', {
+    inputs: ['anual'],
+    title: 'Arboviroses por município',
+    description: 'Casos de dengue e chikungunya por município e ano; situação pela incidência de dengue (abaixo de 100, de 100 a 299, 300 ou mais por 100 mil).',
+    fn: (anual) => {
+      const campos = ['dengue_casos', 'dengue_incidencia', 'dengue_graves', 'dengue_obitos', 'chik_casos'];
+      const m = new Map();
+      for (const r of anual) {
+        if (!campos.includes(r.indicador)) continue;
+        const k = r.unidade + '-' + r.ano;
+        if (!m.has(k)) m.set(k, { chave: k, unidade: r.unidade, nome: r.nome, ano: Number(r.ano) });
+        m.get(k)[r.indicador] = Number(r.valor);
+      }
+      for (const r of m.values()) {
+        const inc = r.dengue_incidencia;
+        r.situacao = inc == null ? null : inc >= 300 ? 'Epidemia' : inc >= 100 ? 'Média' : 'Baixa';
+      }
+      return [...m.values()];
+    },
+  });
+
+  dash.calc('canal_endemico', {
+    inputs: ['semanal'],
+    title: 'Faixa histórica semanal',
+    description: 'Mediana e máximo de casos prováveis em cada semana epidemiológica nos anos anteriores ao mais recente (semanas sem casos contam como zero).',
+    fn: (semanal) => {
+      const anoMax = d3.max(semanal, (r) => Number(r.ano));
+      const anos = [...new Set(semanal.map((r) => Number(r.ano)))].filter((a) => a < anoMax);
+      const casos = new Map();
+      const grupos = new Set();
+      for (const r of semanal) {
+        casos.set([r.unidade, r.agravo, r.ano, r.semana].join('|'), Number(r.casos));
+        grupos.add(r.unidade + '|' + r.agravo);
+      }
+      const linhas = [];
+      for (const g of grupos) {
+        const [unidade, agravo] = g.split('|');
+        for (let s = 1; s <= 53; s++) {
+          const v = anos.map((a) => casos.get([unidade, agravo, a, s].join('|')) || 0);
+          linhas.push({ unidade, agravo, semana: s, mediana: d3.median(v), maximo: d3.max(v), anos: anos.length });
+        }
+      }
+      return linhas;
+    },
+  });
+
+  // ---------------------------------------------------------------- dados e formatação
+  const cache = {};
+  function base() {
+    const a = dash.data('anual'), d = dash.data('indicadores');
+    if (a.status !== 'ok' || d.status !== 'ok') return null;
+    if (cache.rows !== a.data || cache.defsRows !== d.data) {
+      cache.rows = a.data; cache.defsRows = d.data;
+      cache.m = new Map(a.data.map((r) => [r.unidade + '|' + Number(r.ano) + '|' + r.indicador, r]));
+      cache.defs = new Map(d.data.map((r) => [r.indicador, r]));
+      cache.anos = [...new Set(a.data.map((r) => Number(r.ano)))].sort((x, y) => x - y);
+      const nomes = new Map(a.data.map((r) => [r.unidade, r.nome]));
+      cache.nomes = nomes;
+      cache.municipios = [...nomes.keys()].filter((u) => u !== 'IBIAPABA' && u !== 'CE').sort((x, y) => nomes.get(x).localeCompare(nomes.get(y), 'pt'));
+      cache.temCE = nomes.has('CE');
+      cache.anosFechados = cache.anos.filter((x) => x < ANO_CORRENTE);
+      cache.anoArbo = d3.max(a.data.filter((r) => r.indicador === 'dengue_casos'), (r) => Number(r.ano));
+    }
+    return cache;
+  }
+  const row = (u, a, i) => cache.m.get(u + '|' + a + '|' + i);
+  const val = (u, a, i) => { const r = row(u, a, i); return r == null || r.valor == null ? null : Number(r.valor); };
+  const def = (i) => cache.defs.get(i) || { nome: i, unidade_medida: '', melhor: null };
+  const isRate = (i) => /%|por |R\$/.test(def(i).unidade_medida || '');
+  const ind = (i, u) => (u !== 'IBIAPABA' && PEQUENAS.has(i) ? i + '_3a' : i);
+
+  function fmt(i, v) {
+    if (v == null || Number.isNaN(v)) return '—';
+    const un = def(i).unidade_medida || '';
+    if (un.startsWith('%')) return F1(v) + '%';
+    if (un.startsWith('R$')) return 'R$ ' + F2(v);
+    if (un.startsWith('por ')) return F1(v);
+    return F0(v);
+  }
+  function fmtDelta(i, d) {
+    if (d == null) return '';
+    const un = def(i).unidade_medida || '';
+    const s = d > 0 ? '+' : d < 0 ? '−' : '±';
+    const a = Math.abs(d);
+    if (un.startsWith('%')) return s + F1(a) + ' p.p.';
+    if (un.startsWith('R$')) return s + 'R$ ' + F2(a);
+    if (un.startsWith('por ')) return s + F1(a);
+    return s + F0(a);
+  }
+  function tone(i, d) {
+    const m = def(i).melhor;
+    if (d == null || d === 0 || !m) return 'ob-neutral';
+    return (m === 'menor') === d < 0 ? 'ob-good' : 'ob-bad';
+  }
+  const where = (u, a, i) => `unidade=${encodeURIComponent(u)}&ano=${a}&indicador=${encodeURIComponent(i)}`;
+  function mark(el, source, field, w) {
+    el.setAttribute('data-source', source);
+    el.setAttribute('data-field', field);
+    el.setAttribute('data-where', w);
+    return el;
+  }
+  function el(tag, cls, text) {
+    const e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+  function params() {
+    const p = dash.params();
+    const c = cache;
+    let unidade = p.unidade && c.nomes.has(p.unidade) && p.unidade !== 'CE' ? p.unidade : 'IBIAPABA';
+    let ano = Number(p.ano);
+    if (!c.anosFechados.includes(ano)) ano = d3.max(c.anosFechados);
+    let indicador = p.indicador && c.defs.has(p.indicador) && isRate(p.indicador) ? p.indicador : 'tmi';
+    const agravo = p.agravo === 'chik' ? 'chik' : 'dengue';
+    return { unidade, ano, indicador, agravo };
+  }
+  function failed(container) {
+    container.classList.remove('dash-skeleton');
+    container.replaceChildren(el('div', 'ob-fail', 'Failed to load'));
+  }
+  function status(...ids) {
+    const s = ids.map((id) => dash.data(id).status);
+    if (s.includes('error') || s.includes('connect') || s.includes('declined') || s.includes('missing')) return 'error';
+    return s.every((x) => x === 'ok') ? 'ok' : 'loading';
+  }
+
+  // ---------------------------------------------------------------- dica (tooltip)
+  function showTip(evt, titulo, linhas) {
+    tip.replaceChildren(el('div', 't', titulo), ...linhas.map((l) => {
+      const d = el('div');
+      if (l.color) { const s = el('span', 'ob-dot'); s.style.background = l.color; s.style.marginRight = '6px'; d.append(s); }
+      d.append(document.createTextNode(l.text));
+      return d;
+    }));
+    tip.hidden = false;
+    const r = root.getBoundingClientRect();
+    const w = tip.offsetWidth, h = tip.offsetHeight;
+    let x = evt.clientX - r.left + 12, y = evt.clientY - r.top + 12;
+    if (x + w > r.width) x = Math.max(0, evt.clientX - r.left - w - 12);
+    if (y + h > r.height) y = Math.max(0, evt.clientY - r.top - h - 12);
+    tip.style.left = x + 'px'; tip.style.top = y + 'px';
+  }
+  const hideTip = () => { tip.hidden = true; };
+
+  // ---------------------------------------------------------------- desenho
+  function svgNode(tag, attrs, parent) {
+    const n = document.createElementNS(SVG, tag);
+    for (const k in attrs) if (attrs[k] != null) n.setAttribute(k, attrs[k]);
+    if (parent) parent.appendChild(n);
+    return n;
+  }
+  function textWidth(svg, textos) {
+    const g = svgNode('g', {}, svg);
+    let w = 0;
+    for (const t of textos) { const n = svgNode('text', {}, g); n.textContent = t; w = Math.max(w, n.getComputedTextLength()); }
+    g.remove();
+    return w;
+  }
+  function newSvg(container, height) {
+    const w = container.clientWidth;
+    const svg = svgNode('svg', { width: '100%', height, viewBox: `0 0 ${w} ${height}`, role: 'img' });
+    container.replaceChildren(svg);
+    container.style.minHeight = height + 'px';
+    return [svg, w];
+  }
+  const color = (k) => getComputedStyle(root).getPropertyValue(k).trim();
+
+  // barras horizontais: itens [{label, value, hl, nota}]; ref = {value, label}
+  function hbars(container, itens, fmtv, ref) {
+    container.classList.remove('dash-skeleton');
+    if (!container.clientWidth) return;
+    const rowH = 28, top = ref ? 22 : 4;
+    const h = top + itens.length * rowH + 4;
+    const [svg, w] = newSvg(container, h);
+    const lw = Math.min(textWidth(svg, itens.map((d) => d.label)), w * 0.42) + 10;
+    const vw = textWidth(svg, itens.map((d) => fmtv(d.value))) + 10;
+    const max = d3.max([...itens.map((d) => d.value || 0), ref ? ref.value || 0 : 0]) || 1;
+    const x = d3.scaleLinear([0, max], [lw, Math.max(lw + 40, w - vw)]);
+    itens.forEach((d, k) => {
+      const y = top + k * rowH;
+      const g = svgNode('g', {}, svg);
+      const lab = svgNode('text', { x: lw - 10, y: y + rowH / 2 + 4, 'text-anchor': 'end', class: d.hl ? 'ob-strong' : null }, g);
+      lab.textContent = d.label;
+      if (d.value != null) {
+        svgNode('rect', { x: lw, y: y + 7, width: Math.max(2, x(d.value) - lw), height: rowH - 14, rx: 4,
+          fill: d.hl ? dash.colors[0] : color('--cds-chart-muted') }, g);
+      }
+      const v = svgNode('text', { x: (d.value != null ? x(d.value) : lw) + 6, y: y + rowH / 2 + 4, class: d.hl ? 'ob-strong' : null }, g);
+      v.textContent = fmtv(d.value);
+      const hit = svgNode('rect', { x: 0, y, width: w, height: rowH, fill: 'transparent' }, g);
+      hit.addEventListener('mousemove', (e) => showTip(e, d.label, [{ text: fmtv(d.value) }, ...(d.nota ? [{ text: d.nota }] : [])]));
+      hit.addEventListener('mouseleave', hideTip);
+    });
+    if (ref && ref.value != null) {
+      const rx = x(ref.value);
+      svgNode('line', { x1: rx, x2: rx, y1: top - 4, y2: h, stroke: color('--cds-chart-reference'), 'stroke-dasharray': '4 3' }, svg);
+      const t = svgNode('text', { x: rx, y: 12, 'text-anchor': rx > w * 0.7 ? 'end' : 'middle' }, svg);
+      t.textContent = ref.label;
+    }
+  }
+
+  // linhas no tempo: series [{name, color, dashed, pts:[{x, y, nota}]}]
+  function lines(container, series, fmtv, opts = {}) {
+    container.classList.remove('dash-skeleton');
+    if (!container.clientWidth) return;
+    const h = opts.height || 200;
+    const [svg, w] = newSvg(container, h);
+    const anos = [...new Set(series.flatMap((s) => s.pts.map((p) => p.x)))].sort((a, b) => a - b);
+    const ys = series.flatMap((s) => s.pts.map((p) => p.y)).filter((v) => v != null);
+    if (!anos.length || !ys.length) { container.replaceChildren(el('p', 'ob-note', 'Sem dados para esta combinação.')); return; }
+    const y = d3.scaleLinear([0, d3.max(ys) * 1.08 || 1], [h - 22, 8]).nice(4);
+    const ticks = y.ticks(4);
+    const ml = textWidth(svg, ticks.map(fmtv)) + 10;
+    const x = d3.scalePoint(anos, [ml + 8, w - 12]);
+    for (const t of ticks) {
+      svgNode('line', { x1: ml, x2: w, y1: y(t), y2: y(t), stroke: color('--cds-chart-grid') }, svg);
+      const n = svgNode('text', { x: ml - 6, y: y(t) + 4, 'text-anchor': 'end' }, svg); n.textContent = fmtv(t);
+    }
+    const passo = Math.ceil(anos.length / Math.max(1, Math.floor((w - ml) / 44)));
+    anos.forEach((a, k) => {
+      if (k % passo && k !== anos.length - 1) return;
+      const n = svgNode('text', { x: x(a), y: h - 4, 'text-anchor': 'middle' }, svg);
+      n.textContent = a >= ANO_CORRENTE ? a + '*' : a;
+    });
+    for (const s of series) {
+      const pts = s.pts.filter((p) => p.y != null);
+      const linha = d3.line().x((p) => x(p.x)).y((p) => y(p.y));
+      svgNode('path', { d: linha(pts), fill: 'none', stroke: s.color, 'stroke-width': 2, 'stroke-linecap': 'round', 'stroke-linejoin': 'round', 'stroke-dasharray': s.dashed ? '5 4' : null }, svg);
+      for (const p of pts) {
+        svgNode('circle', { cx: x(p.x), cy: y(p.y), r: s.dashed ? 2 : 3, fill: p.x >= ANO_CORRENTE ? color('--color-panel') : s.color, stroke: s.color, 'stroke-width': 1.5 }, svg);
+      }
+    }
+    const regua = svgNode('line', { y1: 8, y2: h - 22, stroke: color('--cds-chart-axis'), visibility: 'hidden' }, svg);
+    const hit = svgNode('rect', { x: ml, y: 0, width: w - ml, height: h, fill: 'transparent' }, svg);
+    hit.addEventListener('mousemove', (e) => {
+      const px = e.clientX - svg.getBoundingClientRect().left;
+      const a = anos.reduce((b, c) => (Math.abs(x(c) - px) < Math.abs(x(b) - px) ? c : b), anos[0]);
+      regua.setAttribute('x1', x(a)); regua.setAttribute('x2', x(a)); regua.setAttribute('visibility', 'visible');
+      showTip(e, a >= ANO_CORRENTE ? `${a} (parcial)` : String(a), series.map((s) => {
+        const p = s.pts.find((q) => q.x === a);
+        return { color: s.color, text: `${s.name}: ${p ? fmtv(p.y) : '—'}${p && p.nota ? ' · ' + p.nota : ''}` };
+      }));
+    });
+    hit.addEventListener('mouseleave', () => { regua.setAttribute('visibility', 'hidden'); hideTip(); });
+  }
+
+  function legend(container, itens) {
+    container.replaceChildren(...itens.map((s) => {
+      const sp = el('span');
+      const sw = el('span', 'ob-swatch');
+      sw.style.background = s.dashed ? `repeating-linear-gradient(90deg, ${s.color} 0 4px, transparent 4px 7px)` : s.color;
+      sp.append(sw, document.createTextNode(s.name));
+      return sp;
+    }));
+  }
+
+  // séries padrão: unidade escolhida, serra (se for município) e Ceará
+  function seriesPara(i, unidade, incluirParcial) {
+    const c = cache;
+    const anos = incluirParcial ? c.anos : c.anosFechados;
+    const nota = (u, a) => { const r = row(u, a, i); return r && r.denominador != null ? `${F0(r.numerador)} ÷ ${F0(r.denominador)}` : ''; };
+    const pts = (u) => anos.map((a) => ({ x: a, y: val(u, a, i), nota: nota(u, a) }));
+    const s = [{ name: c.nomes.get(unidade), color: dash.colors[0], pts: pts(unidade) }];
+    if (unidade !== 'IBIAPABA') s.push({ name: 'Serra da Ibiapaba', color: color('--cds-chart-muted'), pts: pts('IBIAPABA') });
+    if (c.temCE) s.push({ name: 'Ceará', color: color('--cds-chart-reference'), dashed: true, pts: pts('CE') });
+    return s;
+  }
+
+  // ---------------------------------------------------------------- controles
+  const selU = $('ob-unidade'), selA = $('ob-ano'), selI = $('ob-indicador'), selG = $('ob-agravo');
+  selU.addEventListener('change', () => dash.setParams({ unidade: selU.value }));
+  selA.addEventListener('change', () => dash.setParams({ ano: Number(selA.value) }));
+  selI.addEventListener('change', () => dash.setParams({ indicador: selI.value }));
+  selG.addEventListener('change', () => dash.setParams({ agravo: selG.value }));
+
+  function drawControls(p) {
+    const c = cache;
+    if (selU.options.length !== c.municipios.length + 1) {
+      selU.replaceChildren(new Option('Serra da Ibiapaba (8 municípios)', 'IBIAPABA'), ...c.municipios.map((u) => new Option(c.nomes.get(u), u)));
+    }
+    if (selA.options.length !== c.anosFechados.length) {
+      selA.replaceChildren(...[...c.anosFechados].reverse().map((a) => new Option(String(a), String(a))));
+    }
+    if (!selI.options.length) {
+      const porEixo = d3.group(dash.data('indicadores').data.filter((d) => isRate(d.indicador)), (d) => d.eixo);
+      selI.replaceChildren(...[...porEixo].map(([eixo, ds]) => {
+        const og = document.createElement('optgroup'); og.label = eixo;
+        og.append(...ds.map((d) => new Option(d.nome, d.indicador)));
+        return og;
+      }));
+    }
+    selU.value = p.unidade; selA.value = String(p.ano); selI.value = p.indicador; selG.value = p.agravo;
+  }
+
+  // ---------------------------------------------------------------- cabeçalho
+  function drawHeader(p) {
+    const c = cache, u = p.unidade, nome = c.nomes.get(u);
+    const iT = ind('tmi', u);
+    const tk1 = $('ob-tk1'), tk2 = $('ob-tk2');
+    tk1.classList.remove('dash-skeleton');
+    const b1 = mark(el('b', null, fmt(iT, val(u, p.ano, iT))), 'anual', 'valor', where(u, p.ano, iT));
+    tk1.replaceChildren(`Em ${p.ano}, a mortalidade infantil em ${nome} foi de `, b1,
+      ` por mil nascidos vivos${iT.endsWith('_3a') ? ' (média de 3 anos)' : ''}`);
+    if (c.temCE && val('CE', p.ano, 'tmi') != null) {
+      tk1.append('; no Ceará, ', mark(el('b', null, fmt('tmi', val('CE', p.ano, 'tmi'))), 'anual', 'valor', where('CE', p.ano, 'tmi')));
+    }
+    tk1.append('.');
+    const inc = val(u, c.anoArbo, 'dengue_incidencia');
+    if (inc != null) {
+      const b2 = mark(el('b', null, fmt('dengue_incidencia', inc)), 'anual', 'valor', where(u, c.anoArbo, 'dengue_incidencia'));
+      tk2.replaceChildren(`Dengue em ${c.anoArbo}${c.anoArbo >= ANO_CORRENTE ? ', até agora' : ''}: `, b2,
+        ` casos prováveis por 100 mil habitantes${inc >= 300 ? ', acima do limiar de epidemia.' : '.'}`);
+    } else tk2.replaceChildren();
+  }
+
+  // ---------------------------------------------------------------- Início
+  function drawInicio(p) {
+    const c = cache, u = p.unidade;
+    const box = $('ob-kpis');
+    box.replaceChildren(...KPIS.map((base) => {
+      const i = ind(base, u);
+      const ano = base.startsWith('dengue') ? c.anoArbo : p.ano;
+      const v = val(u, ano, i), ant = val(u, ano - 1, i);
+      const card = el('div', 'ob-kpi');
+      card.id = 'kpi-' + base;
+      const parcial = ano >= ANO_CORRENTE ? ' (parcial)' : '';
+      card.append(el('div', 'ob-kpi-label', `${def(i).nome} · ${ano}${parcial}`));
+      card.append(mark(el('div', 'ob-kpi-value', fmt(i, v)), 'anual', 'valor', where(u, ano, i)));
+      card.append(el('div', 'ob-kpi-unit', def(i).unidade_medida));
+      const foot = el('div', 'ob-kpi-foot');
+      if (v != null && ant != null) {
+        const d = el('span', tone(i, v - ant), `${fmtDelta(i, v - ant)} vs ${ano - 1}`);
+        mark(d, 'ficha', 'variacao', `id=${encodeURIComponent(`${u}-${ano}-${i}`)}`);
+        foot.append(d);
+      }
+      const iCE = base;
+      if (c.temCE && val('CE', ano, iCE) != null) {
+        const ce = el('span', null, 'Ceará ');
+        ce.append(mark(el('span', null, fmt(iCE, val('CE', ano, iCE))), 'anual', 'valor', where('CE', ano, iCE)));
+        foot.append(ce);
+      }
+      card.append(foot);
+      return card;
+    }));
+
+    // alertas de dengue
+    const al = $('ob-alertas');
+    const st = status('arbo_municipios');
+    if (st === 'error') { failed(al); } else if (st === 'ok') {
+      const linhas = dash.data('arbo_municipios').data
+        .filter((r) => r.ano === c.anoArbo && r.unidade !== 'CE' && r.unidade !== 'IBIAPABA' && r.dengue_incidencia >= 300)
+        .sort((a, b) => b.dengue_incidencia - a.dengue_incidencia);
+      $('ob-alertas-titulo').textContent = `Municípios acima do limiar de epidemia de dengue em ${c.anoArbo}${c.anoArbo >= ANO_CORRENTE ? ' (até agora)' : ''}`;
+      al.replaceChildren(...(linhas.length ? linhas.map((r) => {
+        const chip = el('span', 'ob-chip');
+        const dot = el('span', 'ob-dot'); dot.style.background = color('--cds-chart-status-critical');
+        chip.append(dot, r.nome + ' · ', mark(el('span', null, fmt('dengue_incidencia', r.dengue_incidencia)), 'arbo_municipios', 'dengue_incidencia', `chave=${encodeURIComponent(r.chave)}`), ' por 100 mil');
+        return chip;
+      }) : [el('span', 'ob-note', 'Nenhum município acima de 300 casos por 100 mil habitantes.')]));
+    }
+
+    // comparação entre municípios
+    const i = p.indicador;
+    $('ob-comparacao-titulo').textContent = `${def(i).nome}, ${p.ano}: comparação entre os municípios`;
+    $('ob-comparacao-nota').textContent = `${def(i).unidade_medida}. ${def(i).nota || ''}`.trim();
+    const itens = [...c.municipios, 'IBIAPABA'].map((m) => {
+      const r = row(m, p.ano, i);
+      return { label: c.nomes.get(m), value: val(m, p.ano, i), hl: m === u,
+        nota: r && r.denominador != null ? `${F0(r.numerador)} ÷ ${F0(r.denominador)}` : '' };
+    }).sort((a, b) => (b.value ?? -1) - (a.value ?? -1));
+    const vCE = c.temCE ? val('CE', p.ano, i) : null;
+    hbars($('ob-comparacao'), itens, (v) => fmt(i, v), vCE != null ? { value: vCE, label: `Ceará ${fmt(i, vCE)}` } : null);
+  }
+
+  // ---------------------------------------------------------------- Ficha do município
+  function drawMunicipio(p) {
+    const c = cache, u = p.unidade, i = p.indicador;
+    $('ob-tendencia-titulo').textContent = `${def(i).nome} (${def(i).unidade_medida})`;
+    const s = seriesPara(i, u, i.startsWith('dengue') || i.startsWith('chik'));
+    legend($('ob-tendencia-legenda'), s);
+    lines($('ob-tendencia'), s, (v) => fmt(i, v));
+
+    // destino das internações
+    const dst = $('ob-destino');
+    const sd = status('destino_internacao');
+    if (sd === 'error') failed(dst);
+    else if (sd === 'ok') {
+      const linhas = dash.data('destino_internacao').data.filter((r) => r.unidade === u);
+      const cats = u === 'IBIAPABA' ? ['Na própria serra', 'Sobral', 'Fortaleza', 'Outros municípios do CE'] : DESTINOS;
+      const juntar = (d) => (u === 'IBIAPABA' && (d === 'Próprio município' || d === 'Outro município da serra') ? 'Na própria serra' : d);
+      const cores = u === 'IBIAPABA'
+        ? [dash.colors[0], dash.colors[2], dash.colors[3], color('--cds-chart-muted')]
+        : [dash.colors[0], dash.colors[1], dash.colors[2], dash.colors[3], color('--cds-chart-muted')];
+      const porAno = d3.rollup(linhas, (v) => d3.rollup(v, (w) => d3.sum(w, (x) => Number(x.internacoes)), (x) => juntar(x.destino)), (r) => Number(r.ano));
+      const anos = [...porAno.keys()].sort((a, b) => b - a);
+      legend($('ob-destino-legenda'), cats.map((n, k) => ({ name: n, color: cores[k] })));
+      stack100(dst, anos.map((a) => ({ ano: a, partes: porAno.get(a) })), cats, cores);
+    }
+
+    // causas
+    drawCausas($('ob-causas-obito'), 'causas_obito', 'obitos', u, p.ano, 'óbitos', $('ob-causas-obito-titulo'), 'Principais causas de óbito');
+    drawCausas($('ob-causas-int'), 'causas_internacao', 'internacoes', u, p.ano, 'internações', $('ob-causas-int-titulo'), 'Principais causas de internação');
+
+    // ficha
+    $('ob-ficha-titulo').textContent = `Todos os indicadores · ${c.nomes.get(u)} · ${p.ano}`;
+    const tb = document.querySelector('#ob-ficha tbody');
+    const sf = status('ficha');
+    if (sf === 'error') { tb.replaceChildren(); failed($('ob-ficha-card').querySelector('.ob-tablewrap')); return; }
+    if (sf !== 'ok') return;
+    const ordem = ['Demografia', 'Materno-infantil', 'Mortalidade', 'Internações', 'Arboviroses'];
+    const linhas = dash.data('ficha').data.filter((r) => r.unidade === u && Number(r.ano) === p.ano)
+      .sort((a, b) => ordem.indexOf(a.eixo) - ordem.indexOf(b.eixo));
+    tb.replaceChildren(...linhas.map((r) => {
+      const tr = el('tr');
+      tr.dataset.key = r.id;
+      const n = (v) => (v == null ? null : Number(v));
+      tr.append(el('td', null, r.eixo), el('td', null, r.nome), el('td', 'num', fmt(r.indicador, n(r.valor))),
+        el('td', 'num', fmt(r.indicador, n(r.anterior))), el('td', 'num ' + tone(r.indicador, n(r.variacao)), fmtDelta(r.indicador, n(r.variacao))),
+        el('td', 'num', fmt(r.indicador, n(r.ibiapaba))), el('td', 'num', fmt(r.indicador, n(r.ceara))));
+      return tr;
+    }));
+  }
+
+  function drawCausas(container, ds, campo, u, ano, rotulo, tituloEl, titulo) {
+    const st = status(ds);
+    if (st === 'error') return failed(container);
+    if (st !== 'ok') return;
+    tituloEl.textContent = `${titulo} · ${ano}`;
+    const linhas = dash.data(ds).data.filter((r) => r.unidade === u && Number(r.ano) === ano)
+      .map((r) => ({ label: r.grupo, value: Number(r[campo]) })).sort((a, b) => b.value - a.value);
+    const total = d3.sum(linhas, (d) => d.value);
+    const top = linhas.slice(0, 8).map((d) => ({ ...d, nota: `${F1((d.value / total) * 100)}% dos ${rotulo}` }));
+    hbars(container, top, (v) => F0(v));
+  }
+
+  function stack100(container, linhas, cats, cores) {
+    container.classList.remove('dash-skeleton');
+    if (!container.clientWidth) return;
+    const rowH = 26, h = linhas.length * rowH + 4;
+    const [svg, w] = newSvg(container, h);
+    const lw = textWidth(svg, linhas.map((l) => l.ano + '*')) + 10;
+    const x = d3.scaleLinear([0, 1], [lw, w - 4]);
+    linhas.forEach((l, k) => {
+      const y = k * rowH;
+      const t = svgNode('text', { x: lw - 8, y: y + rowH / 2 + 4, 'text-anchor': 'end' }, svg);
+      t.textContent = l.ano >= ANO_CORRENTE ? l.ano + '*' : l.ano;
+      const total = d3.sum(cats, (c) => l.partes.get(c) || 0) || 1;
+      let acc = 0;
+      cats.forEach((cat, j) => {
+        const n = l.partes.get(cat) || 0, f = n / total;
+        const r = svgNode('rect', { x: x(acc), y: y + 5, width: Math.max(0, x(acc + f) - x(acc) - 1), height: rowH - 10, fill: cores[j] }, svg);
+        r.addEventListener('mousemove', (e) => showTip(e, `${l.ano}${l.ano >= ANO_CORRENTE ? ' (parcial)' : ''}`, [{ color: cores[j], text: `${cat}: ${F1(f * 100)}% (${F0(n)})` }]));
+        r.addEventListener('mouseleave', hideTip);
+        acc += f;
+      });
+    });
+  }
+
+  // ---------------------------------------------------------------- Materno-infantil
+  function drawMaterno(p) {
+    const c = cache, u = p.unidade;
+    $('ob-materno-nota').textContent = `${c.nomes.get(u)} comparado${u === 'IBIAPABA' ? '' : ' com a serra e'} com o Ceará. Anos com * são parciais e ficam fora dos gráficos.`;
+    const grade = $('ob-materno-graficos');
+    if (grade.children.length !== MATERNO.length) {
+      grade.replaceChildren(...MATERNO.map((base) => {
+        const card = el('div', 'ob-card');
+        card.id = 'materno-' + base;
+        card.append(el('h3', 'ob-h2'), el('p', 'ob-note'), el('div', 'ob-legend'));
+        const ch = el('div', 'ob-chart dash-skeleton');
+        ch.setAttribute('data-source', 'anual');
+        card.append(ch);
+        return card;
+      }));
+    }
+    MATERNO.forEach((base, k) => {
+      const i = ind(base, u);
+      const card = grade.children[k];
+      card.children[0].textContent = def(i).nome;
+      card.children[1].textContent = def(i).unidade_medida;
+      const s = seriesPara(i, u, false);
+      legend(card.children[2], s);
+      lines(card.children[3], s, (v) => fmt(i, v), { height: 160 });
+    });
+
+    $('ob-materno-tabela-titulo').textContent = `Municípios lado a lado · ${p.ano}`;
+    const tb = document.querySelector('#ob-materno-tabela tbody');
+    const st = status('materno_municipios');
+    if (st === 'error') return failed($('ob-materno-tabela-card').querySelector('.ob-tablewrap'));
+    if (st !== 'ok') return;
+    const linhas = dash.data('materno_municipios').data.filter((r) => r.ano === p.ano)
+      .sort((a, b) => (a.unidade === 'CE') - (b.unidade === 'CE') || (a.unidade === 'IBIAPABA') - (b.unidade === 'IBIAPABA') || a.nome.localeCompare(b.nome, 'pt'));
+    tb.replaceChildren(...linhas.map((r) => {
+      const tr = el('tr', r.unidade === u ? 'ob-hl' : null);
+      tr.dataset.key = r.chave;
+      tr.append(el('td', null, r.nome));
+      for (const k of ['nascidos_vivos', 'tmi_3a', 'pct_prenatal7', 'pct_cesarea', 'pct_baixo_peso', 'pct_mae_adolescente']) tr.append(el('td', 'num', fmt(k, r[k])));
+      return tr;
+    }));
+  }
+
+  // ---------------------------------------------------------------- Arboviroses
+  function drawArbo(p) {
+    const c = cache, u = p.unidade, ag = p.agravo;
+    const nomeAg = ag === 'dengue' ? 'Dengue' : 'Chikungunya';
+    const ws = $('ob-semanal');
+    const st = status('semanal', 'canal_endemico');
+    if (st === 'error') failed(ws);
+    else if (st === 'ok') {
+      const sem = dash.data('semanal').data.filter((r) => r.unidade === u && r.agravo === ag);
+      const anoMax = d3.max(dash.data('semanal').data, (r) => Number(r.ano));
+      const canal = dash.data('canal_endemico').data.filter((r) => r.unidade === u && r.agravo === ag);
+      const atual = new Map(sem.filter((r) => Number(r.ano) === anoMax).map((r) => [Number(r.semana), Number(r.casos)]));
+      $('ob-semanal-titulo').textContent = `${nomeAg} por semana em ${anoMax}${anoMax >= ANO_CORRENTE ? ' (até agora)' : ''} · ${c.nomes.get(u)}`;
+      const anosHist = canal.length ? canal[0].anos : 0;
+      legend($('ob-semanal-legenda'), [
+        { name: `Casos em ${anoMax}`, color: dash.colors[0] },
+        { name: `Máximo de ${anosHist} anos anteriores`, color: color('--cds-chart-muted') },
+        { name: 'Mediana', color: color('--cds-chart-reference'), dashed: true },
+      ]);
+      weekly(ws, atual, canal);
+    }
+
+    const iInc = ag === 'dengue' ? 'dengue_incidencia' : 'chik_incidencia';
+    $('ob-arbo-anual-titulo').textContent = `Incidência de ${nomeAg.toLowerCase()} por ano (por 100 mil hab.)`;
+    const s = seriesPara(iInc, u, true);
+    legend($('ob-arbo-anual-legenda'), s);
+    lines($('ob-arbo-anual'), s, (v) => fmt(iInc, v));
+
+    $('ob-arbo-tabela-titulo').textContent = `Situação por município em ${c.anoArbo}${c.anoArbo >= ANO_CORRENTE ? ' (até agora)' : ''}`;
+    const tb = document.querySelector('#ob-arbo-tabela tbody');
+    const sa = status('arbo_municipios');
+    if (sa === 'error') return failed($('ob-arbo-tabela-card').querySelector('.ob-tablewrap'));
+    if (sa !== 'ok') return;
+    const linhas = dash.data('arbo_municipios').data.filter((r) => r.ano === c.anoArbo)
+      .sort((a, b) => (a.unidade === 'CE') - (b.unidade === 'CE') || (a.unidade === 'IBIAPABA') - (b.unidade === 'IBIAPABA') || (b.dengue_incidencia ?? 0) - (a.dengue_incidencia ?? 0));
+    tb.replaceChildren(...linhas.map((r) => {
+      const tr = el('tr', r.unidade === u ? 'ob-hl' : null);
+      tr.dataset.key = r.chave;
+      tr.append(el('td', null, r.nome), el('td', 'num', fmt('dengue_casos', r.dengue_casos)), el('td', 'num', fmt('dengue_incidencia', r.dengue_incidencia)),
+        el('td', 'num', fmt('dengue_graves', r.dengue_graves)), el('td', 'num', fmt('dengue_obitos', r.dengue_obitos)), el('td', 'num', fmt('chik_casos', r.chik_casos)));
+      const sit = el('td');
+      if (r.situacao) {
+        const chip = el('span', 'ob-chip');
+        const dot = el('span', 'ob-dot');
+        dot.style.background = r.situacao === 'Epidemia' ? color('--cds-chart-status-critical') : r.situacao === 'Média' ? color('--color-warn') : color('--cds-chart-muted');
+        chip.append(dot, r.situacao);
+        sit.append(chip);
+      }
+      tr.append(sit);
+      return tr;
+    }));
+  }
+
+  function weekly(container, atual, canal) {
+    container.classList.remove('dash-skeleton');
+    if (!container.clientWidth) return;
+    const h = 220;
+    const [svg, w] = newSvg(container, h);
+    const semanas = d3.range(1, 54);
+    const porSem = new Map(canal.map((r) => [Number(r.semana), r]));
+    const max = d3.max([...semanas.map((s) => atual.get(s) || 0), ...canal.map((r) => r.maximo)]) || 1;
+    const y = d3.scaleLinear([0, max * 1.05], [h - 22, 8]).nice(4);
+    const ticks = y.ticks(4).filter((t) => Number.isInteger(t));
+    const ml = textWidth(svg, ticks.map((t) => F0(t))) + 10;
+    const x = d3.scaleBand(semanas, [ml, w - 4]).padding(0.2);
+    for (const t of ticks) {
+      svgNode('line', { x1: ml, x2: w, y1: y(t), y2: y(t), stroke: color('--cds-chart-grid') }, svg);
+      const n = svgNode('text', { x: ml - 6, y: y(t) + 4, 'text-anchor': 'end' }, svg); n.textContent = F0(t);
+    }
+    const passo = x.bandwidth() > 12 ? 4 : 8;
+    for (const s of semanas) if (s === 1 || s % passo === 0) {
+      const n = svgNode('text', { x: x(s) + x.bandwidth() / 2, y: h - 4, 'text-anchor': 'middle' }, svg); n.textContent = s;
+    }
+    const area = d3.area().x((s) => x(s) + x.bandwidth() / 2).y0(y(0)).y1((s) => y(porSem.get(s)?.maximo || 0)).curve(d3.curveStep);
+    svgNode('path', { d: area(semanas), fill: color('--cds-chart-muted'), opacity: 0.35 }, svg);
+    const med = d3.line().x((s) => x(s) + x.bandwidth() / 2).y((s) => y(porSem.get(s)?.mediana || 0)).curve(d3.curveStep);
+    svgNode('path', { d: med(semanas), fill: 'none', stroke: color('--cds-chart-reference'), 'stroke-width': 1.5, 'stroke-dasharray': '4 3' }, svg);
+    for (const s of semanas) {
+      const n = atual.get(s);
+      const ref = porSem.get(s);
+      if (n) {
+        const acima = ref && n > ref.maximo;
+        svgNode('rect', { x: x(s), y: y(n), width: x.bandwidth(), height: Math.max(1, y(0) - y(n)), rx: Math.min(3, x.bandwidth() / 2),
+          fill: acima ? color('--cds-chart-status-critical') : dash.colors[0] }, svg);
+      }
+      const hit = svgNode('rect', { x: x(s), y: 0, width: x.bandwidth(), height: h - 22, fill: 'transparent' }, svg);
+      hit.addEventListener('mousemove', (e) => showTip(e, `Semana ${s}`, [
+        { color: dash.colors[0], text: `Casos: ${F0(n || 0)}` },
+        { text: `Mediana anterior: ${F1(ref?.mediana || 0)} · máximo: ${F0(ref?.maximo || 0)}` },
+      ]));
+      hit.addEventListener('mouseleave', hideTip);
+    }
+  }
+
+  // ---------------------------------------------------------------- Metodologia
+  function drawMetodologia() {
+    const tb = document.querySelector('#ob-definicoes tbody');
+    if (status('indicadores') !== 'ok') return;
+    tb.replaceChildren(...dash.data('indicadores').data.map((d) => {
+      const tr = el('tr');
+      tr.dataset.key = d.indicador;
+      tr.append(el('td', null, d.nome), el('td', null, d.eixo), el('td', null, d.unidade_medida), el('td', null, d.fonte), el('td', null, d.nota));
+      return tr;
+    }));
+  }
+
+  // ---------------------------------------------------------------- abas
+  const PAGINAS = ['inicio', 'municipio', 'materno', 'arboviroses', 'metodologia'];
+  let aba = PAGINAS.includes(location.hash.slice(1)) ? location.hash.slice(1) : 'inicio';
+  function mostrar(id) {
+    aba = id;
+    for (const pg of PAGINAS) $(pg).hidden = pg !== id;
+    for (const b of document.querySelectorAll('.ob-tab')) b.setAttribute('aria-selected', String(b.dataset.tab === id));
+    dash.setLink(id);
+    desenhar();
+  }
+  for (const b of document.querySelectorAll('.ob-tab')) b.addEventListener('click', () => mostrar(b.dataset.tab));
+
+  function desenhar() {
+    const st = status('anual', 'indicadores');
+    if (st === 'error') { failed($('ob-comparacao')); $('ob-tk1').classList.remove('dash-skeleton'); return; }
+    if (st !== 'ok' || !base()) return;
+    const p = params();
+    drawControls(p);
+    drawHeader(p);
+    if (aba === 'inicio') drawInicio(p);
+    if (aba === 'municipio') drawMunicipio(p);
+    if (aba === 'materno') drawMaterno(p);
+    if (aba === 'arboviroses') drawArbo(p);
+    if (aba === 'metodologia') drawMetodologia();
+  }
+
+  dash.onData(desenhar);
+  if (aba !== 'inicio') mostrar(aba);
+})();
+</script>

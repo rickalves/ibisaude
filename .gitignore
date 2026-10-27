@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.part
+
+# Microdados com registros individuais (SIM, SINASC, SIH, SINAN): ficam só na máquina/cache do CI, nunca no git.
+data/cache/
+data/datasus/
+data/datasus_ce/

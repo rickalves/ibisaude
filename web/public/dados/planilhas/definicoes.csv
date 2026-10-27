@@ -1,0 +1,35 @@
+﻿Código;Indicador;Eixo;Unidade de medida;Melhor quando;Fonte;Como é calculado
+populacao;População residente;Demografia;hab.;;IBGE;"Estimativas anuais; 2022 = Censo; 2023 interpolado."
+nascidos_vivos;Nascidos vivos;Materno-infantil;nascimentos;;SINASC;
+tmi;Mortalidade infantil;Materno-infantil;por mil nascidos vivos;menor;SIM + SINASC;Óbitos de menores de 1 ano ÷ nascidos vivos.
+tmi_3a;Mortalidade infantil (média de 3 anos);Materno-infantil;por mil nascidos vivos;menor;SIM + SINASC;"Soma do ano e dos 2 anteriores; estabiliza municípios pequenos."
+tmn;Mortalidade neonatal;Materno-infantil;por mil nascidos vivos;menor;SIM + SINASC;Óbitos com menos de 28 dias ÷ nascidos vivos.
+tmn_3a;Mortalidade neonatal (média de 3 anos);Materno-infantil;por mil nascidos vivos;menor;SIM + SINASC;
+obitos_maternos;Óbitos maternos;Materno-infantil;óbitos;menor;SIM;Causa básica O00–O95, O98–O99 ou A34.
+rmm_3a;Razão de mortalidade materna (3 anos);Materno-infantil;por 100 mil nascidos vivos;menor;SIM + SINASC;
+pct_cesarea;Partos cesáreos;Materno-infantil;% dos partos;menor;SINASC;Excluídos partos com tipo ignorado.
+pct_prenatal7;7 ou mais consultas de pré-natal;Materno-infantil;% dos nascidos vivos;maior;SINASC;Excluídos registros com nº de consultas ignorado.
+pct_prenatal_1tri;Pré-natal iniciado no 1º trimestre;Materno-infantil;% dos nascidos vivos;maior;SINASC;"Mês de início 1 a 3; excluídos ignorados."
+pct_baixo_peso;Baixo peso ao nascer;Materno-infantil;% dos nascidos vivos;menor;SINASC;Menos de 2.500 g.
+pct_prematuro;Prematuridade;Materno-infantil;% dos nascidos vivos;menor;SINASC;Menos de 37 semanas de gestação.
+pct_mae_adolescente;Mães adolescentes;Materno-infantil;% dos nascidos vivos;menor;SINASC;Mãe com 10 a 19 anos.
+obitos;Óbitos;Mortalidade;óbitos;;SIM;
+tx_mortalidade;Mortalidade geral;Mortalidade;por mil hab.;menor;SIM + IBGE;Taxa bruta, sem padronização por idade.
+obitos_dcnt_prematuros;Óbitos prematuros por doenças crônicas;Mortalidade;óbitos (30–69 anos);menor;SIM;Câncer, diabetes, doenças circulatórias e respiratórias crônicas.
+tx_causas_externas;Mortalidade por causas externas;Mortalidade;por 100 mil hab.;menor;SIM + IBGE;Acidentes, violências e lesões (V01–Y98).
+tx_homicidio;Homicídios;Mortalidade;por 100 mil hab.;menor;SIM + IBGE;Agressões X85–Y09.
+tx_transito;Mortes no trânsito;Mortalidade;por 100 mil hab.;menor;SIM + IBGE;V01–V89.
+obitos_covid;Óbitos por COVID-19;Mortalidade;óbitos;menor;SIM;B34.2, U07.1, U07.2.
+internacoes;Internações SUS;Internações;internações;;SIH;Por ano de competência da AIH.
+tx_internacao;Taxa de internação SUS;Internações;por mil hab.;;SIH + IBGE;
+pct_icsap;Internações sensíveis à atenção primária;Internações;% das internações (exceto partos);menor;SIH;Lista brasileira de ICSAP, Portaria 221/2008.
+pct_fora_serra;Internações fora da Ibiapaba;Internações;% das internações;;SIH;Hospital localizado fora dos 8 municípios.
+pct_obito_hospitalar;Mortalidade hospitalar;Internações;% das internações;menor;SIH;Internações que terminaram em óbito.
+gasto_sih_per_capita;Gasto SUS com internações por habitante;Internações;R$ por hab.;;SIH + IBGE;Valor total das AIHs ÷ população.
+dengue_casos;Casos prováveis de dengue;Arboviroses;casos;menor;SINAN;Notificações exceto descartadas, por ano de notificação.
+dengue_incidencia;Incidência de dengue;Arboviroses;por 100 mil hab.;menor;SINAN + IBGE;Acima de 300/100 mil é considerado epidemia (MS).
+dengue_graves;Dengue com sinais de alarme ou grave;Arboviroses;casos;menor;SINAN;
+dengue_obitos;Óbitos por dengue;Arboviroses;óbitos;menor;SINAN;Evolução = óbito pelo agravo.
+chik_casos;Casos prováveis de chikungunya;Arboviroses;casos;menor;SINAN;
+chik_incidencia;Incidência de chikungunya;Arboviroses;por 100 mil hab.;menor;SINAN + IBGE;
+zika_casos;Casos prováveis de zika;Arboviroses;casos;menor;SINAN;
