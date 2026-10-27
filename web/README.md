@@ -16,6 +16,8 @@ npm run lint
 | `components/paginas/` | Conteúdo interativo de cada página |
 | `components/graficos/` | Gráficos em SVG desenhados com d3 (barras, linhas, semanal, empilhado) |
 | `lib/dados.ts` | Leitura dos JSON no build |
+| `app/tema.css` | Design system: tokens de cor (modo claro e escuro), tipografia e espaçamento. Ver [docs/design-system.md](../docs/design-system.md) |
+| `components/SeletorTema.tsx` | Seletor Automático / Claro / Escuro do topo |
 | `lib/formato.ts` | Formatação de números em pt-BR |
 | `lib/planilha.ts`, `components/BotaoBaixar.tsx` | Botão "Baixar planilha" dos cartões: gera no navegador um CSV no padrão do Excel em português |
 | `public/dados/` | Dados do site; também ficam disponíveis para download em `/dados/` (planilhas em `/dados/planilhas/`) |

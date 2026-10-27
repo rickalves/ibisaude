@@ -3,6 +3,7 @@
 | Documento | Para quem | O que tem |
 |---|---|---|
 | [arquitetura.md](arquitetura.md) | Quem vai manter ou alterar o projeto | Como os dados saem do DATASUS e viram o site, o papel de cada pasta, as decisões de projeto e como adicionar um indicador ou uma página |
+| [design-system.md](design-system.md) | Quem vai mexer no visual do site | Tokens de cor, tipografia e espaçamento, modo claro/escuro e regras de contraste |
 | [glossario.md](glossario.md) | Todos | Siglas e termos de saúde pública e de tecnologia usados no código e no site |
 | [dicionario-de-dados.md](dicionario-de-dados.md) | Quem vai usar os dados baixados | Campos de cada arquivo publicado e a fórmula de cada indicador |
 

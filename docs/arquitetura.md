@@ -142,6 +142,8 @@ Peças principais:
 - `lib/indice.ts` cria um índice `(unidade, ano, indicador) → valor` e escolhe a versão de 3 anos para municípios.
 - `components/Filtros.tsx` guarda o município e o ano escolhidos num *context* React, que vale para todas as páginas
   durante a visita.
+- `app/tema.css` é o design system (cores dos modos claro e escuro, tipografia, espaçamento) e
+  `components/SeletorTema.tsx` o seletor de tema; ver [design-system.md](design-system.md).
 - `components/graficos/` tem os gráficos em SVG (d3 só calcula escalas e formatos; o desenho é React).
 - `components/BotaoBaixar.tsx` + `lib/planilha.ts`: o botão "Baixar planilha" de cada cartão monta um CSV no
   navegador com os números daquele cartão.

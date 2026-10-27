@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Source_Sans_3, Source_Serif_4 } from "next/font/google";
 import { Navegacao, ProvedorFiltros } from "@/components/Filtros";
+import { SCRIPT_TEMA, SeletorTema } from "@/components/SeletorTema";
 import { meta, unidades } from "@/lib/dados";
+import "./tema.css";
 import "./globals.css";
 
 const sans = Source_Sans_3({ variable: "--fonte-texto", subsets: ["latin"] });
@@ -15,13 +17,22 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="pt-BR" className={`${sans.variable} ${serif.variable}`}>
+    // suppressHydrationWarning: SCRIPT_TEMA pode pôr data-tema no <html> antes do React assumir a página
+    <html lang="pt-BR" className={`${sans.variable} ${serif.variable}`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: SCRIPT_TEMA }} />
+      </head>
       <body>
         <ProvedorFiltros unidades={unidades} anos={meta.anos_fechados}>
           <header className="topo">
             <div className="topo-interno">
-              <p className="marca-sobre">Serra da Ibiapaba · Ceará</p>
-              <p className="marca">Observatório de Saúde</p>
+              <div className="topo-marca">
+                <div>
+                  <p className="marca-sobre">Serra da Ibiapaba · Ceará</p>
+                  <p className="marca">Observatório de Saúde</p>
+                </div>
+                <SeletorTema />
+              </div>
               <Navegacao />
             </div>
           </header>

@@ -1,0 +1,127 @@
+/*
+ * Design system do observatório. Documentação: docs/design-system.md
+ *
+ * Três camadas:
+ *   1. Paleta base (--neutro-*, --verde-*, ...): cores brutas. Não use direto nos componentes.
+ *   2. Tokens semânticos (--fundo, --texto, --serie-1, ...): o que os componentes usam. Cada um declara o valor
+ *      do modo claro e do escuro com light-dark(), que escolhe pelo color-scheme do elemento.
+ *   3. Escalas (--texto-*, --esp-*, --raio, --sombra): tipografia, espaçamento e forma, iguais nos dois modos.
+ *
+ * Tema: sem atributo, segue o sistema operacional. <html data-tema="claro|escuro"> força um dos modos
+ * (components/SeletorTema.tsx grava a escolha no navegador).
+ */
+
+/* ---------- 1. paleta base ---------- */
+:root {
+  /* neutros levemente esverdeados */
+  --neutro-0: #ffffff;
+  --neutro-50: #f5f7f3;
+  --neutro-100: #e6ebe7;
+  --neutro-200: #dde3de;
+  --neutro-300: #b5c1ba;
+  --neutro-400: #9aa8a1;
+  --neutro-450: #7f8c85;
+  --neutro-500: #66716b;
+  --neutro-600: #56645d;
+  --neutro-700: #4a5851;
+  --neutro-800: #2a342f;
+  --neutro-850: #232d28;
+  --neutro-900: #19211d;
+  --neutro-950: #111714;
+
+  /* verde de mata da serra: a cor da marca */
+  --verde-300: #4fb393;
+  --verde-700: #1d6b57;
+  --verde-900: #163d33;
+  --verde-950: #0c2620;
+  --verde-claro-300: #5cc28a;
+  --verde-claro-700: #1f7a4d;
+
+  /* cores de apoio para séries de gráficos e estados */
+  --ambar-300: #dfa449;
+  --ambar-600: #c48527;
+  --ambar-700: #b7791f;
+  --azul-300: #7d9fd6;
+  --azul-600: #4b6fa3;
+  --terracota-300: #d27c64;
+  --terracota-600: #a5523f;
+  --vermelho-300: #ef6a5e;
+  --vermelho-600: #c0362c;
+  --vermelho-700: #b3261e;
+}
+
+/* ---------- 2. tokens semânticos ---------- */
+:root {
+  color-scheme: light dark;
+
+  /* superfícies e texto */
+  --fundo: light-dark(var(--neutro-50), var(--neutro-950));
+  --painel: light-dark(var(--neutro-0), var(--neutro-900));
+  --texto: light-dark(var(--neutro-900), var(--neutro-100));
+  --texto-suave: light-dark(var(--neutro-600), var(--neutro-400));
+  --linha: light-dark(var(--neutro-200), var(--neutro-800));
+  --topo: light-dark(var(--verde-900), var(--verde-950));
+  --topo-texto: light-dark(var(--neutro-50), var(--neutro-100));
+
+  /* ação e marca */
+  --destaque: light-dark(var(--verde-700), var(--verde-300));
+  --sobre-destaque: light-dark(var(--neutro-0), var(--neutro-950)); /* texto sobre fundo --destaque */
+  --foco: var(--destaque);
+
+  /* estados */
+  --bom: light-dark(var(--verde-claro-700), var(--verde-claro-300));
+  --ruim: light-dark(var(--vermelho-700), var(--vermelho-300));
+  --alerta: light-dark(var(--ambar-700), var(--ambar-300));
+  --critica: light-dark(var(--vermelho-600), var(--vermelho-300));
+
+  /* gráficos: séries em ordem de uso; --apagada para contexto, --referencia para o Ceará */
+  --serie-1: var(--destaque);
+  --serie-2: light-dark(var(--ambar-600), var(--ambar-300));
+  --serie-3: light-dark(var(--azul-600), var(--azul-300));
+  --serie-4: light-dark(var(--terracota-600), var(--terracota-300));
+  --apagada: light-dark(var(--neutro-300), var(--neutro-700));
+  --referencia: light-dark(var(--neutro-500), var(--neutro-400));
+  --grade: light-dark(var(--neutro-100), var(--neutro-850));
+  --eixo: light-dark(var(--neutro-450), var(--neutro-500)); /* linha-guia do cursor nos gráficos */
+
+  /* light-dark() só aceita cores: a sombra usa um token de cor */
+  --sombra-cor: light-dark(rgb(0 0 0 / 0.12), rgb(0 0 0 / 0.45));
+  --sombra: 0 4px 16px var(--sombra-cor);
+}
+
+:root[data-tema="claro"] {
+  color-scheme: light;
+}
+:root[data-tema="escuro"] {
+  color-scheme: dark;
+}
+
+/* ---------- 3. escalas ---------- */
+:root {
+  /* tipografia (fontes definidas em app/layout.tsx) */
+  --fonte-corpo: var(--fonte-texto), system-ui, sans-serif;
+  --fonte-display: var(--fonte-titulo), Georgia, serif;
+  --texto-2xs: 11px;
+  --texto-xs: 13px;
+  --texto-sm: 14px;
+  --texto-md: 15px;
+  --texto-base: 16px;
+  --texto-lg: 17px;
+  --texto-xl: 18px;
+  --texto-kpi: 34px;
+
+  /* espaçamento */
+  --esp-1: 4px;
+  --esp-2: 8px;
+  --esp-3: 12px;
+  --esp-4: 16px;
+  --esp-5: 20px;
+  --esp-6: 24px;
+  --esp-8: 32px;
+  --esp-12: 48px;
+
+  /* forma */
+  --raio: 8px;
+  --raio-pilula: 999px;
+  --largura-max: 1200px;
+}
