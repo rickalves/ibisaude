@@ -54,7 +54,9 @@ A cada commit o site é reconstruído.
 ## Atualização automática
 
 O workflow `.github/workflows/atualizar-dados.yml` roda todo dia 5 (ou manualmente, em *Actions*):
-coleta os arquivos novos do DATASUS, recalcula os indicadores e faz commit de `web/public/dados/`.
+baixa só os arquivos do DATASUS que mudaram desde a última execução, recalcula os indicadores (usando as contagens
+guardadas em `data/agregados/` para o resto) e faz commit de `web/public/dados/`. Detalhes em
+[docs/arquitetura.md](docs/arquitetura.md#4-atualização-automática).
 Esse commit dispara a nova publicação na Vercel.
 
 ## Notas de método

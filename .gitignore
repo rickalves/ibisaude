@@ -2,7 +2,9 @@
 __pycache__/
 *.part
 
-# Microdados com registros individuais (SIM, SINASC, SIH, SINAN): ficam só na máquina/cache do CI, nunca no git.
+# Microdados com registros individuais (SIM, SINASC, SIH, SINAN): ficam só na máquina, nunca no git.
+# O manifesto da coleta (nomes, tamanhos e datas dos arquivos do FTP) entra, para a atualização incremental.
 data/cache/
-data/datasus/
+data/datasus/*
+!data/datasus/manifesto.json
 data/datasus_ce/

@@ -10,11 +10,14 @@ O observatório tem três partes que rodam em momentos diferentes:
                           ┌────────────── fora do git (microdados) ──────────────┐
 FTP DATASUS ──► coleta/datasus.py ──► data/datasus/*.parquet      (só a Ibiapaba, todas as colunas)
  SIM, SINASC,    └ Dbc2Dbf.java       data/datasus_ce/*.parquet   (todo o CE, colunas reduzidas)
- SIH, SINAN                           data/datasus/manifesto.json
+ SIH, SINAN
                           └──────────────────────────────────────────────────────┘
+                 └──► data/datasus/manifesto.json  (nomes, tamanhos e datas no FTP; no git)
 IBGE SIDRA ──► coleta/populacao_ibge.py ──► data/referencia/populacao.csv
                                                     │
                        indicadores/construir.py ◄───┘   (lê data/datasus_ce + população)
+                                 │  ▲
+                                 │  └── data/agregados/*.csv  contagens por arquivo de origem (no git)
                                  │
                                  ├──► web/public/dados/*.json           tabelas que o site lê
                                  ├──► web/public/dados/indicadores.csv  formato longo, para programas
@@ -30,7 +33,7 @@ IBGE SIDRA ──► coleta/populacao_ibge.py ──► data/referencia/populaca
 | `config/` | `municipios_ibiapaba.json`: os 8 municípios do núcleo (código IBGE de 6 e 7 dígitos) e 2 opcionais (Ipu, Ipueiras) |
 | `coleta/` | `datasus.py` (FTP do DATASUS), `Dbc2Dbf.java` (descompressor de `.dbc`), `populacao_ibge.py` (SIDRA), `resumo_datasus.py` (contagem de registros, para conferência) |
 | `indicadores/` | `construir.py` (cálculo dos indicadores) e `planilhas.py` (geração do Excel e dos CSV) |
-| `data/` | `datasus/` e `datasus_ce/` (microdados, ignorados pelo git), `referencia/` (população), `indicadores/` (cópia do CSV de indicadores) |
+| `data/` | `datasus/` e `datasus_ce/` (microdados, ignorados pelo git, exceto `datasus/manifesto.json`), `agregados/` (contagens por arquivo de origem), `referencia/` (população), `indicadores/` (cópia do CSV de indicadores) |
 | `web/` | Site Next.js. Detalhes em [web/README.md](../web/README.md) |
 | `testes/` | `teste_api.py`: teste da API de Dados Abertos do Ministério da Saúde (não é usado pelo site) |
 | `painel/` | Primeira versão do painel, publicada no claude.ai; substituída pelo site |
@@ -102,6 +105,11 @@ para 2023, então o valor é interpolado entre 2022 e 2024. A API do Ministério
 - **Médias de 3 anos** (`tmi_3a`, `tmn_3a`, `rmm_3a`): soma dos óbitos do ano e dos dois anteriores dividida pela soma
   dos nascidos vivos dos mesmos três anos. Os municípios têm de 200 a 1.500 nascimentos por ano, e um único óbito
   muda a taxa anual em vários pontos.
+- **Contagens guardadas.** Antes de virar indicador, tudo é contado por arquivo de origem (por exemplo
+  "óbitos infantis em Tianguá, 2024, vindos de `DOCE2024`") e guardado em `data/agregados/`. Na execução seguinte,
+  os arquivos que estão no disco são recontados e substituem suas linhas; os que não estão (porque não mudaram no
+  FTP) continuam valendo. Como todas as contagens são somas, o resultado é idêntico ao de recalcular tudo. O valor em
+  reais das internações é arredondado a centavos por arquivo, para o CSV não mudar à toa entre execuções.
 - **Definições.** O dicionário `DEFINICOES` em `construir.py` é a fonte única de nome, eixo, multiplicador, unidade,
   sentido (`melhor`: "menor" ou "maior"), fonte e nota de cada indicador. O site e as planilhas leem dele, via
   `indicadores.json`.
@@ -148,20 +156,31 @@ Next.js 16 fica desligada porque não funciona com `output: "export"`.
 
 `.github/workflows/atualizar-dados.yml` roda no dia 5 de cada mês (ou manualmente, em *Actions*):
 
-1. restaura `data/datasus*` do cache do GitHub Actions;
-2. roda `datasus.py` (só baixa o que mudou), `populacao_ibge.py` e `construir.py`;
-3. faz commit de `web/public/dados`, `data/indicadores` e `data/referencia` se algo mudou;
+1. roda `datasus.py --incremental`: lista as pastas do FTP (alguns segundos) e compara com o manifesto que está no
+   git. Só baixa os arquivos novos ou com tamanho/data diferentes. Na prática são os preliminares do ano corrente e
+   do anterior, os meses novos do SIH e, de vez em quando, um arquivo antigo que o DATASUS revisou;
+2. roda `populacao_ibge.py` e `construir.py`, que recalcula só os arquivos baixados e usa `data/agregados/` para o resto;
+3. faz commit de `web/public/dados`, `data/indicadores`, `data/referencia`, `data/agregados` e do manifesto;
 4. a Vercel percebe o commit e publica o site de novo.
 
-O GitHub apaga caches sem uso há 7 dias. Como o workflow roda uma vez por mês, na prática cada execução baixa tudo de
-novo (cerca de 1 hora). O limite de tempo do job é 5 horas.
+Por que não "baixar só os 2 últimos anos": o DATASUS também revisa anos anteriores (o SIM de um ano só fica
+definitivo cerca de dois anos depois, e o SIH reapresenta AIHs de meses passados). Comparar com o manifesto pega
+essas revisões sem baixar o que não mudou.
+
+**Execução completa.** Em *Actions → Atualizar dados → Run workflow*, marque "Baixar todos os anos de novo". Ela apaga
+`data/agregados` e baixa tudo (cerca de 1 hora). É necessária quando muda o **cálculo** de uma contagem que já existe
+(por exemplo, a lista de códigos CID de um indicador) ou quando se adiciona uma coluna nova do DATASUS, porque as
+contagens guardadas dos anos antigos foram feitas com a regra anterior. Quem tem todos os microdados na própria
+máquina pode, em vez disso, rodar `construir.py` localmente e fazer commit de `data/agregados`.
 
 ## Privacidade (LGPD)
 
 Os microdados do DATASUS são públicos, mas têm registros individuais (data de nascimento, município, causa de morte).
 Em municípios pequenos, cruzar esses campos pode identificar uma pessoa. Por isso:
 
-- `data/datasus/`, `data/datasus_ce/` e `data/cache/` estão no `.gitignore` e nunca vão para o repositório nem para o site;
+- `data/datasus/`, `data/datasus_ce/` e `data/cache/` estão no `.gitignore` e nunca vão para o repositório nem para o site.
+  A única exceção é `data/datasus/manifesto.json`, que só tem nomes, tamanhos e datas dos arquivos do FTP;
+- `data/agregados/` tem contagens por município, ano e arquivo de origem, o mesmo nível de detalhe do que o site já publica;
 - o site e as planilhas só publicam contagens agregadas por município e ano (ou semana).
 
 ## Como estender
@@ -173,9 +192,11 @@ Em municípios pequenos, cruzar esses campos pode identificar uma pessoa. Por is
    entrada correspondente no manifesto).
 2. Em `construir.py`, conte o numerador numa das consultas `acumular(...)` (por exemplo
    `count(*) filter (where ...) as minha_variavel`).
-3. Adicione a definição em `DEFINICOES`: `"codigo": (nome, eixo, multiplicador, unidade, melhor, fonte, nota)`.
-4. Chame `add(u, a, "codigo", g("numerador"), g("denominador"))` no laço de indicadores.
-5. Rode `construir.py` e `npm run build`. O indicador aparece sozinho no seletor, na ficha, na Metodologia e nas
+3. Como as contagens dos anos antigos estão guardadas sem a variável nova, rode `construir.py` com todos os
+   microdados locais (ou dispare a execução completa do workflow) e faça commit de `data/agregados`.
+4. Adicione a definição em `DEFINICOES`: `"codigo": (nome, eixo, multiplicador, unidade, melhor, fonte, nota)`.
+5. Chame `add(u, a, "codigo", g("numerador"), g("denominador"))` no laço de indicadores.
+6. Rode `construir.py` e `npm run build`. O indicador aparece sozinho no seletor, na ficha, na Metodologia e nas
    planilhas.
 
 ### Adicionar uma página

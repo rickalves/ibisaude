@@ -85,4 +85,6 @@ Termos usados no site, nas planilhas e no código. Nomes de variáveis do códig
 | **Vercel** | Serviço de hospedagem recomendado; publica o site a cada commit no GitHub. |
 | **GitHub Actions** | Automação do GitHub que roda a atualização mensal dos dados. |
 | **Manifesto** | `data/datasus/manifesto.json`: registro de cada arquivo já baixado (tamanho, data no FTP, se é preliminar), usado para não baixar de novo o que não mudou. |
+| **Contagens agregadas** | `data/agregados/*.csv`: contagens por município, ano e arquivo de origem do DATASUS, guardadas no git para que a atualização mensal só precise baixar os arquivos que mudaram. |
+| **Execução incremental** | Modo da coleta (`--incremental`) que confia no manifesto e só baixa arquivos novos ou alterados no FTP. |
 | **BOM** | Marca no início de um arquivo de texto que avisa ao Excel que o arquivo é UTF-8. Sem ela, os acentos aparecem errados nos CSV. |

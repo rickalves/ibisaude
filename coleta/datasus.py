@@ -8,12 +8,17 @@ Uso:
   .venv/Scripts/python coleta/datasus.py                          # SIM, SINASC, SIH, SINAN 2019-2026
   .venv/Scripts/python coleta/datasus.py --sistemas SIH --inicio 2024
   .venv/Scripts/python coleta/datasus.py --sistemas SIA --inicio 2025 --fim 2025   # pesado: ~80 MB/mês
+  .venv/Scripts/python coleta/datasus.py --incremental            # só o que mudou no FTP desde o manifesto
 
 Saída: data/datasus/<SISTEMA>/<ARQUIVO>.parquet      registros completos da Ibiapaba
        data/datasus_ce/<SISTEMA>/<ARQUIVO>.parquet   colunas reduzidas, todos os residentes do CE
        data/datasus/manifesto.json
 Arquivos já processados com o mesmo tamanho/data no FTP são pulados (preliminares são
 re-baixados automaticamente quando o DATASUS os atualiza).
+
+--incremental: pula os arquivos que estão no manifesto com o mesmo tamanho/data mesmo que o Parquet não esteja no
+disco. É o modo da atualização automática: o manifesto e as contagens agregadas (data/agregados) ficam no git, e
+indicadores/construir.py só recalcula os arquivos baixados nesta execução.
 """
 import argparse
 import datetime as dt
@@ -230,6 +235,8 @@ def main():
     ap.add_argument("--inicio", type=int, default=2019)
     ap.add_argument("--fim", type=int, default=dt.date.today().year)
     ap.add_argument("--manter-dbc", action="store_true", help="não apagar os .dbc baixados")
+    ap.add_argument("--incremental", action="store_true",
+                    help="confiar no manifesto: não baixar de novo arquivos inalterados mesmo sem o Parquet local")
     args = ap.parse_args()
 
     codigos = municipios()
@@ -254,8 +261,9 @@ def main():
                 destino = SAIDA / sistema / (Path(nome_real).stem.upper() + ".parquet")
                 destino_ce = SAIDA_CE / sistema / destino.name
                 anterior = manifesto.get(caminho)
-                if (anterior and anterior["tamanho"] == tamanho and anterior["data_remota"] == data_remota
-                        and destino.exists() and (destino_ce.exists() or not cfg["colunas_ce"])):
+                inalterado = anterior and anterior["tamanho"] == tamanho and anterior["data_remota"] == data_remota
+                if inalterado and (args.incremental or (
+                        destino.exists() and (destino_ce.exists() or not cfg["colunas_ce"]))):
                     continue
 
                 dbc = CACHE / sistema / nome_real
@@ -272,6 +280,9 @@ def main():
                 if not args.manter_dbc:
                     dbc.unlink()
 
+                # o mesmo arquivo pode ter vindo antes de outra pasta (PRELIM -> definitivo)
+                for k in [k for k, m in manifesto.items() if m["arquivo"].upper() == nome_real.upper() and k != caminho]:
+                    del manifesto[k]
                 manifesto[caminho] = {
                     "sistema": sistema, "arquivo": nome_real, "tamanho": tamanho, "data_remota": data_remota,
                     "preliminar": "PRELIM" in pasta, "registros_total": total, "registros_ibiapaba": len(linhas),

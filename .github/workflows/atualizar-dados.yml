@@ -1,11 +1,21 @@
 name: Atualizar dados
 
-# Todo dia 5, baixa os arquivos novos do DATASUS, recalcula os indicadores e faz commit dos JSON em
-# web/public/dados. A hospedagem (Vercel) publica o site de novo a cada commit.
+# Todo dia 5, baixa do DATASUS só os arquivos que mudaram desde a última execução, recalcula os indicadores e faz
+# commit dos resultados. A hospedagem (Vercel) publica o site de novo a cada commit.
+#
+# O que torna a execução rápida: o manifesto da coleta (data/datasus/manifesto.json) e as contagens agregadas por
+# arquivo (data/agregados/) ficam no git. A coleta compara o manifesto com a listagem do FTP e só baixa arquivos novos
+# ou atualizados (em geral os preliminares do ano corrente e do anterior e os meses novos do SIH); o cálculo
+# recalcula esses arquivos e usa as contagens guardadas para os demais. Nenhum microdado entra no git.
 on:
   schedule:
     - cron: "0 9 5 * *" # dia 5, 06h em Brasília
   workflow_dispatch:
+    inputs:
+      completo:
+        description: "Baixar todos os anos de novo (~1 h). Use se o cálculo de um indicador mudar."
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -33,18 +43,15 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      # Microdados das execuções anteriores: evita baixar de novo o que não mudou no FTP.
-      # O GitHub apaga caches sem uso há 7 dias; nesse caso a coleta baixa tudo outra vez (~1 h).
-      - uses: actions/cache@v4
-        with:
-          path: |
-            data/datasus
-            data/datasus_ce
-          key: datasus-${{ github.run_id }}
-          restore-keys: datasus-
+      - name: Coletar DATASUS (só o que mudou)
+        if: ${{ !inputs.completo }}
+        run: python coleta/datasus.py --incremental
 
-      - name: Coletar DATASUS
-        run: python coleta/datasus.py
+      - name: Coletar DATASUS (todos os anos)
+        if: ${{ inputs.completo }}
+        run: |
+          rm -rf data/agregados
+          python coleta/datasus.py
 
       - name: População (IBGE)
         run: python coleta/populacao_ibge.py
@@ -56,7 +63,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
-          git add web/public/dados data/indicadores data/referencia
+          git add web/public/dados data/indicadores data/referencia data/agregados data/datasus/manifesto.json
           if git diff --cached --quiet; then
             echo "Nenhum dado novo."
           else

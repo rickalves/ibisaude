@@ -7,7 +7,12 @@ Uso:
   .venv/Scripts/python indicadores/construir.py                 # base do Ceará (data/datasus_ce)
   .venv/Scripts/python indicadores/construir.py --base ibiapaba # só Ibiapaba (data/datasus), sem a unidade CE
 
+Contagens guardadas (base ce): data/agregados/*.csv tem as contagens de cada arquivo do DATASUS, já agregadas por
+município e ano. Os arquivos presentes em data/datasus_ce são recalculados; os demais vêm dessas contagens. Assim a
+atualização mensal só precisa baixar os arquivos que mudaram (coleta/datasus.py --incremental).
+
 Saída:
+  data/agregados/*.csv               contagens por arquivo de origem (entram no git; não têm registros individuais)
   data/indicadores/indicadores.csv   tabela longa (unidade, ano, indicador, numerador, denominador, valor)
   web/public/dados/*.json            tabelas do site (só agregados, sem microdados); também baixáveis
   web/public/dados/planilhas/        as mesmas tabelas em .xlsx e .csv para Excel (indicadores/planilhas.py)
@@ -24,7 +29,9 @@ import duckdb
 import planilhas
 
 RAIZ = Path(__file__).resolve().parent.parent
+AGREGADOS = RAIZ / "data" / "agregados"
 SOBRAL, FORTALEZA = "231290", "230440"
+ARQUIVO = r"regexp_extract(filename, '([^/\\]+)\.parquet$', 1)"  # nome do arquivo de origem, ex.: DOCE2024
 
 # Lista brasileira de internações por condições sensíveis à atenção primária (Portaria SAS/MS 221/2008)
 ICSAP = (r"^(A0[0-9]|A1[5-9]|A3[3-7]|A5[0-3]|A95|B0[56]|B16|B26|B5[0-4]|B77|D50|E1[0-4]|E4[0-6]|E5[0-9]|"
@@ -100,12 +107,16 @@ def carregar(con, base, cfg):
     con.executemany("insert into mun values (?, ?)", [(m["ibge6"], m["nome"]) for m in cfg["nucleo"]])
 
     def ler(sistema, padrao="*.parquet"):
-        arquivos = list((base / sistema).glob(padrao))
+        """Origem SQL dos Parquet de um sistema e os nomes dos arquivos; None se não houver nenhum no disco."""
+        arquivos = sorted((base / sistema).glob(padrao))
         if not arquivos:
-            raise SystemExit(f"sem dados em {base / sistema}")
-        return f"read_parquet('{(base / sistema).as_posix()}/{padrao}', union_by_name=true, filename=true)"
+            return None, []
+        return (f"read_parquet('{(base / sistema).as_posix()}/{padrao}', union_by_name=true, filename=true)",
+                [a.stem for a in arquivos])
 
     def unidades(nome, origem, res, com_ce):
+        if origem is None:
+            return False
         sql = f"""
             create or replace view {nome} as
             select left({res}, 6) as unidade, * from {origem} where left({res}, 6) in (select cod from mun)
@@ -114,35 +125,80 @@ def carregar(con, base, cfg):
         if com_ce:
             sql += f"\n union all select 'CE', * from {origem} where left({res}, 2) = '23'"
         con.execute(sql)
+        return True
     return ler, unidades
+
+
+def mesclar(nome, novas, recalculados, persistir):
+    """Junta as contagens recém-calculadas com as guardadas em data/agregados/<nome>.csv.
+
+    Linhas guardadas de arquivos que acabaram de ser recalculados são descartadas; as de arquivos que não estão
+    no disco (anos antigos, que não mudaram no FTP) são mantidas. Com persistir=False só usa as novas.
+    """
+    caminho = AGREGADOS / f"{nome}.csv"
+    todas = list(novas)
+    if persistir and caminho.exists():
+        with open(caminho, encoding="utf-8", newline="") as f:
+            for r in csv.DictReader(f):
+                if r["arquivo"] in recalculados:
+                    continue
+                todas.append({k: (v if k in ("arquivo", "unidade", "u", "variavel", "agravo", "c") else
+                                  float(v) if "." in v else int(v)) for k, v in r.items()})
+    if persistir and todas:
+        todas.sort(key=lambda r: tuple(str(v) for v in r.values()))
+        caminho.parent.mkdir(parents=True, exist_ok=True)
+        with open(caminho, "w", encoding="utf-8", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=list(todas[0]), lineterminator="\n")
+            w.writeheader()
+            w.writerows(todas)
+    return todas
+
+
+def somar(linhas, chaves, campo="n"):
+    """Soma `campo` entre os arquivos de origem, mantendo só `chaves`."""
+    total = defaultdict(int)
+    for r in linhas:
+        total[tuple(r[k] for k in chaves)] += r[campo]
+    return [dict(zip(chaves, k)) | {campo: v} for k, v in sorted(total.items())]
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--base", choices=["ce", "ibiapaba"], default="ce")
+    ap.add_argument("--microdados", type=Path, help="pasta dos Parquet, se não for a padrão da base")
     args = ap.parse_args()
-    base = RAIZ / "data" / ("datasus_ce" if args.base == "ce" else "datasus")
+    base = args.microdados or RAIZ / "data" / ("datasus_ce" if args.base == "ce" else "datasus")
     com_ce = args.base == "ce"
     cfg = json.loads((RAIZ / "config" / "municipios_ibiapaba.json").read_text(encoding="utf-8"))
 
     con = duckdb.connect()
     ler, unidades = carregar(con, base, cfg)
-    unidades("sim", ler("SIM"), "CODMUNRES", com_ce)
-    unidades("sinasc", ler("SINASC"), "CODMUNRES", com_ce)
-    unidades("sih", ler("SIH"), "MUNIC_RES", com_ce)
-    unidades("sinan", ler("SINAN"), "ID_MN_RESI", com_ce)
+    tem, recalculados = {}, set()
+    for nome, sistema, res in (("sim", "SIM", "CODMUNRES"), ("sinasc", "SINASC", "CODMUNRES"),
+                               ("sih", "SIH", "MUNIC_RES"), ("sinan", "SINAN", "ID_MN_RESI")):
+        origem, arquivos = ler(sistema)
+        tem[nome] = unidades(nome, origem, res, com_ce)
+        recalculados.update(arquivos)
+    persistir = com_ce  # as contagens guardadas são da base do Ceará
+    if not recalculados and not (persistir and (AGREGADOS / "contagens.csv").exists()):
+        raise SystemExit(f"sem dados em {base} nem em {AGREGADOS}")
+    print(f"{len(recalculados)} arquivo(s) recalculado(s) a partir de {base}")
 
     agg = defaultdict(dict)  # (unidade, ano) -> {variável: valor}
+    contagens = []  # uma linha por arquivo de origem, unidade, ano e variável
 
-    def acumular(sql):
+    def acumular(sistema, sql):
+        if not tem[sistema]:
+            return
         res = con.execute(sql)
         cols = [d[0] for d in res.description]
         for linha in res.fetchall():
             reg = dict(zip(cols, linha))
             if reg["ano"] is None:
                 continue
-            chave = (reg.pop("unidade"), int(reg.pop("ano")))
-            agg[chave].update({k: v for k, v in reg.items()})
+            arquivo, u, a = reg.pop("arquivo"), reg.pop("unidade"), int(reg.pop("ano"))
+            contagens.extend({"arquivo": arquivo, "unidade": u, "ano": a, "variavel": k, "valor": v}
+                             for k, v in reg.items() if v is not None)
 
     # população
     with open(RAIZ / "data" / "referencia" / "populacao.csv", encoding="utf-8") as f:
@@ -153,13 +209,13 @@ def main():
             if u == m["ibge6"] and "pop" in v:
                 agg[("IBIAPABA", a)]["pop"] = agg[("IBIAPABA", a)].get("pop", 0) + v["pop"]
 
-    acumular("""
+    acumular("sim", f"""
         with s as (
             select *, case left(IDADE, 1) when '4' then try_cast(substr(IDADE, 2, 2) as int)
                                           when '5' then 100 + try_cast(substr(IDADE, 2, 2) as int)
                                           else 0 end as idade_anos
             from sim)
-        select unidade, try_cast(right(DTOBITO, 4) as int) as ano,
+        select {ARQUIVO} as arquivo, unidade, try_cast(right(DTOBITO, 4) as int) as ano,
             count(*) as obitos,
             count(*) filter (where left(IDADE, 1) in ('0', '1', '2', '3')) as obitos_inf,
             count(*) filter (where left(IDADE, 1) in ('0', '1')
@@ -175,8 +231,8 @@ def main():
                 or CAUSABAS between 'I00' and 'I99z' or CAUSABAS between 'J30' and 'J98z')) as dcnt_prem
         from s group by all""")
 
-    acumular("""
-        select unidade, try_cast(right(DTNASC, 4) as int) as ano,
+    acumular("sinasc", f"""
+        select {ARQUIVO} as arquivo, unidade, try_cast(right(DTNASC, 4) as int) as ano,
             count(*) as nv,
             count(*) filter (where PARTO = '2') as cesareas,
             count(*) filter (where PARTO in ('1', '2')) as partos_inf,
@@ -192,24 +248,28 @@ def main():
             count(*) filter (where try_cast(IDADEMAE as int) between 10 and 60) as idademae_inf
         from sinasc group by all""")
 
-    acumular(f"""
-        select unidade, try_cast(ANO_CMPT as int) as ano,
+    acumular("sih", f"""
+        select {ARQUIVO} as arquivo, unidade, try_cast(ANO_CMPT as int) as ano,
             count(*) as internacoes,
             count(*) filter (where not (DIAG_PRINC between 'O80' and 'O84z')) as internacoes_sem_parto,
             count(*) filter (where regexp_matches(DIAG_PRINC, '{ICSAP}')) as icsap,
             count(*) filter (where left(MUNIC_MOV, 6) not in (select cod from mun)) as fora_serra,
             count(*) filter (where MORTE = '1') as obitos_hosp,
-            sum(try_cast(VAL_TOT as double)) as gasto
+            round(sum(try_cast(VAL_TOT as double)), 2) as gasto
         from sih group by all""")
 
-    acumular("""
-        select unidade, try_cast(NU_ANO as int) as ano,
+    acumular("sinan", f"""
+        select {ARQUIVO} as arquivo, unidade, try_cast(NU_ANO as int) as ano,
             count(*) filter (where filename like '%DENG%') as dengue,
             count(*) filter (where filename like '%DENG%' and CLASSI_FIN in ('11', '12')) as dengue_graves,
             count(*) filter (where filename like '%DENG%' and EVOLUCAO = '2') as dengue_obitos,
             count(*) filter (where filename like '%CHIK%' and coalesce(CLASSI_FIN, '') <> '5') as chik,
             count(*) filter (where filename like '%ZIKA%' and coalesce(CLASSI_FIN, '') <> '2') as zika
         from sinan group by all""")
+
+    for r in mesclar("contagens", contagens, recalculados, persistir):
+        v = agg[(r["unidade"], r["ano"])]
+        v[r["variavel"]] = v.get(r["variavel"], 0) + r["valor"]
 
     # ------------------------------------------------------------- indicadores anuais (formato longo)
     linhas = []
@@ -275,38 +335,43 @@ def main():
         add(u, a, "zika_casos", g("zika"))
 
     # ------------------------------------------------------------- séries auxiliares
-    def tabela(sql):
-        res = con.execute(sql)
-        cols = [d[0] for d in res.description]
-        return [dict(zip(cols, r)) for r in res.fetchall()]
+    def tabela(nome, sistema, sql, chaves):
+        """Contagens por arquivo de origem, mescladas com as guardadas e somadas entre arquivos."""
+        novas = []
+        if tem[sistema]:
+            res = con.execute(sql)
+            cols = [d[0] for d in res.description]
+            novas = [dict(zip(cols, r)) for r in res.fetchall()]
+            novas = [r for r in novas if all(r[k] is not None for k in chaves)]
+        return somar(mesclar(nome, novas, recalculados, persistir), chaves)
 
-    semanal = tabela("""
-        select unidade as u, case when filename like '%DENG%' then 'dengue' else 'chik' end as agravo,
+    semanal = tabela("semanal", "sinan", f"""
+        select {ARQUIVO} as arquivo, unidade as u, case when filename like '%DENG%' then 'dengue' else 'chik' end as agravo,
                try_cast(left(SEM_PRI, 4) as int) as a, try_cast(right(SEM_PRI, 2) as int) as s, count(*) as n
         from sinan
         where (filename like '%DENG%' or (filename like '%CHIK%' and coalesce(CLASSI_FIN, '') <> '5'))
           and length(SEM_PRI) = 6 and left(SEM_PRI, 4) >= '2019'
-        group by all order by all""")
+        group by all""", ["u", "agravo", "a", "s"])
 
-    causas_obito = tabela(f"""
-        select unidade as u, try_cast(right(DTOBITO, 4) as int) as a, {CAPITULO_CID.format(c='CAUSABAS')} as c,
+    causas_obito = tabela("causas_obito", "sim", f"""
+        select {ARQUIVO} as arquivo, unidade as u, try_cast(right(DTOBITO, 4) as int) as a, {CAPITULO_CID.format(c='CAUSABAS')} as c,
                count(*) as n
-        from sim where CAUSABAS <> '' group by all order by all""")
+        from sim where CAUSABAS <> '' group by all""", ["u", "a", "c"])
 
-    causas_internacao = tabela(f"""
-        select unidade as u, try_cast(ANO_CMPT as int) as a, {CAPITULO_CID.format(c='DIAG_PRINC')} as c,
+    causas_internacao = tabela("causas_internacao", "sih", f"""
+        select {ARQUIVO} as arquivo, unidade as u, try_cast(ANO_CMPT as int) as a, {CAPITULO_CID.format(c='DIAG_PRINC')} as c,
                count(*) as n
-        from sih where DIAG_PRINC <> '' group by all order by all""")
+        from sih where DIAG_PRINC <> '' group by all""", ["u", "a", "c"])
 
-    destino = tabela(f"""
-        select unidade as u, try_cast(ANO_CMPT as int) as a,
+    destino = tabela("destino_internacao", "sih", f"""
+        select {ARQUIVO} as arquivo, unidade as u, try_cast(ANO_CMPT as int) as a,
             case when left(MUNIC_MOV, 6) = left(MUNIC_RES, 6) then 'Próprio município'
                  when left(MUNIC_MOV, 6) in (select cod from mun) then 'Outro município da serra'
                  when left(MUNIC_MOV, 6) = '{SOBRAL}' then 'Sobral'
                  when left(MUNIC_MOV, 6) = '{FORTALEZA}' then 'Fortaleza'
                  else 'Outros municípios do CE' end as c,
             count(*) as n
-        from sih where unidade <> 'CE' group by all order by all""")
+        from sih where unidade <> 'CE' group by all""", ["u", "a", "c"])
 
     # ------------------------------------------------------------- saída
     nomes = {m["ibge6"]: m["nome"] for m in cfg["nucleo"]} | {"IBIAPABA": "Serra da Ibiapaba", "CE": "Ceará"}
