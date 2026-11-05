@@ -524,8 +524,8 @@ Croatá;230423;2026;Internações sensíveis à atenção primária;% das intern
 Croatá;230423;2026;Internações fora da Ibiapaba;% das internações;181;1101;16,44
 Croatá;230423;2026;Mortalidade hospitalar;% das internações;53;1101;4,81
 Croatá;230423;2026;Gasto SUS com internações por habitante;R$ por hab.;1536967,22;18090;84,96
-Croatá;230423;2026;Casos prováveis de dengue;casos;213;;213
-Croatá;230423;2026;Incidência de dengue;por 100 mil hab.;213;18090;1177,45
+Croatá;230423;2026;Casos prováveis de dengue;casos;214;;214
+Croatá;230423;2026;Incidência de dengue;por 100 mil hab.;214;18090;1182,97
 Croatá;230423;2026;Dengue com sinais de alarme ou grave;casos;0;;0
 Croatá;230423;2026;Óbitos por dengue;óbitos;0;;0
 Croatá;230423;2026;Casos prováveis de chikungunya;casos;13;;13
@@ -790,8 +790,8 @@ Guaraciaba do Norte;230500;2026;Internações sensíveis à atenção primária;
 Guaraciaba do Norte;230500;2026;Internações fora da Ibiapaba;% das internações;320;2105;15,2
 Guaraciaba do Norte;230500;2026;Mortalidade hospitalar;% das internações;86;2105;4,09
 Guaraciaba do Norte;230500;2026;Gasto SUS com internações por habitante;R$ por hab.;3264658,79;44823;72,83
-Guaraciaba do Norte;230500;2026;Casos prováveis de dengue;casos;435;;435
-Guaraciaba do Norte;230500;2026;Incidência de dengue;por 100 mil hab.;435;44823;970,48
+Guaraciaba do Norte;230500;2026;Casos prováveis de dengue;casos;433;;433
+Guaraciaba do Norte;230500;2026;Incidência de dengue;por 100 mil hab.;433;44823;966,02
 Guaraciaba do Norte;230500;2026;Dengue com sinais de alarme ou grave;casos;3;;3
 Guaraciaba do Norte;230500;2026;Óbitos por dengue;óbitos;0;;0
 Guaraciaba do Norte;230500;2026;Casos prováveis de chikungunya;casos;4;;4
@@ -1315,8 +1315,8 @@ São Benedito;231230;2026;Internações sensíveis à atenção primária;% das 
 São Benedito;231230;2026;Internações fora da Ibiapaba;% das internações;417;2239;18,62
 São Benedito;231230;2026;Mortalidade hospitalar;% das internações;93;2239;4,15
 São Benedito;231230;2026;Gasto SUS com internações por habitante;R$ por hab.;3414850,12;50274;67,92
-São Benedito;231230;2026;Casos prováveis de dengue;casos;31;;31
-São Benedito;231230;2026;Incidência de dengue;por 100 mil hab.;31;50274;61,66
+São Benedito;231230;2026;Casos prováveis de dengue;casos;30;;30
+São Benedito;231230;2026;Incidência de dengue;por 100 mil hab.;30;50274;59,67
 São Benedito;231230;2026;Dengue com sinais de alarme ou grave;casos;0;;0
 São Benedito;231230;2026;Óbitos por dengue;óbitos;0;;0
 São Benedito;231230;2026;Casos prováveis de chikungunya;casos;7;;7
@@ -1581,8 +1581,8 @@ Tianguá;231340;2026;Internações sensíveis à atenção primária;% das inter
 Tianguá;231340;2026;Internações fora da Ibiapaba;% das internações;640;5083;12,59
 Tianguá;231340;2026;Mortalidade hospitalar;% das internações;157;5083;3,09
 Tianguá;231340;2026;Gasto SUS com internações por habitante;R$ por hab.;8680113,98;87757;98,91
-Tianguá;231340;2026;Casos prováveis de dengue;casos;1181;;1181
-Tianguá;231340;2026;Incidência de dengue;por 100 mil hab.;1181;87757;1345,76
+Tianguá;231340;2026;Casos prováveis de dengue;casos;1264;;1264
+Tianguá;231340;2026;Incidência de dengue;por 100 mil hab.;1264;87757;1440,34
 Tianguá;231340;2026;Dengue com sinais de alarme ou grave;casos;3;;3
 Tianguá;231340;2026;Óbitos por dengue;óbitos;2;;2
 Tianguá;231340;2026;Casos prováveis de chikungunya;casos;3;;3
@@ -2379,8 +2379,8 @@ Serra da Ibiapaba;IBIAPABA;2026;Internações sensíveis à atenção primária;
 Serra da Ibiapaba;IBIAPABA;2026;Internações fora da Ibiapaba;% das internações;2769;18474;14,99
 Serra da Ibiapaba;IBIAPABA;2026;Mortalidade hospitalar;% das internações;648;18474;3,51
 Serra da Ibiapaba;IBIAPABA;2026;Gasto SUS com internações por habitante;R$ por hab.;27391893,74;341387;80,24
-Serra da Ibiapaba;IBIAPABA;2026;Casos prováveis de dengue;casos;2120;;2120
-Serra da Ibiapaba;IBIAPABA;2026;Incidência de dengue;por 100 mil hab.;2120;341387;621
+Serra da Ibiapaba;IBIAPABA;2026;Casos prováveis de dengue;casos;2201;;2201
+Serra da Ibiapaba;IBIAPABA;2026;Incidência de dengue;por 100 mil hab.;2201;341387;644,72
 Serra da Ibiapaba;IBIAPABA;2026;Dengue com sinais de alarme ou grave;casos;6;;6
 Serra da Ibiapaba;IBIAPABA;2026;Óbitos por dengue;óbitos;2;;2
 Serra da Ibiapaba;IBIAPABA;2026;Casos prováveis de chikungunya;casos;40;;40
@@ -2637,10 +2637,10 @@ Ceará;CE;2026;Taxa de internação SUS;por mil hab.;411231;9302211;44,21
 Ceará;CE;2026;Internações sensíveis à atenção primária;% das internações (exceto partos);64810;384498;16,86
 Ceará;CE;2026;Mortalidade hospitalar;% das internações;16195;411231;3,94
 Ceará;CE;2026;Gasto SUS com internações por habitante;R$ por hab.;696815790,63;9302211;74,91
-Ceará;CE;2026;Casos prováveis de dengue;casos;18531;;18531
-Ceará;CE;2026;Incidência de dengue;por 100 mil hab.;18531;9302211;199,21
-Ceará;CE;2026;Dengue com sinais de alarme ou grave;casos;612;;612
+Ceará;CE;2026;Casos prováveis de dengue;casos;18846;;18846
+Ceará;CE;2026;Incidência de dengue;por 100 mil hab.;18846;9302211;202,6
+Ceará;CE;2026;Dengue com sinais de alarme ou grave;casos;619;;619
 Ceará;CE;2026;Óbitos por dengue;óbitos;27;;27
-Ceará;CE;2026;Casos prováveis de chikungunya;casos;582;;582
-Ceará;CE;2026;Incidência de chikungunya;por 100 mil hab.;582;9302211;6,26
+Ceará;CE;2026;Casos prováveis de chikungunya;casos;574;;574
+Ceará;CE;2026;Incidência de chikungunya;por 100 mil hab.;574;9302211;6,17
 Ceará;CE;2026;Casos prováveis de zika;casos;264;;264

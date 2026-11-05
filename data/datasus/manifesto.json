@@ -1421,34 +1421,34 @@
  "/dissemin/publicos/SINAN/DADOS/PRELIM/DENGBR26.dbc": {
   "sistema": "SINAN",
   "arquivo": "DENGBR26.dbc",
-  "tamanho": 22163588,
-  "data_remota": "10-19-26 03:26PM",
+  "tamanho": 24049349,
+  "data_remota": "10-27-26 07:58AM",
   "preliminar": true,
-  "registros_total": 478404,
-  "registros_ibiapaba": 2104,
-  "registros_ce": 18459,
-  "coletado_em": "2026-10-27T12:07:11"
+  "registros_total": 483823,
+  "registros_ibiapaba": 2185,
+  "registros_ce": 18774,
+  "coletado_em": "2026-11-05T17:11:21"
  },
  "/dissemin/publicos/SINAN/DADOS/PRELIM/CHIKBR26.dbc": {
   "sistema": "SINAN",
   "arquivo": "CHIKBR26.dbc",
-  "tamanho": 5822578,
-  "data_remota": "10-19-26 03:24PM",
+  "tamanho": 6581156,
+  "data_remota": "10-27-26 07:58AM",
   "preliminar": true,
-  "registros_total": 137730,
+  "registros_total": 139795,
   "registros_ibiapaba": 88,
-  "registros_ce": 6919,
-  "coletado_em": "2026-10-27T12:07:16"
+  "registros_ce": 6996,
+  "coletado_em": "2026-11-05T17:11:39"
  },
  "/dissemin/publicos/SINAN/DADOS/PRELIM/ZIKABR26.dbc": {
   "sistema": "SINAN",
   "arquivo": "ZIKABR26.dbc",
-  "tamanho": 375021,
-  "data_remota": "10-23-26 08:35AM",
+  "tamanho": 380758,
+  "data_remota": "10-27-26 03:51PM",
   "preliminar": true,
-  "registros_total": 13875,
+  "registros_total": 14115,
   "registros_ibiapaba": 1,
   "registros_ce": 2170,
-  "coletado_em": "2026-10-27T12:07:17"
+  "coletado_em": "2026-11-05T17:11:42"
  }
 }

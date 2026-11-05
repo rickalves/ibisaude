@@ -66,7 +66,7 @@ Carnaubal;230340;Dengue;2026;28;4
 Carnaubal;230340;Dengue;2026;29;1
 Carnaubal;230340;Dengue;2026;30;1
 Carnaubal;230340;Dengue;2026;31;1
-Carnaubal;230340;Dengue;2026;35;1
+Carnaubal;230340;Dengue;2026;41;1
 Croatá;230423;Chikungunya;2020;19;1
 Croatá;230423;Chikungunya;2026;17;1
 Croatá;230423;Chikungunya;2026;18;1
@@ -143,6 +143,7 @@ Croatá;230423;Dengue;2026;37;1
 Croatá;230423;Dengue;2026;38;1
 Croatá;230423;Dengue;2026;39;1
 Croatá;230423;Dengue;2026;40;1
+Croatá;230423;Dengue;2026;41;1
 Guaraciaba do Norte;230500;Chikungunya;2022;46;2
 Guaraciaba do Norte;230500;Chikungunya;2022;47;1
 Guaraciaba do Norte;230500;Chikungunya;2023;14;1
@@ -239,9 +240,9 @@ Guaraciaba do Norte;230500;Dengue;2026;23;14
 Guaraciaba do Norte;230500;Dengue;2026;24;11
 Guaraciaba do Norte;230500;Dengue;2026;25;6
 Guaraciaba do Norte;230500;Dengue;2026;26;1
-Guaraciaba do Norte;230500;Dengue;2026;27;8
+Guaraciaba do Norte;230500;Dengue;2026;27;7
 Guaraciaba do Norte;230500;Dengue;2026;28;7
-Guaraciaba do Norte;230500;Dengue;2026;29;7
+Guaraciaba do Norte;230500;Dengue;2026;29;6
 Guaraciaba do Norte;230500;Dengue;2026;30;8
 Guaraciaba do Norte;230500;Dengue;2026;31;5
 Guaraciaba do Norte;230500;Dengue;2026;32;5
@@ -353,14 +354,13 @@ São Benedito;231230;Dengue;2026;23;2
 São Benedito;231230;Dengue;2026;24;1
 São Benedito;231230;Dengue;2026;27;1
 São Benedito;231230;Dengue;2026;28;2
-São Benedito;231230;Dengue;2026;32;1
 São Benedito;231230;Dengue;2026;34;1
 São Benedito;231230;Dengue;2026;35;1
-São Benedito;231230;Dengue;2026;36;3
 São Benedito;231230;Dengue;2026;37;2
 São Benedito;231230;Dengue;2026;38;1
-São Benedito;231230;Dengue;2026;39;2
+São Benedito;231230;Dengue;2026;39;3
 São Benedito;231230;Dengue;2026;40;1
+São Benedito;231230;Dengue;2026;41;2
 Tianguá;231340;Chikungunya;2022;10;1
 Tianguá;231340;Chikungunya;2022;13;1
 Tianguá;231340;Chikungunya;2022;16;1
@@ -607,19 +607,21 @@ Tianguá;231340;Dengue;2026;18;98
 Tianguá;231340;Dengue;2026;19;89
 Tianguá;231340;Dengue;2026;20;96
 Tianguá;231340;Dengue;2026;21;113
-Tianguá;231340;Dengue;2026;22;92
+Tianguá;231340;Dengue;2026;22;93
 Tianguá;231340;Dengue;2026;23;55
 Tianguá;231340;Dengue;2026;24;53
-Tianguá;231340;Dengue;2026;25;67
-Tianguá;231340;Dengue;2026;26;22
+Tianguá;231340;Dengue;2026;25;68
+Tianguá;231340;Dengue;2026;26;23
 Tianguá;231340;Dengue;2026;27;7
-Tianguá;231340;Dengue;2026;28;32
+Tianguá;231340;Dengue;2026;28;33
 Tianguá;231340;Dengue;2026;29;12
-Tianguá;231340;Dengue;2026;30;36
-Tianguá;231340;Dengue;2026;31;16
-Tianguá;231340;Dengue;2026;32;24
-Tianguá;231340;Dengue;2026;33;21
-Tianguá;231340;Dengue;2026;34;2
+Tianguá;231340;Dengue;2026;30;48
+Tianguá;231340;Dengue;2026;31;40
+Tianguá;231340;Dengue;2026;32;34
+Tianguá;231340;Dengue;2026;33;35
+Tianguá;231340;Dengue;2026;34;17
+Tianguá;231340;Dengue;2026;35;2
+Tianguá;231340;Dengue;2026;36;2
 Tianguá;231340;Dengue;2026;38;1
 Ubajara;231360;Chikungunya;2019;41;1
 Ubajara;231360;Chikungunya;2020;10;1
@@ -1333,25 +1335,26 @@ Serra da Ibiapaba;IBIAPABA;Dengue;2026;18;133
 Serra da Ibiapaba;IBIAPABA;Dengue;2026;19;133
 Serra da Ibiapaba;IBIAPABA;Dengue;2026;20;133
 Serra da Ibiapaba;IBIAPABA;Dengue;2026;21;171
-Serra da Ibiapaba;IBIAPABA;Dengue;2026;22;145
+Serra da Ibiapaba;IBIAPABA;Dengue;2026;22;146
 Serra da Ibiapaba;IBIAPABA;Dengue;2026;23;95
 Serra da Ibiapaba;IBIAPABA;Dengue;2026;24;102
-Serra da Ibiapaba;IBIAPABA;Dengue;2026;25;93
-Serra da Ibiapaba;IBIAPABA;Dengue;2026;26;58
-Serra da Ibiapaba;IBIAPABA;Dengue;2026;27;43
-Serra da Ibiapaba;IBIAPABA;Dengue;2026;28;70
-Serra da Ibiapaba;IBIAPABA;Dengue;2026;29;42
-Serra da Ibiapaba;IBIAPABA;Dengue;2026;30;64
-Serra da Ibiapaba;IBIAPABA;Dengue;2026;31;40
-Serra da Ibiapaba;IBIAPABA;Dengue;2026;32;46
-Serra da Ibiapaba;IBIAPABA;Dengue;2026;33;37
-Serra da Ibiapaba;IBIAPABA;Dengue;2026;34;15
-Serra da Ibiapaba;IBIAPABA;Dengue;2026;35;19
-Serra da Ibiapaba;IBIAPABA;Dengue;2026;36;13
+Serra da Ibiapaba;IBIAPABA;Dengue;2026;25;94
+Serra da Ibiapaba;IBIAPABA;Dengue;2026;26;59
+Serra da Ibiapaba;IBIAPABA;Dengue;2026;27;42
+Serra da Ibiapaba;IBIAPABA;Dengue;2026;28;71
+Serra da Ibiapaba;IBIAPABA;Dengue;2026;29;41
+Serra da Ibiapaba;IBIAPABA;Dengue;2026;30;76
+Serra da Ibiapaba;IBIAPABA;Dengue;2026;31;64
+Serra da Ibiapaba;IBIAPABA;Dengue;2026;32;55
+Serra da Ibiapaba;IBIAPABA;Dengue;2026;33;51
+Serra da Ibiapaba;IBIAPABA;Dengue;2026;34;30
+Serra da Ibiapaba;IBIAPABA;Dengue;2026;35;20
+Serra da Ibiapaba;IBIAPABA;Dengue;2026;36;12
 Serra da Ibiapaba;IBIAPABA;Dengue;2026;37;7
 Serra da Ibiapaba;IBIAPABA;Dengue;2026;38;6
-Serra da Ibiapaba;IBIAPABA;Dengue;2026;39;5
+Serra da Ibiapaba;IBIAPABA;Dengue;2026;39;6
 Serra da Ibiapaba;IBIAPABA;Dengue;2026;40;2
+Serra da Ibiapaba;IBIAPABA;Dengue;2026;41;4
 Ceará;CE;Chikungunya;2019;1;10
 Ceará;CE;Chikungunya;2019;2;15
 Ceará;CE;Chikungunya;2019;3;24
@@ -1720,16 +1723,16 @@ Ceará;CE;Chikungunya;2025;53;9
 Ceará;CE;Chikungunya;2026;1;3
 Ceará;CE;Chikungunya;2026;2;4
 Ceará;CE;Chikungunya;2026;3;6
-Ceará;CE;Chikungunya;2026;4;5
+Ceará;CE;Chikungunya;2026;4;4
 Ceará;CE;Chikungunya;2026;5;10
 Ceará;CE;Chikungunya;2026;6;6
 Ceará;CE;Chikungunya;2026;7;7
 Ceará;CE;Chikungunya;2026;8;4
 Ceará;CE;Chikungunya;2026;9;13
 Ceará;CE;Chikungunya;2026;10;10
-Ceará;CE;Chikungunya;2026;11;4
+Ceará;CE;Chikungunya;2026;11;3
 Ceará;CE;Chikungunya;2026;12;7
-Ceará;CE;Chikungunya;2026;13;10
+Ceará;CE;Chikungunya;2026;13;9
 Ceará;CE;Chikungunya;2026;14;11
 Ceará;CE;Chikungunya;2026;15;10
 Ceará;CE;Chikungunya;2026;16;8
@@ -1740,24 +1743,25 @@ Ceará;CE;Chikungunya;2026;20;15
 Ceará;CE;Chikungunya;2026;21;13
 Ceará;CE;Chikungunya;2026;22;15
 Ceará;CE;Chikungunya;2026;23;21
-Ceará;CE;Chikungunya;2026;24;25
-Ceará;CE;Chikungunya;2026;25;16
+Ceará;CE;Chikungunya;2026;24;24
+Ceará;CE;Chikungunya;2026;25;14
 Ceará;CE;Chikungunya;2026;26;15
-Ceará;CE;Chikungunya;2026;27;22
+Ceará;CE;Chikungunya;2026;27;20
 Ceará;CE;Chikungunya;2026;28;27
 Ceará;CE;Chikungunya;2026;29;25
 Ceará;CE;Chikungunya;2026;30;21
 Ceará;CE;Chikungunya;2026;31;16
 Ceará;CE;Chikungunya;2026;32;21
-Ceará;CE;Chikungunya;2026;33;26
-Ceará;CE;Chikungunya;2026;34;20
+Ceará;CE;Chikungunya;2026;33;27
+Ceará;CE;Chikungunya;2026;34;17
 Ceará;CE;Chikungunya;2026;35;17
-Ceará;CE;Chikungunya;2026;36;10
-Ceará;CE;Chikungunya;2026;37;12
-Ceará;CE;Chikungunya;2026;38;15
-Ceará;CE;Chikungunya;2026;39;19
-Ceará;CE;Chikungunya;2026;40;22
-Ceará;CE;Chikungunya;2026;41;6
+Ceará;CE;Chikungunya;2026;36;8
+Ceará;CE;Chikungunya;2026;37;10
+Ceará;CE;Chikungunya;2026;38;13
+Ceará;CE;Chikungunya;2026;39;15
+Ceará;CE;Chikungunya;2026;40;26
+Ceará;CE;Chikungunya;2026;41;11
+Ceará;CE;Chikungunya;2026;42;3
 Ceará;CE;Dengue;2019;1;53
 Ceará;CE;Dengue;2019;2;40
 Ceará;CE;Dengue;2019;3;77
@@ -2147,21 +2151,22 @@ Ceará;CE;Dengue;2026;20;687
 Ceará;CE;Dengue;2026;21;677
 Ceará;CE;Dengue;2026;22;661
 Ceará;CE;Dengue;2026;23;771
-Ceará;CE;Dengue;2026;24;851
-Ceará;CE;Dengue;2026;25;909
-Ceará;CE;Dengue;2026;26;990
-Ceará;CE;Dengue;2026;27;1075
-Ceará;CE;Dengue;2026;28;1073
-Ceará;CE;Dengue;2026;29;1023
-Ceará;CE;Dengue;2026;30;960
-Ceará;CE;Dengue;2026;31;888
-Ceará;CE;Dengue;2026;32;900
-Ceará;CE;Dengue;2026;33;729
-Ceará;CE;Dengue;2026;34;604
-Ceará;CE;Dengue;2026;35;518
-Ceará;CE;Dengue;2026;36;458
-Ceará;CE;Dengue;2026;37;403
-Ceará;CE;Dengue;2026;38;319
-Ceará;CE;Dengue;2026;39;245
-Ceará;CE;Dengue;2026;40;217
-Ceará;CE;Dengue;2026;41;57
+Ceará;CE;Dengue;2026;24;850
+Ceará;CE;Dengue;2026;25;910
+Ceará;CE;Dengue;2026;26;991
+Ceará;CE;Dengue;2026;27;1074
+Ceará;CE;Dengue;2026;28;1074
+Ceará;CE;Dengue;2026;29;1024
+Ceará;CE;Dengue;2026;30;974
+Ceará;CE;Dengue;2026;31;915
+Ceará;CE;Dengue;2026;32;910
+Ceará;CE;Dengue;2026;33;747
+Ceará;CE;Dengue;2026;34;594
+Ceará;CE;Dengue;2026;35;493
+Ceará;CE;Dengue;2026;36;438
+Ceará;CE;Dengue;2026;37;392
+Ceará;CE;Dengue;2026;38;339
+Ceará;CE;Dengue;2026;39;304
+Ceará;CE;Dengue;2026;40;250
+Ceará;CE;Dengue;2026;41;191
+Ceará;CE;Dengue;2026;42;64

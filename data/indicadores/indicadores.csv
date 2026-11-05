@@ -524,8 +524,8 @@ unidade,nome,ano,indicador,numerador,denominador,valor
 230423,Croatá,2026,pct_fora_serra,181,1101,16.44
 230423,Croatá,2026,pct_obito_hospitalar,53,1101,4.81
 230423,Croatá,2026,gasto_sih_per_capita,1536967.22,18090,84.96
-230423,Croatá,2026,dengue_casos,213,,213
-230423,Croatá,2026,dengue_incidencia,213,18090,1177.45
+230423,Croatá,2026,dengue_casos,214,,214
+230423,Croatá,2026,dengue_incidencia,214,18090,1182.97
 230423,Croatá,2026,dengue_graves,0,,0
 230423,Croatá,2026,dengue_obitos,0,,0
 230423,Croatá,2026,chik_casos,13,,13
@@ -790,8 +790,8 @@ unidade,nome,ano,indicador,numerador,denominador,valor
 230500,Guaraciaba do Norte,2026,pct_fora_serra,320,2105,15.2
 230500,Guaraciaba do Norte,2026,pct_obito_hospitalar,86,2105,4.09
 230500,Guaraciaba do Norte,2026,gasto_sih_per_capita,3264658.79,44823,72.83
-230500,Guaraciaba do Norte,2026,dengue_casos,435,,435
-230500,Guaraciaba do Norte,2026,dengue_incidencia,435,44823,970.48
+230500,Guaraciaba do Norte,2026,dengue_casos,433,,433
+230500,Guaraciaba do Norte,2026,dengue_incidencia,433,44823,966.02
 230500,Guaraciaba do Norte,2026,dengue_graves,3,,3
 230500,Guaraciaba do Norte,2026,dengue_obitos,0,,0
 230500,Guaraciaba do Norte,2026,chik_casos,4,,4
@@ -1315,8 +1315,8 @@ unidade,nome,ano,indicador,numerador,denominador,valor
 231230,São Benedito,2026,pct_fora_serra,417,2239,18.62
 231230,São Benedito,2026,pct_obito_hospitalar,93,2239,4.15
 231230,São Benedito,2026,gasto_sih_per_capita,3414850.12,50274,67.92
-231230,São Benedito,2026,dengue_casos,31,,31
-231230,São Benedito,2026,dengue_incidencia,31,50274,61.66
+231230,São Benedito,2026,dengue_casos,30,,30
+231230,São Benedito,2026,dengue_incidencia,30,50274,59.67
 231230,São Benedito,2026,dengue_graves,0,,0
 231230,São Benedito,2026,dengue_obitos,0,,0
 231230,São Benedito,2026,chik_casos,7,,7
@@ -1581,8 +1581,8 @@ unidade,nome,ano,indicador,numerador,denominador,valor
 231340,Tianguá,2026,pct_fora_serra,640,5083,12.59
 231340,Tianguá,2026,pct_obito_hospitalar,157,5083,3.09
 231340,Tianguá,2026,gasto_sih_per_capita,8680113.98,87757,98.91
-231340,Tianguá,2026,dengue_casos,1181,,1181
-231340,Tianguá,2026,dengue_incidencia,1181,87757,1345.76
+231340,Tianguá,2026,dengue_casos,1264,,1264
+231340,Tianguá,2026,dengue_incidencia,1264,87757,1440.34
 231340,Tianguá,2026,dengue_graves,3,,3
 231340,Tianguá,2026,dengue_obitos,2,,2
 231340,Tianguá,2026,chik_casos,3,,3
@@ -2371,12 +2371,12 @@ CE,Ceará,2026,tx_internacao,411231,9302211,44.21
 CE,Ceará,2026,pct_icsap,64810,384498,16.86
 CE,Ceará,2026,pct_obito_hospitalar,16195,411231,3.94
 CE,Ceará,2026,gasto_sih_per_capita,696815790.63,9302211,74.91
-CE,Ceará,2026,dengue_casos,18531,,18531
-CE,Ceará,2026,dengue_incidencia,18531,9302211,199.21
-CE,Ceará,2026,dengue_graves,612,,612
+CE,Ceará,2026,dengue_casos,18846,,18846
+CE,Ceará,2026,dengue_incidencia,18846,9302211,202.6
+CE,Ceará,2026,dengue_graves,619,,619
 CE,Ceará,2026,dengue_obitos,27,,27
-CE,Ceará,2026,chik_casos,582,,582
-CE,Ceará,2026,chik_incidencia,582,9302211,6.26
+CE,Ceará,2026,chik_casos,574,,574
+CE,Ceará,2026,chik_incidencia,574,9302211,6.17
 CE,Ceará,2026,zika_casos,264,,264
 IBIAPABA,Serra da Ibiapaba,2019,populacao,320838,,320838
 IBIAPABA,Serra da Ibiapaba,2019,nascidos_vivos,5481,,5481
@@ -2637,8 +2637,8 @@ IBIAPABA,Serra da Ibiapaba,2026,pct_icsap,2017,16808,12.0
 IBIAPABA,Serra da Ibiapaba,2026,pct_fora_serra,2769,18474,14.99
 IBIAPABA,Serra da Ibiapaba,2026,pct_obito_hospitalar,648,18474,3.51
 IBIAPABA,Serra da Ibiapaba,2026,gasto_sih_per_capita,27391893.74,341387,80.24
-IBIAPABA,Serra da Ibiapaba,2026,dengue_casos,2120,,2120
-IBIAPABA,Serra da Ibiapaba,2026,dengue_incidencia,2120,341387,621.0
+IBIAPABA,Serra da Ibiapaba,2026,dengue_casos,2201,,2201
+IBIAPABA,Serra da Ibiapaba,2026,dengue_incidencia,2201,341387,644.72
 IBIAPABA,Serra da Ibiapaba,2026,dengue_graves,6,,6
 IBIAPABA,Serra da Ibiapaba,2026,dengue_obitos,2,,2
 IBIAPABA,Serra da Ibiapaba,2026,chik_casos,40,,40
